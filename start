@@ -1,0 +1,1 @@
+java -Xmx30G -jar server/server.jar nogui

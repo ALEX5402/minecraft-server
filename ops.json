@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "e72a6906-265f-3042-a0e2-4dcc0bdc8376",
+    "name": "LAM_WEB",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "63f2f2ba-086b-3b53-8311-c772468d3755",
+    "name": "demo",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
