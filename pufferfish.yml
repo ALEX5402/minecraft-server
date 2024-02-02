@@ -31,6 +31,7 @@ inactive-goal-selector-throttle: false
 misc:
   disable-method-profiler: true
   disable-out-of-order-chat: false
+  suppress-null-id-disconnections: false
 enable-books: true
 enable-suffocation-optimization: true
 enable-async-mob-spawning: true

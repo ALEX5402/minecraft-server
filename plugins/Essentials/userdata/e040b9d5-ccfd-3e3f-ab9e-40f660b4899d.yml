@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.155.89.54
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1706819796171
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706886882116
+  login: 1706886904109
+money: '0'
+last-account-name: YUP007
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 576.3060499516185
+  y: 88.2213383700728
+  z: -479.934150505061
+  yaw: -148.19313049316406
+  pitch: 21.686260223388672
+lastlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 345.6809144132444
+  y: 118.9375
+  z: -518.6612495618642
+  yaw: -137.47808837890625
+  pitch: 47.8730354309082

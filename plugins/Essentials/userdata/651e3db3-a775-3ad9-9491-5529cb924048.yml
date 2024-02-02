@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706873318988
+  login: 1706872765862
+money: '0'
+last-account-name: Trar33
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 1556.7022739789443
+  y: -24.878399953842163
+  z: -1251.1234877984602
+  yaw: 115.46112060546875
+  pitch: 26.559078216552734
+lastlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 412.7598179659038
+  y: 63.0
+  z: -553.7628122772456
+  yaw: -83.3984375
+  pitch: 15.560111999511719

@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706866084689
+  login: 1706865972584
+money: '0'
+last-account-name: vanshoo911
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 367.6189198471658
+  y: 118.0
+  z: -466.30000001192093
+  yaw: -137.52517700195312
+  pitch: 42.75868606567383

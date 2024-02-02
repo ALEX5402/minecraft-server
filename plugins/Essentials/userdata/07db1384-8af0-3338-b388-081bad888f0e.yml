@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706865286228
+  login: 1706865199932
+money: '0'
+last-account-name: Wahidunn_
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 375.19279354184323
+  y: 118.0
+  z: -429.92429926500614
+  yaw: -159.14886474609375
+  pitch: -14.999999046325684

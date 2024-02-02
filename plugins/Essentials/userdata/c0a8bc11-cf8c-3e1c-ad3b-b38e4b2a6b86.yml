@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706859392878
+  login: 1706859368191
+money: '0'
+last-account-name: red_x_09
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 338.9614295663915
+  y: 122.0
+  z: -499.1938238660022
+  yaw: 117.69983673095703
+  pitch: 22.52161407470703

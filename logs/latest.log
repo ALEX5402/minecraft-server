@@ -1,93 +1,30 @@
-[09:56:57] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[09:56:59] [ServerMain/INFO]: Loaded 1174 recipes
-[09:56:59] [ServerMain/INFO]: Loaded 1271 advancements
-[09:56:59] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[09:56:59] [Server thread/INFO]: Loading properties
-[09:56:59] [Server thread/INFO]: This server is running Purpur version git-Purpur-2134 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 030cb9e on HEAD)
-[09:57:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[09:57:01] [Server thread/INFO]: Using 4 threads for Netty based IO
-[09:57:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[09:57:01] [Server thread/WARN]: [Pufferfish] Will not enable SIMD! These optimizations are only safely supported on Java 17, Java 18, and Java 19.
-[09:57:01] [Server thread/INFO]: Default game type: SURVIVAL
-[09:57:01] [Server thread/INFO]: Generating keypair
-[09:57:02] [Server thread/INFO]: Starting Minecraft server on *:25565
-[09:57:02] [Server thread/INFO]: Using epoll channel type
-[09:57:02] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[09:57:02] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[09:57:02] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
-[09:57:02] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
-[09:57:02] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[09:57:03] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[09:57:03] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[09:57:03] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[09:57:03] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.59
-[09:57:03] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.0.3
-[09:57:03] [Server thread/INFO]: [playit-gg] Loading server plugin playit-gg v0.1.4
-[09:57:03] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
-[09:57:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[09:57:03] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[09:57:03] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[09:57:03] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[09:57:03] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[09:57:03] [Server thread/INFO]: Preparing level "world"
-[09:57:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[09:57:04] [Server thread/INFO]: Time elapsed: 241 ms
-[09:57:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[09:57:04] [Server thread/INFO]: Time elapsed: 54 ms
-[09:57:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[09:57:05] [Server thread/INFO]: Time elapsed: 910 ms
-[09:57:05] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.2
-[09:57:05] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3 (765)
-[09:57:05] [Server thread/INFO]: [spark] Enabling spark v1.10.59
-[09:57:06] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
-[09:57:06] [Server thread/INFO]: [spark] Starting background profiler...
-[09:57:07] [Server thread/INFO]: [TAB] Enabling TAB v4.0.3
-[09:57:07] [Server thread/INFO]: [TAB] Server version: 1.20.4 (v1_20_R3)
-[09:57:07] [Server thread/INFO]: [TAB] Your server version is not compatible. This plugin version was made for 1.5 - 1.20.1. Disabling.
-[09:57:07] [Server thread/INFO]: [TAB] Disabling TAB v4.0.3
-[09:57:07] [Server thread/INFO]: [playit-gg] Enabling playit-gg v0.1.4
-[09:57:08] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.9.1
-[09:57:08] [Thread-7/INFO]: [gg.playit.minecraft.PlayitKeysSetup] secret key found, checking
-[09:57:08] [Thread-7/INFO]: [gg.playit.minecraft.PlayitKeysSetup] check secret
-[09:57:08] [Server thread/INFO]: Running delayed init tasks
-[09:57:08] [Server thread/INFO]: Done (8.722s)! For help, type "help"
-[09:57:08] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[09:57:09] [Server thread/WARN]: [EntityLookup] Entity uuid already exists: e97b8d3f-0f88-4e2f-8ee4-3db5e6f82f55, mapped to EntityBat['Bat'/178, uuid='e97b8d3f-0f88-4e2f-8ee4-3db5e6f82f55', l='ServerLevel[world]', x=-124.20, y=11.16, z=205.59, cpos=[-8, 12], tl=419, v=true], can't add EntityBat['Bat'/235, uuid='e97b8d3f-0f88-4e2f-8ee4-3db5e6f82f55', l='ServerLevel[world]', x=-126.22, y=7.11, z=208.38, cpos=[-8, 13], tl=476, v=false]
-[09:57:09] [Thread-7/INFO]: [gg.playit.minecraft.PlayitKeysSetup] found minecraft java tunnel: multi-sox.joinmc.link
-[09:57:09] [Thread-7/INFO]: [gg.playit.minecraft.PlayitManager] keys and tunnel setup
-[09:57:09] [Thread-7/INFO]: playit.gg: tunnel setup
-[09:57:09] [Thread-7/INFO]: playit.gg: multi-sox.joinmc.link
-[09:57:09] [Thread-7/WARN]: [gg.playit.control.ChannelSetup] Got IO error working with :control.playit.gg/2602:fbaf:840:0:0:0:0:1, error : java.net.SocketException: Network is unreachable
-[09:57:10] [Thread-7/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
-[09:57:11] [Thread-7/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
-[09:57:53] [Server thread/INFO]: Stopping server
-[09:57:53] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.9.1
-[09:57:53] [Server thread/INFO]: [playit-gg] Disabling playit-gg v0.1.4
-[09:57:53] [Server thread/INFO]: [spark] Disabling spark v1.10.59
-[09:57:53] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.9.2
-[09:57:53] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[09:57:53] [Server thread/INFO]: Saving players
-[09:57:53] [Server thread/INFO]: Saving worlds
-[09:57:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[09:57:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[09:57:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[09:57:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[09:57:54] [Thread-7/INFO]: [gg.playit.minecraft.PlayitManager] control channel shutdown
-[09:57:55] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world' in 1.23s
-[09:57:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:57:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[09:57:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[09:57:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[09:57:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[09:57:56] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.56s
-[09:57:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:57:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[09:57:56] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[09:57:56] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[09:57:56] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[09:57:56] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.22s
-[09:57:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09:57:56] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[09:57:56] [Server thread/INFO]: Flushing Chunk IO
-[09:57:56] [Server thread/INFO]: Closing Thread Pool
-[09:57:56] [Server thread/INFO]: Closing Server
+[15:19:09] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:19:10] [ServerMain/INFO]: Loaded 7 recipes
+[15:19:11] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[15:19:11] [Server thread/INFO]: Loading properties
+[15:19:11] [Server thread/INFO]: This server is running Purpur version git-Purpur-2050 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 423c2af on HEAD)
+[15:19:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:19:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:19:12] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[15:19:13] [Server thread/WARN]: [Pufferfish] Will not enable SIMD! These optimizations are only safely supported on Java 17, Java 18, and Java 19.
+[15:19:13] [Server thread/INFO]: Default game type: SURVIVAL
+[15:19:13] [Server thread/INFO]: Generating keypair
+[15:19:13] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:19:13] [Server thread/INFO]: Using epoll channel type
+[15:19:13] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[15:19:13] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[15:19:16] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
+[15:19:16] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
+[15:19:17] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[15:19:17] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[15:19:17] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[15:19:18] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[15:19:18] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[15:19:18] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[15:19:18] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
+[15:19:19] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[15:19:19] [Server thread/INFO]: [floodgate] Took 696ms to boot Floodgate
+[15:19:19] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
+[15:19:19] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
+[15:19:20] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@61ea2537]
+[15:19:20] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT

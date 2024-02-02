@@ -1,1 +1,5 @@
-java -Xmx30G -jar server/server.jar nogui
+screen -S server -d -m java -Xmx16G -jar server/server.jar nogui
+screen -S playit -d -m playit
+screen -S playit2 -d -m playit
+screen -S playit3 -d -m playit
+screen -S playit4 -d -m playit

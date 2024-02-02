@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.45.208.22
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706885315967
+  login: 1706885357659
+money: '0'
+last-account-name: NotRexy_
+lastlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 375.2678195115625
+  y: 118.79673560066871
+  z: -499.2296220505439
+  yaw: -12.727070808410645
+  pitch: 11.549942970275879
+logoutlocation:
+  world: f7e09ae1-341f-44f8-9363-e000fab108f2
+  world-name: world_nether
+  x: 448.32922348419794
+  y: 57.0
+  z: 25.930316204184514
+  yaw: -5.33782958984375
+  pitch: 16.649917602539062

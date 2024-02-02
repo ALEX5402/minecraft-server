@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.217.241.58
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706876410968
+  login: 1706875872746
+money: '0'
+last-account-name: simar1234
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: -501.30000001192093
+  y: 31.0
+  z: -686.3000000119209
+  yaw: 177.72509765625
+  pitch: 3.730835437774658
+lastlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 276.8494669224537
+  y: 65.0
+  z: -615.6050064735164
+  yaw: -53.447509765625
+  pitch: 10.67176628112793

@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.72.254.143
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706885095868
+  login: 1706885122309
+money: '0'
+last-account-name: TheDream
+logoutlocation:
+  world: f7e09ae1-341f-44f8-9363-e000fab108f2
+  world-name: world_nether
+  x: 442.2592360756319
+  y: 28.0
+  z: -17.69657944801746
+  yaw: 127.4783935546875
+  pitch: -64.79996490478516

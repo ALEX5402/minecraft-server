@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1706864195889
+  login: 1706863918626
+money: '0'
+last-account-name: PXG69
+logoutlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: 336.69999998807907
+  y: 120.9375
+  z: -500.2967505735673
+  yaw: -84.79632568359375
+  pitch: 36.57333755493164
+lastlocation:
+  world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
+  world-name: world
+  x: -16.73026740659734
+  y: 63.0
+  z: -410.8429875009429
+  yaw: -171.8568115234375
+  pitch: 82.76669311523438
