@@ -1,1 +1,139 @@
-chestData: []
+chestData:
+- ==: ChestData
+  playerUUID: ad7b7073-577b-3b65-8023-fa5f79d4d798
+  holographicTimer: world;390.5;64.79999995231628;-609.5
+  worldName: world
+  as_timer_id: 06d6c1dd-2e6e-40e4-ae2c-070b7d05a2a8
+  playerName: ThunderBoltt18
+  isRemovedBlock: true
+  isInfinity: false
+  as_owner_id: a6de189e-1be6-4520-b9f1-70708113a44c
+  chestDate: 2024-02-03T08:44:24.147Z
+  xpStored: 0
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 19
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 102
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 2
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_SHOVEL
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 1
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ARROW
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: WATER_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: OAK_PLANKS
+    amount: 24
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COOKED_BEEF
+    amount: 55
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ARROW
+    amount: 7
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COOKED_MUTTON
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: WHEAT_SEEDS
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_INGOT
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: FLINT_AND_STEEL
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: DIRT
+    amount: 4
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      Damage: 87
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      Damage: 87
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      Damage: 87
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      Damage: 87
+  - ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      Damage: 106
+      blockMaterial: SHIELD
+  chestLocation: world;390.0;64.0;-610.0

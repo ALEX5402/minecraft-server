@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1706885315967
-  login: 1706885357659
+  logout: 1706954226048
+  login: 1706952697453
 money: '0'
 last-account-name: NotRexy_
 lastlocation:
@@ -29,10 +29,10 @@ lastlocation:
   yaw: -12.727070808410645
   pitch: 11.549942970275879
 logoutlocation:
-  world: f7e09ae1-341f-44f8-9363-e000fab108f2
-  world-name: world_nether
-  x: 448.32922348419794
-  y: 57.0
-  z: 25.930316204184514
-  yaw: -5.33782958984375
-  pitch: 16.649917602539062
+  world: 1139dc9a-a659-4425-bc95-7f0360551cf6
+  world-name: world_the_end
+  x: 575.8930096858621
+  y: 58.0
+  z: 1398.9290517572056
+  yaw: 179.74156188964844
+  pitch: 29.250080108642578

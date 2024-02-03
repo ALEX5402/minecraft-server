@@ -193,6 +193,10 @@ Players:
     name: RumiGamer11
   0f25faf6-be48-3eff-858f-526f8439b775:
     name: vanshoo911
+    starter:
+      cooldown: 1706947986775
+      buyed: false
+      one_time: true
   4710de70-8ad7-3f04-83fb-59c320a83938:
     name: Itz_Krrish
   273d8455-da5a-31eb-9b59-8b3f7b4ecd02:
@@ -2625,5 +2629,173 @@ Players:
     name: TheDream
     starter:
       cooldown: 1706883713936
+      buyed: false
+      one_time: true
+  a8b60fcb-ea58-36d9-a11e-06eeabf9d022:
+    name: arsh_botyt
+    starter:
+      cooldown: 1706887363105
+      buyed: false
+      one_time: true
+  64e040ab-5201-3c13-b5d8-8ef99d1edb6d:
+    name: AxXer_00
+    starter:
+      cooldown: 1706887834909
+      buyed: false
+      one_time: true
+  70900987-fa2b-3243-98d4-42f2deec2ef0:
+    name: FlairBoltee
+    starter:
+      cooldown: 1706888093093
+      buyed: false
+      one_time: true
+  45d5fbe5-bd40-390a-8fee-fc66f7959036:
+    name: Extremuu
+    starter:
+      cooldown: 1706888101592
+      buyed: false
+      one_time: true
+  3ff24193-6ac5-3fac-b8e0-3fb85beb3603:
+    name: Yaseen_bhai
+    starter:
+      cooldown: 1706901745993
+      buyed: false
+      one_time: true
+  8ea1f8ba-64ce-3e28-92df-aa84fa9c340f:
+    name: BD_GamerZ_YT
+    starter:
+      cooldown: 1706902657922
+      buyed: false
+      one_time: true
+  16e94db8-1ab8-33ef-80fa-94a4d5ec862a:
+    name: Not_Shubham_xD
+    starter:
+      cooldown: 1706946674168
+      buyed: false
+      one_time: true
+  5b5dab40-1837-38c8-8ebd-ec63bf7aebdd:
+    name: opnaruto
+    starter:
+      cooldown: 1706947851822
+      buyed: false
+      one_time: true
+  b2f0feed-6182-30c1-92e2-b3cf08b37a81:
+    name: RSGAMER6118
+    starter:
+      cooldown: 1706947880255
+      buyed: false
+      one_time: true
+  e3e314ae-5a04-38c7-9e0c-fa4bfe93a1e2:
+    name: ANSHU_PLAYZ_00
+    starter:
+      cooldown: 1706947897754
+      buyed: false
+      one_time: true
+  129c04c2-1c75-3341-9786-c85aa26b24ec:
+    name: Dk2345678
+    starter:
+      cooldown: 1706948012400
+      buyed: false
+      one_time: true
+  ad7b7073-577b-3b65-8023-fa5f79d4d798:
+    name: ThunderBoltt18
+    starter:
+      cooldown: 1706948013608
+      buyed: false
+      one_time: true
+  7e2f316c-d0b9-364b-9def-21ebe0cebab2:
+    name: TG191
+    starter:
+      cooldown: 1706948017758
+      buyed: false
+      one_time: true
+  dc438365-e704-3139-a743-5b5838e0f965:
+    name: GOD_BUTCHER1237
+    starter:
+      cooldown: 1706948036105
+      buyed: false
+      one_time: true
+  1b3d1b3e-20fa-3149-a242-a943e8157676:
+    name: notakshat8899
+    starter:
+      cooldown: 1706948435451
+      buyed: false
+      one_time: true
+  27662909-82eb-3d7a-bcf1-0f1fa35cb636:
+    name: DeadLordOp
+    starter:
+      cooldown: 1706948512155
+      buyed: false
+      one_time: true
+  be9bb9bd-9f9a-3b1a-bc5d-e1733e1cd8da:
+    name: Nathx_playz
+    starter:
+      cooldown: 1706948556399
+      buyed: false
+      one_time: true
+  b16bd9f4-7bb2-32c2-b4fd-561e3ce1003d:
+    name: Aizaz_nu
+    starter:
+      cooldown: 1706948573204
+      buyed: false
+      one_time: true
+  f21bc9a6-d39a-3896-867b-437ce778bffa:
+    name: Sapno
+    starter:
+      cooldown: 1706948657101
+      buyed: false
+      one_time: true
+  5501926e-b79b-31f7-bd6c-7cd1071fc9cc:
+    name: Sahiplaying
+    starter:
+      cooldown: 1706948977502
+      buyed: false
+      one_time: true
+  1f10b2a2-fdd2-334b-b021-fe08cfa86e72:
+    name: Grand_Plays
+    starter:
+      cooldown: 1706949091457
+      buyed: false
+      one_time: true
+  2cbe11b8-5ff2-3578-8449-51afcf58fa65:
+    name: Itz_DarkYT
+    starter:
+      cooldown: 1706949211003
+      buyed: false
+      one_time: true
+  7e78253a-02c8-3b40-9965-faaec14e797c:
+    name: Ruhan_GamerOP
+    starter:
+      cooldown: 1706949498450
+      buyed: false
+      one_time: true
+  ff3a8c80-3c02-3f9d-91d0-a42507ac72fd:
+    name: CrimsonKnifeX
+    starter:
+      cooldown: 1706949737754
+      buyed: false
+      one_time: true
+  c909a31c-d049-32e8-8d7a-8d0a65c85c1d:
+    name: ATSIO
+    starter:
+      cooldown: 1706951256950
+      buyed: false
+      one_time: true
+  973de36f-16b3-3619-a692-e1fe86b2785d:
+    name: Sk_ALOCk111
+    starter:
+      cooldown: 1706951604018
+      buyed: false
+      one_time: true
+  f44eafd2-59ea-3351-a032-339e408039a5:
+    name: GamerBoyInd
+    starter:
+      cooldown: 1706952258009
+      buyed: false
+      one_time: true
+  42c9d84e-09c2-3d77-a79d-83ee50011722:
+    name: Notgamerarka
+    starter:
+      cooldown: 1706985855502
       buyed: false
       one_time: true

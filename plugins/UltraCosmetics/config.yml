@@ -406,7 +406,7 @@ Menu-Item:
   Lore: |-
     <green>Right-click with this
     <green>to open the menu
-# Custom model data for the menu item. Only supported on MC >= 1.14.4 (when it was added)
+  # Custom model data for the menu item. Only supported on MC >= 1.14.4 (when it was added)
   Custom-Model-Data: 0
   # Whether to open cosmetics menu when the menu item is clicked from the player's inventory
   Open-Menu-On-Inventory-Click: false

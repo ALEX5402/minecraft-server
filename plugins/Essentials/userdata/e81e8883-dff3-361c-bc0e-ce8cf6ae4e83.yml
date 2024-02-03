@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1706877099562
-  login: 1706876930030
+  logout: 1706951251753
+  login: 1706951206488
 money: '0'
 last-account-name: nterdreams
 lastlocation:
@@ -31,8 +31,8 @@ lastlocation:
 logoutlocation:
   world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
   world-name: world
-  x: 918.5879017064457
-  y: 113.23152379758702
-  z: -221.69999998807907
-  yaw: 125.02238464355469
-  pitch: 73.22607421875
+  x: 894.5815495087021
+  y: 89.0
+  z: -217.60701743565807
+  yaw: 41.152889251708984
+  pitch: 64.69695281982422

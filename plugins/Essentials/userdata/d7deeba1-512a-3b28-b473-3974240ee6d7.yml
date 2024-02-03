@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 127.155.89.54
+ip-address: 127.44.165.76
 afk: false
 socialspy: false
 npc: false
@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1706881336609
-  login: 1706881315946
+  logout: 1706888984434
+  login: 1706888957578
 money: '0'
 last-account-name: SenpaiSpider
 logoutlocation:
   world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
   world-name: world
-  x: 332.04894064922314
+  x: 332.98042009808097
   y: 121.0
-  z: -510.1804009529952
-  yaw: -170.22906494140625
-  pitch: 18.836837768554688
+  z: -510.90879002199523
+  yaw: -103.17889404296875
+  pitch: 24.236827850341797

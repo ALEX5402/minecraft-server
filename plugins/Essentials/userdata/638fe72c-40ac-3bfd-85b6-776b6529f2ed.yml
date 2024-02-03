@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1706876410968
-  login: 1706875872746
+  logout: 1706890884708
+  login: 1706890809632
 money: '0'
 last-account-name: simar1234
 logoutlocation:
   world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
   world-name: world
-  x: -501.30000001192093
-  y: 31.0
-  z: -686.3000000119209
-  yaw: 177.72509765625
-  pitch: 3.730835437774658
+  x: -494.69999998807907
+  y: 37.0
+  z: -676.6550334688261
+  yaw: -14.81781005859375
+  pitch: 17.84296226501465
 lastlocation:
   world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
   world-name: world

@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1706884038669
-  login: 1706883971160
+  logout: 1706952099804
+  login: 1706952088101
 money: '0'
 last-account-name: 4oQAS
 lastlocation:
@@ -32,7 +32,7 @@ logoutlocation:
   world: 62bf68bc-f2fc-44bb-ae2e-a6e6137a0b76
   world-name: world
   x: -1041.7778926377327
-  y: 70.0
+  y: 69.0
   z: -833.7797915960242
   yaw: 151.5
   pitch: 9.90005111694336

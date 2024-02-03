@@ -109,6 +109,7 @@
       "minecraft:skeleton": "2024-02-01 20:13:51 +0000",
       "minecraft:spider": "2024-02-02 13:04:08 +0000",
       "minecraft:creeper": "2024-02-02 13:25:51 +0000",
+      "minecraft:enderman": "2024-02-02 15:29:24 +0000",
       "minecraft:zombie": "2024-02-02 13:04:06 +0000"
     },
     "done": false
@@ -693,6 +694,24 @@
   "minecraft:recipes/misc/gold_nugget_from_blasting": {
     "criteria": {
       "has_golden_horse_armor": "2024-02-02 13:36:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2024-02-02 15:26:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2024-02-02 15:32:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2024-02-02 15:26:47 +0000"
     },
     "done": true
   },
