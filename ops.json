@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "533a86fb-239d-3396-b426-28c8e8204e55",
+    "name": "DRAGON_X_1_FIRE",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "0ec76f01-4062-3290-a788-5053c909ebb5",
     "name": "alex_bhaiya_001",
     "level": 4,

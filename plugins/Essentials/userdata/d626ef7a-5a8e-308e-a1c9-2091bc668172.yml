@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 171.76.5.171
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715074251567
+  login: 1715074144198
+money: '0'
+last-account-name: KawaiiRero
+lastlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 781.8852226016706
+  y: 157.0
+  z: 206.95064310879425
+  yaw: -163.40951538085938
+  pitch: -2.1493289470672607
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 746.2352074359069
+  y: 64.0
+  z: -234.5901499308298
+  yaw: 96.11827087402344
+  pitch: 55.63924026489258

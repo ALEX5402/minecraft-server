@@ -1,0 +1,83 @@
+#Made by Blue1
+#My Discord is Blue Dev#1111
+#Check out my YouTube channel as well, Blue BukkitDev, at https://www.youtube.com/channel/UCvsI8pt5E4stMKFcSyebczw
+#
+#I've eliminated all deprecated code to keep up with the newest versions and all upcoming features. 
+#
+#!!!WARNING!!! UsePermissions is by default set to false; that means that any player can use any command. 
+#This can be dangerous as some players are only there to troll and will delete important warps. 
+UsePermissions: false
+#Warp-Limit is added here to give to all players a limit that can be overridden with permissions. 
+Warp-Limit: 1
+#These are the lines of the sign that will appear *after* it has been placed. 
+#You may use %line1%, %line2%, %line3% and %line4%, and they will be replaced by the line that the player typed. 
+#%warp% is replaced by the second line, which is the name of the warp for which they are making a sign. 
+#
+#To place a warp sign, place a sign and type "warp" on the first line (without the quotation marks), and the name
+#of the warp on the second line. This will look something like the following, if the warp to which the sign directs 
+#was to be called "crates":
+# ___________________
+#|        warp       |
+#|       crates      |
+#|                   |
+#|                   |
+#|___________________|
+#         | |
+#         | |
+#         | |
+#Sign format is what the sign will look like after you have finished editing it as was shown above. 
+SignFormat:
+  Line1: "&9&lWARP"
+  Line2: "&d%warp%"
+  Line3: "&2&l&m=========="
+  Line4: "%line4%"
+#This is the prefix for any messages. 
+Prefix: "&7[&3Warps&7] "
+GUI-Or-List: "GUI"
+#I've eliminated the data version (material>-->[:0]<--<) to keep up with deprecation and appropriate code practices. 
+Default-GUI-Warp-Item: "SPRUCE_SIGN"
+#%index% is replaced by the page number. If you don't plan on having more than one page, this can be removed.
+Warps-GUI-Name: "&9Warps &7Page %index%"
+#%index% can be used in the 'previous' and 'next' items as well.
+GUI-Next-Page:
+  Item: "PAPER"
+  Name: "&6Next Page"
+  Lore: "&bClick to see the next page!"
+GUI-Previous-Page:
+  Item: "PAPER"
+  Name: "&6Back"
+  Lore: "&bClick to see the previous page!"
+#Amount of time to wait before warping a player.
+Warp-Delay: 3
+#Whether to cancel warping a player if they move before the countdown is over. Note that this is not any movement; the player must move from one block to another. 
+Cancel-Warp-On-Movement: true
+#
+#Suggested by JacobNordvall: Thanks Jacob! :)
+#%warp% can be used in all of the following messages except Warps-List (which can use %warps% instead), and No-Warps.
+#It is replaced by the name of the warp that corresponds to the message.
+#The placeholder %prefix% can also be used in these messages. 
+#The placeholder %limit% can be used in the Warp-Limit-Reached message. 
+##################################################################
+No-Warps: "&4There are no warps!"
+Invalid-Warp-Name: "&4There is no warp with that name!"
+Warp-Already-Exists: "&4There is already a warp by that name!"
+Warp-Set: "&b%warp% &6has been set to your current location."
+Warp-Deleted: "&b%warp% &6has been successfully deleted."
+Warp-Limit-Reached: "&cYou have created as many warps as you are allowed! (%limit%)"
+Warps-List: "&6Warps: &b%warps%"
+##################################################################
+Warp-Message: "&6You have warped to &b%warp%!"
+Warp-Sign-Created: "&6You have created a warp sign for &b%warp%!"
+Warp-Sign-Broken: "&6You have broken a warp sign for &b%warp%!"
+Warp-Sign-Broken-Confirm: "&6You are about to break a warp sign. Break again within 1 second to confirm."
+Warp-Countdown: "&6You will warp to %warp% in %time% seconds. Don't move!"
+Warp-Item-Set: "&6You have set %warp%'s item to %item%"
+#These next few cannot use %warp%
+Sign-Create-No-Permission: "&4You do not have permission to create this warp sign!"
+Sign-Destroy-No-Permission: "&4You do not have permission to break this warp sign!"
+Warp-Cancelled: "&4Your warp has been cancelled due to movement."
+##################################################################
+No-Permission-For-Command: "do not have permission to execute this command."
+#This part is for compatibility and customization. 
+Teleport-Sound: "ENTITY_ENDERMAN_TELEPORT"
+Open-Inv-Sound: "BLOCK_NOTE_BLOCK_PLING"

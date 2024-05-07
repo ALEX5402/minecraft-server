@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 106.205.67.206
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715073392906
+  login: 1715073214999
+money: '0'
+last-account-name: Rekrap_13
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 765.969421008419
+  y: 63.0
+  z: 123.12238344159348
+  yaw: -70.95126342773438
+  pitch: 68.03926086425781

@@ -1,667 +1,1037 @@
-[07:06:24] [ServerMain/ERROR]: [DirectoryProviderSource] Error preparing plugin context: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to update!
-java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to update!
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:51) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$prepareContext$1(DirectoryProviderSource.java:33) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.walkFiles(DirectoryProviderSource.java:59) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:31) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:101) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.Main.main(Main.java:120) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at org.bukkit.craftbukkit.Main.main(Main.java:340) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:109) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:49) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	... 21 more
-Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:118) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:90) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:49) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	... 21 more
-[07:06:31] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[07:06:31] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
-[07:06:31] [ServerMain/INFO]: No existing world data, creating new world
-[07:06:32] [ServerMain/INFO]: Loaded 1174 recipes
-[07:06:32] [ServerMain/INFO]: Loaded 1271 advancements
-[07:06:33] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[07:06:33] [Server thread/WARN]: ****************************
-[07:06:33] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
-[07:06:33] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
-[07:06:33] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
-[07:06:33] [Server thread/WARN]: ****************************
-[07:06:33] [Server thread/INFO]: Loading properties
-[07:06:33] [Server thread/INFO]: This server is running Purpur version git-Purpur-2176 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 6b1ee98 on HEAD)
-[07:06:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[07:06:33] [Server thread/INFO]: Using 4 threads for Netty based IO
-[07:06:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[07:06:34] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
-[07:06:34] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
-[07:06:34] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
-[07:06:34] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.11, test run: true
-[07:06:34] [Server thread/INFO]: Default game type: SURVIVAL
-[07:06:34] [Server thread/INFO]: Generating keypair
-[07:06:34] [Server thread/INFO]: Starting Minecraft server on *:25565
-[07:06:34] [Server thread/INFO]: Using epoll channel type
-[07:06:34] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[07:06:34] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[07:06:37] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
-[07:06:37] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
-[07:06:37] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
-[07:06:37] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 35 Terra addons:
-        - biome-provider-extrusion@1.0.0-BETA+73baaec6c
-        - biome-provider-image@1.0.0-BETA+73baaec6c
-        - biome-provider-image-v2@1.0.0-BETA+73baaec6c
-        - biome-provider-pipeline@1.0.1-BETA+73baaec6c
-        - biome-provider-pipeline-v2@1.0.0-BETA+73baaec6c
-        - biome-provider-single@1.0.0-BETA+73baaec6c
-        - biome-query-api@1.0.0-BETA+73baaec6c
-        - chunk-generator-noise-3d@1.1.0-BETA+73baaec6c
-        - command-addons@1.0.0-BETA+73baaec6c
-        - command-packs@1.0.0-BETA+73baaec6c
-        - command-profiler@1.0.0-BETA+73baaec6c
-        - command-structures@1.0.0-BETA+73baaec6c
-        - config-biome@1.0.0-BETA+73baaec6c
-        - config-distributors@1.0.0-BETA+73baaec6c
-        - config-feature@1.0.0-BETA+73baaec6c
-        - config-flora@1.0.0-BETA+73baaec6c
-        - config-locators@1.1.0-BETA+73baaec6c
-        - config-noise-function@1.0.0-BETA+73baaec6c
-        - config-ore@1.0.0-BETA+73baaec6c
-        - config-palette@1.0.0-BETA+73baaec6c
-        - config-structure@1.0.0-BETA+73baaec6c
-        - generation-stage-feature@1.1.0-BETA+73baaec6c
-        - generation-stage-structure@1.0.0-BETA+73baaec6c
-        - language-yaml@1.0.0-BETA+73baaec6c
-        - library-image@1.0.0-BETA+73baaec6c
-        - palette-block-shortcut@1.0.0-BETA+73baaec6c
-        - pipeline-image@1.0.0-BETA+73baaec6c
-        - structure-block-shortcut@1.0.0-BETA+73baaec6c
-        - structure-function-check-noise-3d@1.0.0-BETA+73baaec6c
-        - structure-mutator@0.1.0-BETA+73baaec6c
-        - structure-sponge-loader@1.0.0-BETA+73baaec6c
-        - structure-terrascript-loader@1.1.0-BETA+73baaec6c
-        - terra@1.0.0
-        - terra-bukkit@1.0.0
-        - terrascript-function-sampler@1.0.0-BETA+73baaec6c
-[07:06:37] [Server thread/WARN]: [com.dfsek.terra.addons.biome.pipeline.BiomePipelineAddon] The biome-provider-pipeline addon is deprecated and scheduled for removal in Terra 7.0. It is recommended to use the biome-provider-pipeline-v2 addon for future pack development instead.
-[07:06:37] [Server thread/WARN]: [com.dfsek.terra.addons.biome.image.ImageBiomeProviderAddon] The biome-provider-image addon is deprecated and scheduled for removal in Terra 7.0. It is recommended to use the biome-provider-image-v2 addon for future pack development instead.
-[07:06:37] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
-[07:06:37] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
-[07:06:37] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
-[07:06:37] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
-[07:06:38] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[07:06:38] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[07:06:38] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[07:06:38] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[07:06:39] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
-[07:06:39] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[07:06:39] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
-[07:06:39] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@2c3b53]
-[07:06:39] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
-[07:06:39] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
-[07:06:39] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
-[07:06:39] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[07:06:40] [Server thread/INFO]: [floodgate] Took 371ms to boot Floodgate
-[07:06:40] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
-[07:06:40] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[07:06:40] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
-[07:06:40] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
-[07:06:40] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.5
-[07:06:40] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.66
-[07:06:40] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
-[07:06:40] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
-[07:06:40] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT
-[07:06:40] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[07:06:40] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[07:06:40] [Server thread/INFO]: [ImageMaps] Loading server plugin ImageMaps v1.0.10
-[07:06:40] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
-[07:06:40] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.1.1
-[07:06:40] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.7.0
-[07:06:40] [Server thread/INFO]: [PlayerKits] Loading server plugin PlayerKits v2.27.1
-[07:06:40] [Server thread/INFO]: [SetHomes] Loading server plugin SetHomes v1.3.0
-[07:06:40] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.20.0
-[07:06:40] [Server thread/INFO]: [DeadChest] Worldguard support disabled by user
-[07:06:40] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.9.3
-[07:06:40] [Server thread/INFO]: [BetterTeams] Checking if the file config.yml is up to date
-[07:06:40] [Server thread/INFO]: [BetterTeams] File is up to date
-[07:06:40] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
-[07:06:40] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.12
-[07:06:40] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.3.1-BETA+73baaec6c
-[07:06:40] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
-[07:06:40] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
-[07:06:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[07:06:40] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
-[07:06:41] [Server thread/INFO]:         __    
-[07:06:41] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
-[07:06:41] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
-[07:06:41] [Server thread/INFO]: 
-[07:06:41] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[07:06:41] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[07:06:42] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[07:06:42] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[07:06:42] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1672ms)
-[07:06:42] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[07:06:42] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[07:06:42] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[07:06:42] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[07:06:42] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[07:06:42] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
-[07:06:42] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[07:06:42] [Server thread/INFO]: WEPIF: Updated config file
-[07:06:42] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[07:06:43] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R3.PaperweightAdapter as the Bukkit adapter
-[07:06:44] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v3.0.5
-[07:06:44] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.13
-[07:06:44] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
-[07:06:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.0.13]
-[07:06:44] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
-[07:06:44] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[07:06:44] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[07:06:44] [Server thread/INFO]: [Terra] Enabling Terra v6.3.1-BETA+73baaec6c
-[07:06:44] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.3 with server implementation Purpur.
-[07:06:44] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
-[07:06:44] [Server thread/WARN]: [com.dfsek.terra.event.FunctionalEventHandlerImpl] Exception occurred during event handling. Report this to the maintainers of terra@1.0.0
-java.io.UncheckedIOException: No pack.yml file found in /root/minecraft-server/plugins/Terra/packs/.git
-	at com.dfsek.terra.config.pack.ConfigPackImpl.lambda$new$0(ConfigPackImpl.java:129) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.api.util.generic.Construct.construct(Construct.java:15) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.config.pack.ConfigPackImpl.<init>(ConfigPackImpl.java:125) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.registry.master.ConfigRegistry.load(ConfigRegistry.java:47) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.registry.master.ConfigRegistry.loadAll(ConfigRegistry.java:57) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.AbstractPlatform.lambda$load$0(AbstractPlatform.java:152) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.event.EventContextImpl.lambda$handle$0(EventContextImpl.java:50) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at com.dfsek.terra.event.EventContextImpl.handle(EventContextImpl.java:50) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.event.FunctionalEventHandlerImpl.lambda$handle$0(FunctionalEventHandlerImpl.java:55) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at com.dfsek.terra.event.FunctionalEventHandlerImpl.handle(FunctionalEventHandlerImpl.java:48) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.event.EventManagerImpl.lambda$callEvent$0(EventManagerImpl.java:38) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.HashMap$Values.forEach(HashMap.java:1065) ~[?:?]
-	at com.dfsek.terra.event.EventManagerImpl.callEvent(EventManagerImpl.java:38) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.onEnable(TerraBukkitPlugin.java:59) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[purpur-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[purpur-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:653) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:564) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:312) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1146) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-Caused by: java.io.FileNotFoundException: plugins/Terra/packs/.git/pack.yml (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method) ~[?:?]
-	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
-	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
-	at com.dfsek.terra.config.pack.ConfigPackImpl.lambda$new$0(ConfigPackImpl.java:127) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	... 25 more
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] NMS bindings for version v1_20_R3 do not exist. Support for this version is limited.
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] This is usually due to running Terra on an unsupported Minecraft version.
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] 
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] 
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] PROCEEDING WITH AN EXISTING TERRA WORLD WILL RESULT IN CORRUPTION!!!
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] 
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] 
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] NMS bindings for version v1_20_R3 do not exist. Support for this version is limited.
-[07:06:44] [Server thread/ERROR]: [com.dfsek.terra.bukkit.nms.Initializer] This is usually due to running Terra on an unsupported Minecraft version.
-[07:06:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[07:06:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[07:06:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[07:06:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[07:06:44] [Server thread/INFO]: Preparing level "world"
-[07:06:44] [Server thread/ERROR]: [Terra] Could not set generator for default world 'world': Plugin 'Terra v6.3.1-BETA+73baaec6c
-java.lang.IllegalArgumentException: No such config pack "OVERWORLD"
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.lambda$getDefaultWorldGenerator$1(TerraBukkitPlugin.java:176) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.lambda$getDefaultWorldGenerator$2(TerraBukkitPlugin.java:175) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.getDefaultWorldGenerator(TerraBukkitPlugin.java:174) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.getGenerator(CraftServer.java:1957) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:562) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:435) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:346) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1146) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.0.13
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 8e4c6e2
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[07:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[07:06:53] [Server thread/ERROR]: [Terra] Could not set generator for default world 'world_nether': Plugin 'Terra v6.3.1-BETA+73baaec6c
-java.lang.IllegalArgumentException: No such config pack "ORIGEN"
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.lambda$getDefaultWorldGenerator$1(TerraBukkitPlugin.java:176) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.lambda$getDefaultWorldGenerator$2(TerraBukkitPlugin.java:175) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.getDefaultWorldGenerator(TerraBukkitPlugin.java:174) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.getGenerator(CraftServer.java:1957) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:562) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:435) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:346) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1146) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[07:06:54] [Server thread/ERROR]: [Terra] Could not set generator for default world 'world_the_end': Plugin 'Terra v6.3.1-BETA+73baaec6c
-java.lang.IllegalArgumentException: No such config pack "REIMAGEND"
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.lambda$getDefaultWorldGenerator$1(TerraBukkitPlugin.java:176) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.lambda$getDefaultWorldGenerator$2(TerraBukkitPlugin.java:175) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[?:?]
-	at com.dfsek.terra.bukkit.TerraBukkitPlugin.getDefaultWorldGenerator(TerraBukkitPlugin.java:174) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.getGenerator(CraftServer.java:1957) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:562) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:435) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:346) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1146) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[07:06:55] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[07:06:55] [Server thread/INFO]: Time elapsed: 59 ms
-[07:06:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[07:06:55] [Server thread/INFO]: Time elapsed: 33 ms
-[07:06:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[07:06:55] [Server thread/INFO]: Time elapsed: 52 ms
-[07:06:55] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.2
-[07:06:55] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3 (765)
-[07:06:55] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9+5934e49
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[07:06:55] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[07:06:55] [Server thread/INFO]: [WorldGuard] Loading region data...
-[07:06:55] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.5
-[07:06:55] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[07:06:55] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.9.1
-[07:06:55] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[07:06:56] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.6.2-3e052553
-[07:06:56] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.4)...
-[07:06:56] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
-[07:06:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
-[07:06:58] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
-[07:06:58] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
-[07:06:58] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
-[07:06:58] [Server thread/INFO]: [MythicMobs] Base directory /root/minecraft-server/plugins/MythicMobs/data
-[07:06:58] [Server thread/INFO]: [MythicMobs] Module directory /root/minecraft-server/plugins/MythicMobs/data/worlds
-[07:06:59] [Server thread/INFO]: [MythicMobs] Loading Packs...
-[07:07:00] [Server thread/INFO]: [MythicMobs] Loading Items...
-[07:07:00] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
-[07:07:00] [Server thread/INFO]: [MythicMobs] Loading Skills...
-[07:07:00] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
-[07:07:00] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
-[07:07:00] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
-[07:07:00] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
-[07:07:00] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
-[07:07:00] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.6.2 ( build 3e052553 ) has been successfully loaded!
-[07:07:00] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
-[07:07:00] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[07:07:00] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[07:07:00] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[07:07:00] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
-[07:07:00] [Server thread/INFO]: [Essentials] Using locale en_US
-[07:07:00] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[07:07:00] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[07:07:00] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[07:07:00] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[07:07:00] [Server thread/INFO]: [spark] Enabling spark v1.10.66
-[07:07:01] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
-[07:07:01] [Server thread/INFO]: [spark] Starting background profiler...
-[07:07:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: spark [1.10.66]
-[07:07:01] [Server thread/INFO]: [spark] Registered PlaceholderAPI placeholders
-[07:07:01] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.3.0
-[07:07:01] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
-[07:07:01] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[07:07:01] [Server thread/INFO]: [LoginSecurity] Registering commands...
-[07:07:01] [Server thread/INFO]: [LoginSecurity] Registering listeners...
-[07:07:01] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
-[07:07:01] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.92
-[07:07:01] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.2.2-SNAPSHOT
-[07:07:01] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v1.0.10
-[07:07:01] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.1.1
-[07:07:01] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
-[07:07:01] [Server thread/INFO]: [ItemEdit] Hooking into Vault
-[07:07:01] [Server thread/INFO]: [ItemEdit] Hooking into PlaceholderApi
-[07:07:01] [Server thread/INFO]: [ItemEdit] Hooked into PlaceHolderAPI:
-[07:07:01] [Server thread/INFO]: [ItemEdit] placeholders:
-[07:07:01] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
-[07:07:01] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
-[07:07:01] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
-[07:07:01] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
-[07:07:01] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
-[07:07:01] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
-[07:07:01] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
-[07:07:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
-[07:07:01] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
-[07:07:01] [Server thread/INFO]: [ItemEdit] # Enabled (took 111 ms)
-[07:07:01] [Server thread/INFO]: [GSit] Enabling GSit v1.7.0
-[07:07:01] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
-[07:07:01] [Server thread/INFO]: [GSit] Link with PlaceholderAPI successful!
-[07:07:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: gsit [1.7.0]
-[07:07:01] [Server thread/INFO]: [GSit] Link with ViaVersion successful!
-[07:07:01] [Server thread/INFO]: [GSit] Link with WorldGuard successful!
-[07:07:01] [Server thread/INFO]: [PlayerKits] Enabling PlayerKits v2.27.1
-[07:07:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: playerkits [2.27.1]
-[07:07:01] [Server thread/INFO]: [PlayerKits] Has been enabled! Version: 2.27.1
-[07:07:01] [Server thread/INFO]: [PlayerKits] Thanks for using my plugin!  ~Ajneb97
-[07:07:01] [Server thread/INFO]: [SetHomes] Enabling SetHomes v1.3.0
-[07:07:01] [Server thread/INFO]: [SetHomes] Hooked into LuckPerms!
-[07:07:01] [Server thread/INFO]: [DeadChest] Enabling DeadChest v4.20.0
-[07:07:02] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.9.3
-[07:07:02] [Server thread/INFO]: [BetterTeams] Checking if the file messages.yml is up to date
-[07:07:02] [Server thread/INFO]: [BetterTeams] File is up to date
-[07:07:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterTeams [4.9.3]
-[07:07:02] [Server thread/INFO]: Display team name config value: prefix
-[07:07:02] [Server thread/INFO]: Loading below name. Type: PREFIX
-[07:07:02] [Server thread/INFO]: teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@3f4dcda4
-[07:07:02] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.1
-[07:07:02] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[07:07:02] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.12
-[07:07:02] [Server thread/INFO]: [BetterRTP] Cooldown = 600
-[07:07:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterrtp [3.6.12]
-[07:07:02] [Server thread/INFO]: [TAB] Enabling TAB v4.1.2
-[07:07:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [4.1.2]
-[07:07:02] [Server thread/INFO]: [TAB] Enabled in 202ms
-[07:07:02] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.6
-[07:07:02] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[07:07:02] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.6
-[07:07:02] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[07:07:03] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[07:07:03] [Server thread/INFO]: 0 placeholder hook(s) registered!
-[07:07:03] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[07:07:03] [Server thread/INFO]: [Geyser-Spigot] 
-[07:07:03] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.2.2-SNAPSHOT (git-master-f555dc0)
-[07:07:03] [Server thread/INFO]: [Geyser-Spigot] 
-[07:07:03] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[07:07:05] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
-[07:07:05] [Server thread/INFO]: [Geyser-Spigot] Done (2.825s)! Run /geyser help for help!
-[07:07:06] [Server thread/INFO]: Running delayed init tasks
-[07:07:06] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[07:07:06] [Server thread/INFO]: Done (32.899s)! For help, type "help"
-[07:07:06] [Server thread/INFO]: *************************************************************************************
-[07:07:06] [Server thread/INFO]: This is the first time you're starting this server.
-[07:07:06] [Server thread/INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
-[07:07:06] [Server thread/INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
-[07:07:06] [Server thread/INFO]: *************************************************************************************
-[07:07:06] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[07:07:06] [Craft Scheduler Thread - 8 - Essentials/INFO]: [Essentials] Fetching version information...
-[07:07:06] [Craft Scheduler Thread - 7 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
-[07:07:06] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] Checking for Updates ... 
-[07:07:06] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] No new version available
-[07:07:06] [Craft Scheduler Thread - 10 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available.
-[07:07:06] [Craft Scheduler Thread - 10 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available:
-[07:07:06] [Craft Scheduler Thread - 10 - SimpleTpa/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
-[07:07:06] [ForkJoinPool.commonPool-worker-2/INFO]: [Geyser-Spigot] There's a new Geyser update available to support Bedrock version 1.20.80. Download it here: https://geysermc.org/download
-[07:07:06] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 4.10.1, you're on: 4.9.2
-[07:07:16] [Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PURPUR - THIS IS NOT A BUG OR A CRASH  - git-Purpur-2176 (MC: 1.20.4) ---
-[07:07:16] [Watchdog Thread/ERROR]: The server has not responded for 10 seconds! Creating thread dump
-[07:07:16] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:16] [Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Purpur!):
-[07:07:16] [Watchdog Thread/ERROR]: [ChunkTaskScheduler] Chunk wait task info below: 
-[07:07:16] [Watchdog Thread/ERROR]: [ChunkTaskScheduler] Chunk wait: [( 24,-39) in 'world']
-[07:07:16] [Watchdog Thread/ERROR]: [ChunkTaskScheduler] Chunk holder: NewChunkHolder{world=world, chunkX=24, chunkZ=-39, entityChunkFromDisk=false, lastChunkCompletion={chunk_class=net.minecraft.world.level.chunk.ProtoChunk,status=minecraft:carvers}, currentGenStatus=minecraft:carvers, requestedGenStatus=minecraft:full, generationTask=null, generationTaskStatus=null, priority=BLOCKING, priorityLocked=false, neighbourRequestedPriority=IDLE, effective_priority=BLOCKING, oldTicketLevel=33, currentTicketLevel=33, totalNeighboursUsingThisChunk=0, fullNeighbourChunksLoadedBitset=0, chunkStatusRaw=0, currentChunkStatus=INACCESSIBLE, pendingChunkStatus=INACCESSIBLE, is_unload_safe=ticket_level, killed=false}
-[07:07:16] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:16] [Watchdog Thread/ERROR]: Current Thread: Server thread
-[07:07:16] [Watchdog Thread/ERROR]: 	PID: 29 | Suspended: false | Native: false | State: TIMED_WAITING
-[07:07:16] [Watchdog Thread/ERROR]: 	Stack:
-[07:07:16] [Watchdog Thread/ERROR]: 		java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
-[07:07:16] [Watchdog Thread/ERROR]: 		java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.waitForTasks(BlockableEventLoop.java:144)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:134)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:285)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.world.level.chunk.ChunkSource.getChunk(ChunkSource.java:12)
-[07:07:16] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.CraftWorld.getChunkAt(CraftWorld.java:350)
-[07:07:16] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.CraftWorld.getChunkAt(CraftWorld.java:990)
-[07:07:16] [Watchdog Thread/ERROR]: 		org.bukkit.Location.getChunk(Location.java:123)
-[07:07:16] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.ChestData.removeArmorStand(ChestData.java:194)
-[07:07:16] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.DeadChestManager.handleExpirateDeadChest(DeadChestManager.java:159)
-[07:07:16] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.DeadChest.handleEvent(DeadChest.java:240)
-[07:07:16] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.DeadChest$$Lambda$11577/0x00007f7a31c07cc0.run(Unknown Source)
-[07:07:16] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.scheduler.CraftTask.run(CraftTask.java:101)
-[07:07:16] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1679)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:487)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1558)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1246)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[07:07:16] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda$6029/0x00007f7a30b50000.run(Unknown Source)
-[07:07:16] [Watchdog Thread/ERROR]: 		java.base@17.0.11/java.lang.Thread.run(Thread.java:840)
-[07:07:16] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:16] [Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PURPUR - THIS IS NOT A BUG OR A CRASH ---
-[07:07:16] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:18] [User Authenticator #0/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
-[07:07:21] [Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PURPUR - THIS IS NOT A BUG OR A CRASH  - git-Purpur-2176 (MC: 1.20.4) ---
-[07:07:21] [Watchdog Thread/ERROR]: The server has not responded for 15 seconds! Creating thread dump
-[07:07:21] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:21] [Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Purpur!):
-[07:07:21] [Watchdog Thread/ERROR]: [ChunkTaskScheduler] Chunk wait task info below: 
-[07:07:21] [Watchdog Thread/ERROR]: [ChunkTaskScheduler] Chunk wait: [( 24,-39) in 'world']
-[07:07:21] [Watchdog Thread/ERROR]: [ChunkTaskScheduler] Chunk holder: NewChunkHolder{world=world, chunkX=24, chunkZ=-39, entityChunkFromDisk=false, lastChunkCompletion={chunk_class=net.minecraft.world.level.chunk.ProtoChunk,status=minecraft:initialize_light}, currentGenStatus=minecraft:initialize_light, requestedGenStatus=minecraft:full, generationTask=ChunkProgressionTask{class: io.papermc.paper.chunk.system.scheduling.ChunkLightTask, for world: world, chunk: (24,-39), hashcode: 1786493694, priority: BLOCKING, status: minecraft:light, scheduled: true}, generationTaskStatus=minecraft:light, priority=BLOCKING, priorityLocked=false, neighbourRequestedPriority=IDLE, effective_priority=BLOCKING, oldTicketLevel=33, currentTicketLevel=33, totalNeighboursUsingThisChunk=1, fullNeighbourChunksLoadedBitset=0, chunkStatusRaw=0, currentChunkStatus=INACCESSIBLE, pendingChunkStatus=INACCESSIBLE, is_unload_safe=ticket_level, killed=false}
-[07:07:21] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:21] [Watchdog Thread/ERROR]: Current Thread: Server thread
-[07:07:21] [Watchdog Thread/ERROR]: 	PID: 29 | Suspended: false | Native: false | State: TIMED_WAITING
-[07:07:21] [Watchdog Thread/ERROR]: 	Stack:
-[07:07:21] [Watchdog Thread/ERROR]: 		java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
-[07:07:21] [Watchdog Thread/ERROR]: 		java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.waitForTasks(BlockableEventLoop.java:144)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:134)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:285)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.world.level.chunk.ChunkSource.getChunk(ChunkSource.java:12)
-[07:07:21] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.CraftWorld.getChunkAt(CraftWorld.java:350)
-[07:07:21] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.CraftWorld.getChunkAt(CraftWorld.java:990)
-[07:07:21] [Watchdog Thread/ERROR]: 		org.bukkit.Location.getChunk(Location.java:123)
-[07:07:21] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.ChestData.removeArmorStand(ChestData.java:194)
-[07:07:21] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.DeadChestManager.handleExpirateDeadChest(DeadChestManager.java:159)
-[07:07:21] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.DeadChest.handleEvent(DeadChest.java:240)
-[07:07:21] [Watchdog Thread/ERROR]: 		dead-chest-4.20.0.jar//me.crylonz.deadchest.DeadChest$$Lambda$11577/0x00007f7a31c07cc0.run(Unknown Source)
-[07:07:21] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.scheduler.CraftTask.run(CraftTask.java:101)
-[07:07:21] [Watchdog Thread/ERROR]: 		org.bukkit.craftbukkit.v1_20_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1679)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:487)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1558)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1246)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[07:07:21] [Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda$6029/0x00007f7a30b50000.run(Unknown Source)
-[07:07:21] [Watchdog Thread/ERROR]: 		java.base@17.0.11/java.lang.Thread.run(Thread.java:840)
-[07:07:21] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:21] [Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PURPUR - THIS IS NOT A BUG OR A CRASH ---
-[07:07:21] [Watchdog Thread/ERROR]: ------------------------------
-[07:07:23] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 16210ms or 324 ticks behind
-[07:07:23] [Server thread/INFO]: alex_bhaiya_001 joined the game
-[07:07:23] [Server thread/INFO]: alex_bhaiya_001[/103.211.134.222:1668] logged in with entity id 30 at ([world]-7.5, 72.0, 3.5)
-[07:07:34] [Server thread/INFO]: alex_bhaiya_001 issued server command: /pl
-[07:07:51] [Server thread/INFO]: alex_bhaiya_001 issued server command: /terra:addons biome-provider-extrusion:biome-provider-extrusion
-[07:07:59] [Server thread/INFO]: alex_bhaiya_001 issued server command: /terra:packs reload
-[07:07:59] [Server thread/INFO]: [com.dfsek.terra.addons.commands.packs.PacksCommandAddon] Reloading Terra...
-[07:07:59] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
-[07:07:59] [Server thread/ERROR]: [Terra] Exception executing command handler
-java.io.UncheckedIOException: No pack.yml file found in /root/minecraft-server/plugins/Terra/packs/.git
-	at com.dfsek.terra.config.pack.ConfigPackImpl.lambda$new$0(ConfigPackImpl.java:129) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.api.util.generic.Construct.construct(Construct.java:15) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.config.pack.ConfigPackImpl.<init>(ConfigPackImpl.java:125) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.registry.master.ConfigRegistry.load(ConfigRegistry.java:47) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.registry.master.ConfigRegistry.loadAll(ConfigRegistry.java:57) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.bukkit.PlatformImpl.reload(PlatformImpl.java:67) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at com.dfsek.terra.addons.commands.packs.PacksCommandAddon.lambda$initialize$4(PacksCommandAddon.java:77) ~[?:?]
-	at cloud.commandframework.execution.CommandExecutionHandler.executeFuture(CommandExecutionHandler.java:95) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at cloud.commandframework.execution.CommandExecutionCoordinator$SimpleCoordinator.coordinateExecution(CommandExecutionCoordinator.java:123) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at cloud.commandframework.CommandManager.executeCommand(CommandManager.java:189) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at cloud.commandframework.bukkit.BukkitCommand.execute(BukkitCommand.java:116) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:168) ~[purpur-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:1013) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:103) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:442) ~[?:?]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:344) ~[?:?]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:331) ~[?:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2301) ~[?:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$15(ServerGamePacketListenerImpl.java:2261) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:149) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1498) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:123) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1475) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1398) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:133) ~[?:?]
-	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1376) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1265) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[purpur-1.20.4.jar:git-Purpur-2176]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-Caused by: java.io.FileNotFoundException: plugins/Terra/packs/.git/pack.yml (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method) ~[?:?]
-	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
-	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
-	at com.dfsek.terra.config.pack.ConfigPackImpl.lambda$new$0(ConfigPackImpl.java:127) ~[Terra-bukkit-6.3.1-BETA+73baaec6c-shaded.jar:?]
-	... 39 more
-[07:08:07] [Server thread/INFO]: Stopping server
-[07:08:07] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v6.6
-[07:08:07] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[07:08:07] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 6.6
-[07:08:07] [Server thread/INFO]: [TAB] Disabling TAB v4.1.2
-[07:08:07] [Server thread/INFO]: [TAB] Disabled in 2ms
-[07:08:07] [Server thread/INFO]: [Terra] Disabling Terra v6.3.1-BETA+73baaec6c
-[07:08:07] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.1
-[07:08:07] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.9.3
-[07:08:07] [Server thread/INFO]: [DeadChest] Disabling DeadChest v4.20.0
-[07:08:07] [Server thread/INFO]: [SetHomes] Disabling SetHomes v1.3.0
-[07:08:07] [Server thread/INFO]: [PlayerKits] Disabling PlayerKits v2.27.1
-[07:08:07] [Server thread/INFO]: [PlayerKits] Has been disabled! Version: 2.27.1
-[07:08:07] [Server thread/INFO]: [GSit] Disabling GSit v1.7.0
-[07:08:07] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
-[07:08:07] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.1.1
-[07:08:07] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion itemedit
-[07:08:07] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin ItemEdit was disabled.
-[07:08:07] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.0.13
-[07:08:07] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v1.0.10
-[07:08:07] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.2.2-SNAPSHOT
-[07:08:07] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[07:08:07] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[07:08:07] [Server thread/INFO]: [Chunky] Disabling Chunky v1.3.92
-[07:08:07] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.3.0
-[07:08:07] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
-[07:08:07] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
-[07:08:07] [Server thread/INFO]: [spark] Disabling spark v1.10.66
-[07:08:07] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v3.0.5
-[07:08:07] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.1
-[07:08:07] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
-[07:08:07] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.6.2-3e052553
-[07:08:07] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
-[07:08:07] [Server thread/INFO]: [MythicMobs] - 
-[07:08:07] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
-[07:08:07] [Server thread/INFO]: [MythicMobs] - 
-[07:08:07] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
-[07:08:07] [Server thread/INFO]: [MythicMobs] - Spawners saved and unloaded...
-[07:08:07] [Server thread/INFO]: [MythicMobs] - Mobs saved and unloaded...
-[07:08:07] [Server thread/INFO]: [MythicMobs] Saving plugin data...
-[07:08:07] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
-[07:08:07] [Server thread/INFO]: [MythicMobs] - Variables saved...
-[07:08:07] [Server thread/INFO]: [MythicMobs] - All active settings have been saved!
-[07:08:07] [Server thread/INFO]: [MythicMobs] - Mythic has been unloaded!
-[07:08:07] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
-[07:08:07] [Server thread/INFO]: [MythicMobs] Saving plugin data...
-[07:08:07] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
-[07:08:07] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[07:08:07] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.9.1
-[07:08:07] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.5
-[07:08:07] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.9+5934e49
-[07:08:07] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
-[07:08:07] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.18+6616-abda4e0
-[07:08:07] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[07:08:07] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[07:08:07] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
-[07:08:07] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[07:08:07] [Server thread/INFO]: [LuckPerms] Closing storage...
-[07:08:07] [WebSocketConnectReadThread-154/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[07:08:07] [Server thread/INFO]: [LuckPerms] Goodbye!
-[07:08:07] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.9.2
-[07:08:07] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[07:08:07] [Server thread/INFO]: Saving players
-[07:08:07] [Server thread/INFO]: alex_bhaiya_001 lost connection: Server closed
-[07:08:07] [Server thread/INFO]: alex_bhaiya_001 left the game
-[07:08:07] [Server thread/INFO]: Saving worlds
-[07:08:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[07:08:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[07:08:07] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[07:08:07] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Saved 2042 block chunks, 504 entity chunks, 0 poi chunks in world 'world' in 1.17s
-[07:08:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[07:08:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Saved 1681 block chunks, 361 entity chunks, 0 poi chunks in world 'world_nether' in 0.52s
-[07:08:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[07:08:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[07:08:09] [Server thread/INFO]: [ChunkHolderManager] Saved 1681 block chunks, 361 entity chunks, 0 poi chunks in world 'world_the_end' in 0.26s
-[07:08:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[07:08:09] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[07:08:09] [Server thread/INFO]: Flushing Chunk IO
-[07:08:09] [Server thread/INFO]: Closing Thread Pool
-[07:08:09] [Server thread/INFO]: Closing Server
+[09:09:39] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[09:09:41] [ServerMain/INFO]: Loaded 1174 recipes
+[09:09:41] [ServerMain/INFO]: Loaded 1271 advancements
+[09:09:41] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[09:09:41] [Server thread/WARN]: ****************************
+[09:09:41] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[09:09:41] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[09:09:41] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[09:09:41] [Server thread/WARN]: ****************************
+[09:09:41] [Server thread/INFO]: Loading properties
+[09:09:42] [Server thread/INFO]: This server is running Purpur version git-Purpur-2176 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 6b1ee98 on HEAD)
+[09:09:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:09:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:09:42] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[09:09:43] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[09:09:43] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[09:09:43] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
+[09:09:43] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.11, test run: true
+[09:09:43] [Server thread/INFO]: Default game type: SURVIVAL
+[09:09:43] [Server thread/INFO]: Generating keypair
+[09:09:43] [Server thread/INFO]: Starting Minecraft server on *:25565
+[09:09:43] [Server thread/INFO]: Using epoll channel type
+[09:09:43] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[09:09:43] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[09:09:46] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
+[09:09:46] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
+[09:09:46] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[09:09:46] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[09:09:46] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[09:09:46] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[09:09:47] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[09:09:47] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[09:09:47] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
+[09:09:48] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@59046149]
+[09:09:48] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
+[09:09:48] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
+[09:09:48] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
+[09:09:48] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
+[09:09:48] [Server thread/INFO]: [floodgate] Took 560ms to boot Floodgate
+[09:09:48] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
+[09:09:48] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[09:09:48] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
+[09:09:48] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[09:09:48] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.5
+[09:09:48] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.66
+[09:09:48] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
+[09:09:48] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
+[09:09:48] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT
+[09:09:49] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[09:09:49] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[09:09:49] [Server thread/INFO]: [ImageMaps] Loading server plugin ImageMaps v1.0.10
+[09:09:49] [Server thread/INFO]: [Warps] Loading server plugin Warps v2.0.7
+[09:09:49] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
+[09:09:49] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.1.1
+[09:09:49] [Server thread/INFO]: [ClearLag] Loading server plugin ClearLag v3.2.2
+[09:09:49] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.7.0
+[09:09:49] [Server thread/INFO]: [PlayerKits] Loading server plugin PlayerKits v2.27.1
+[09:09:49] [Server thread/INFO]: [SetHomes] Loading server plugin SetHomes v1.3.0
+[09:09:49] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.20.0
+[09:09:49] [Server thread/INFO]: [DeadChest] Worldguard support disabled by user
+[09:09:49] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.9.3
+[09:09:49] [Server thread/INFO]: [BetterTeams] Checking if the file config.yml is up to date
+[09:09:49] [Server thread/INFO]: [BetterTeams] File is up to date
+[09:09:49] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
+[09:09:49] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.12
+[09:09:49] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
+[09:09:49] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
+[09:09:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:09:49] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[09:09:50] [Server thread/INFO]:         __    
+[09:09:50] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[09:09:50] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
+[09:09:50] [Server thread/INFO]: 
+[09:09:50] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[09:09:50] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[09:09:51] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[09:09:51] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[09:09:51] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1821ms)
+[09:09:51] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[09:09:51] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[09:09:51] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[09:09:51] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[09:09:51] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[09:09:51] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
+[09:09:51] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[09:09:51] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[09:09:51] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R3.PaperweightAdapter as the Bukkit adapter
+[09:09:52] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v3.0.5
+[09:09:52] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.13
+[09:09:53] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
+[09:09:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.0.13]
+[09:09:53] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[09:09:53] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[09:09:53] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[09:09:53] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[09:09:53] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[09:09:53] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[09:09:53] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[09:09:53] [Server thread/INFO]: Preparing level "world"
+[09:09:53] [Server thread/ERROR]: Could not set generator for default world 'world': Plugin 'Terra' does not exist
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.0.13
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 8e4c6e2
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[09:09:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[09:09:54] [Server thread/ERROR]: Could not set generator for default world 'world_nether': Plugin 'Terra' does not exist
+[09:09:54] [Server thread/ERROR]: Could not set generator for default world 'world_the_end': Plugin 'Terra' does not exist
+[09:09:54] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[09:09:54] [Server thread/INFO]: Time elapsed: 153 ms
+[09:09:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[09:09:54] [Server thread/INFO]: Time elapsed: 56 ms
+[09:09:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[09:09:54] [Server thread/INFO]: Time elapsed: 135 ms
+[09:09:54] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.2
+[09:09:54] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3 (765)
+[09:09:54] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9+5934e49
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[09:09:55] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[09:09:55] [Server thread/INFO]: [WorldGuard] Loading region data...
+[09:09:55] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.5
+[09:09:55] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[09:09:55] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.9.1
+[09:09:55] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.2-SNAPSHOT (b90-2886a71)
+[09:09:55] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.6.2-3e052553
+[09:09:56] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.4)...
+[09:09:56] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[09:09:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[09:09:57] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[09:09:57] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
+[09:09:57] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[09:09:57] [Server thread/INFO]: [MythicMobs] Base directory /root/minecraft-server/plugins/MythicMobs/data
+[09:09:57] [Server thread/INFO]: [MythicMobs] Module directory /root/minecraft-server/plugins/MythicMobs/data/worlds
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Items...
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[09:09:59] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[09:09:59] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[09:09:59] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[09:10:00] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[09:10:00] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.6.2 ( build 3e052553 ) has been successfully loaded!
+[09:10:00] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
+[09:10:00] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[09:10:00] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[09:10:00] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[09:10:00] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[09:10:00] [Server thread/INFO]: [Essentials] Using locale en_US
+[09:10:00] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[09:10:00] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[09:10:00] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[09:10:00] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[09:10:00] [Server thread/INFO]: [spark] Enabling spark v1.10.66
+[09:10:00] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[09:10:00] [Server thread/INFO]: [spark] Starting background profiler...
+[09:10:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: spark [1.10.66]
+[09:10:00] [Server thread/INFO]: [spark] Registered PlaceholderAPI placeholders
+[09:10:00] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.3.0
+[09:10:01] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[09:10:01] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[09:10:01] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[09:10:01] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[09:10:01] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
+[09:10:01] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.92
+[09:10:01] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.2.2-SNAPSHOT
+[09:10:01] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v1.0.10
+[09:10:01] [Server thread/INFO]: [Warps] Enabling Warps v2.0.7
+[09:10:01] [Server thread/INFO]: Warps has been successfully enabled!
+[09:10:01] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.1.1
+[09:10:01] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[09:10:01] [Server thread/INFO]: [ItemEdit] Hooking into Vault
+[09:10:01] [Server thread/INFO]: [ItemEdit] Hooking into PlaceholderApi
+[09:10:01] [Server thread/INFO]: [ItemEdit] Hooked into PlaceHolderAPI:
+[09:10:01] [Server thread/INFO]: [ItemEdit] placeholders:
+[09:10:01] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
+[09:10:01] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
+[09:10:01] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
+[09:10:01] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
+[09:10:01] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
+[09:10:01] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
+[09:10:01] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
+[09:10:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
+[09:10:01] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
+[09:10:01] [Server thread/INFO]: [ItemEdit] # Enabled (took 88 ms)
+[09:10:01] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[09:10:01] [Server thread/INFO]: [ClearLag] Using version-adapter: LatestVersionAdapter
+[09:10:01] [Server thread/INFO]: [ClearLag] Config not found. Generating default config...
+[09:10:01] [Server thread/INFO]: [ClearLag] Loading modules...
+[09:10:01] [Server thread/WARN]: [ClearLag] Clearlag failed to use the internal TPS tracker during initialization. Reverted to estimation... (net.minecraft.server.v1_20_R3.MinecraftServer)
+[09:10:01] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[09:10:01] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[09:10:01] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[09:10:01] [Thread-43/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.20]...
+[09:10:01] [Server thread/INFO]: [GSit] Enabling GSit v1.7.0
+[09:10:01] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[09:10:01] [Server thread/INFO]: [GSit] Link with PlaceholderAPI successful!
+[09:10:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: gsit [1.7.0]
+[09:10:01] [Server thread/INFO]: [GSit] Link with ViaVersion successful!
+[09:10:01] [Server thread/INFO]: [GSit] Link with WorldGuard successful!
+[09:10:01] [Server thread/INFO]: [PlayerKits] Enabling PlayerKits v2.27.1
+[09:10:01] [Thread-43/INFO]: [ClearLag] No updates found!
+[09:10:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: playerkits [2.27.1]
+[09:10:01] [Server thread/INFO]: [PlayerKits] Has been enabled! Version: 2.27.1
+[09:10:01] [Server thread/INFO]: [PlayerKits] Thanks for using my plugin!  ~Ajneb97
+[09:10:01] [Server thread/INFO]: [SetHomes] Enabling SetHomes v1.3.0
+[09:10:01] [Server thread/INFO]: [SetHomes] Hooked into LuckPerms!
+[09:10:01] [Server thread/INFO]: [DeadChest] Enabling DeadChest v4.20.0
+[09:10:01] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.9.3
+[09:10:01] [Server thread/INFO]: [BetterTeams] Checking if the file messages.yml is up to date
+[09:10:01] [Server thread/INFO]: [BetterTeams] File is up to date
+[09:10:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterTeams [4.9.3]
+[09:10:01] [Server thread/INFO]: Display team name config value: prefix
+[09:10:01] [Server thread/INFO]: Loading below name. Type: PREFIX
+[09:10:01] [Server thread/INFO]: teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@1666c473
+[09:10:01] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.1
+[09:10:01] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[09:10:01] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.12
+[09:10:02] [Server thread/INFO]: [BetterRTP] Cooldown = 600
+[09:10:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterrtp [3.6.12]
+[09:10:02] [Server thread/INFO]: [TAB] Enabling TAB v4.1.2
+[09:10:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [4.1.2]
+[09:10:02] [Server thread/INFO]: [TAB] Enabled in 248ms
+[09:10:02] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.6
+[09:10:02] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[09:10:02] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.6
+[09:10:02] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[09:10:02] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[09:10:02] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[09:10:02] [Server thread/INFO]: [Geyser-Spigot] 
+[09:10:02] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.2.2-SNAPSHOT (git-master-f555dc0)
+[09:10:02] [Server thread/INFO]: [Geyser-Spigot] 
+[09:10:02] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[09:10:05] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
+[09:10:05] [Server thread/INFO]: [Geyser-Spigot] Done (2.973s)! Run /geyser help for help!
+[09:10:05] [Server thread/INFO]: Running delayed init tasks
+[09:10:05] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[09:10:05] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[09:10:05] [Craft Scheduler Thread - 1 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[09:10:05] [Server thread/INFO]: Done (24.014s)! For help, type "help"
+[09:10:05] [Craft Scheduler Thread - 2 - Essentials/INFO]: [Essentials] Fetching version information...
+[09:10:05] [Craft Scheduler Thread - 1 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available.
+[09:10:06] [Craft Scheduler Thread - 1 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available:
+[09:10:06] [Craft Scheduler Thread - 1 - SimpleTpa/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
+[09:10:06] [Craft Scheduler Thread - 10 - Vault/INFO]: [Vault] Checking for Updates ... 
+[09:10:06] [Craft Scheduler Thread - 10 - Vault/INFO]: [Vault] No new version available
+[09:10:06] [Craft Scheduler Thread - 5 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
+[09:10:06] [ForkJoinPool.commonPool-worker-2/INFO]: [Geyser-Spigot] There's a new Geyser update available to support Bedrock version 1.20.80. Download it here: https://geysermc.org/download
+[09:10:06] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 4.10.1, you're on: 4.9.2
+[09:10:07] [User Authenticator #0/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:10:07] [Server thread/INFO]: Dhruv (/101.0.45.98:28874) lost connection: Disconnected
+[09:10:13] [User Authenticator #0/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:10:14] [Server thread/INFO]: Dhruv joined the game
+[09:10:14] [Server thread/INFO]: Dhruv[/101.0.45.98:28632] logged in with entity id 183 at ([world]1161.3073433537295, 98.0, -121.10489022358344)
+[09:11:11] [User Authenticator #0/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
+[09:11:11] [Server thread/INFO]: alex_bhaiya_001 joined the game
+[09:11:11] [Server thread/INFO]: alex_bhaiya_001[/103.211.134.222:3190] logged in with entity id 513 at ([world]769.9788936572813, 160.0, 180.99838566131078)
+[09:11:19] [Server thread/INFO]: alex_bhaiya_001 issued server command: /pl
+[09:11:26] [Server thread/INFO]: alex_bhaiya_001 issued server command: /warps
+[09:11:37] [Server thread/INFO]: alex_bhaiya_001 issued server command: /setwarp spawn
+[09:11:40] [Server thread/INFO]: alex_bhaiya_001 issued server command: /warps
+[09:11:45] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tp Dhruv
+[09:11:49] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode creative
+[09:12:27] [Async Chat Thread - #0/INFO]: [Not Secure] <alex_bhaiya_001> mai bande bulata hu aurr
+[09:12:52] [User Authenticator #1/INFO]: UUID of player Kashik_Gaming is 30ed338a-5250-3515-828a-c7d1f88b9a5b
+[09:12:53] [Server thread/INFO]: Kashik_Gaming joined the game
+[09:12:53] [Server thread/INFO]: Kashik_Gaming has made the advancement [Suit Up]
+[09:12:53] [Server thread/INFO]: Kashik_Gaming has made the advancement [Isn't It Iron Pick]
+[09:12:53] [Server thread/INFO]: Kashik_Gaming has made the advancement [Acquire Hardware]
+[09:12:53] [Server thread/INFO]: Kashik_Gaming[/38.137.57.243:27722] logged in with entity id 843 at ([world]761.5, 157.0, 188.5)
+[09:13:11] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tp Kashik_Gaming
+[09:13:22] [Server thread/INFO]: alex_bhaiya_001 issued server command: /setworldspawn ~ ~ ~
+[09:13:22] [Server thread/INFO]: [alex_bhaiya_001: Set the world spawn point to 769, 160, 184 [0.0]]
+[09:13:25] [User Authenticator #1/INFO]: UUID of player Peropeal is f705d23b-cc3f-3e76-adea-124e76997d89
+[09:13:25] [Server thread/INFO]: Peropeal joined the game
+[09:13:25] [Server thread/INFO]: Peropeal has made the advancement [Suit Up]
+[09:13:25] [Server thread/INFO]: Peropeal has made the advancement [Isn't It Iron Pick]
+[09:13:25] [Server thread/INFO]: Peropeal has made the advancement [Acquire Hardware]
+[09:13:25] [Server thread/INFO]: Peropeal[/49.43.133.63:50756] logged in with entity id 986 at ([world]760.5, 157.0, 189.5)
+[09:13:34] [User Authenticator #1/INFO]: UUID of player Rekrap_13 is cd32e8da-1392-3a0b-a000-49e120840188
+[09:13:34] [Server thread/INFO]: Rekrap_13 joined the game
+[09:13:34] [Server thread/INFO]: Rekrap_13 has made the advancement [Suit Up]
+[09:13:34] [Server thread/INFO]: Rekrap_13 has made the advancement [Isn't It Iron Pick]
+[09:13:34] [Server thread/INFO]: Rekrap_13 has made the advancement [Acquire Hardware]
+[09:13:34] [Server thread/INFO]: Rekrap_13[/106.205.67.206:49934] logged in with entity id 1015 at ([world]769.5, 169.0, 191.5)
+[09:14:04] [Server thread/INFO]: alex_bhaiya_001 issued server command: //wand
+[09:14:17] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/1096, uuid='cf2d3dee-70b1-4929-9f32-49c9bb8698d3', l='ServerLevel[world]', x=1116.50, y=-12.00, z=29.50, cpos=[69, 1], tl=450, v=true] died: Skeletal Knight suffocated in a wall
+[09:14:25] [Server thread/INFO]: Kashik_Gaming was slain by Peropeal
+[09:14:27] [Server thread/INFO]: alex_bhaiya_001 issued server command: //set air
+[09:14:37] [Server thread/INFO]: Kashik_Gaming was slain by Rekrap_13
+[09:15:00] [Server thread/INFO]: Rekrap_13 has made the advancement [Monster Hunter]
+[09:15:17] [Server thread/INFO]: Kashik_Gaming was slain by Peropeal
+[09:15:31] [Server thread/INFO]: Peropeal issued server command: /tpahere Rekrap_13
+[09:15:31] [Async Chat Thread - #1/INFO]: [Not Secure] <alex_bhaiya_001> hello
+[09:16:03] [Server thread/INFO]: Rekrap_13 has made the advancement [Take Aim]
+[09:16:07] [Server thread/INFO]: Kashik_Gaming was slain by Rekrap_13
+[09:16:32] [Server thread/INFO]: Rekrap_13 lost connection: Disconnected
+[09:16:32] [Server thread/INFO]: Rekrap_13 left the game
+[09:16:36] [Server thread/INFO]: alex_bhaiya_001 issued server command: /kit
+[09:16:38] [Server thread/INFO]: alex_bhaiya_001 has made the advancement [Isn't It Iron Pick]
+[09:16:38] [Server thread/INFO]: alex_bhaiya_001 has made the advancement [Acquire Hardware]
+[09:16:47] [Server thread/INFO]: Peropeal issued server command: /kit
+[09:16:55] [Server thread/INFO]: alex_bhaiya_001 issued server command: /kit
+[09:17:08] [Server thread/INFO]: Peropeal lost connection: Disconnected
+[09:17:08] [Server thread/INFO]: Peropeal left the game
+[09:17:39] [Server thread/INFO]: alex_bhaiya_001 has made the advancement [Glow and Behold!]
+[09:17:47] [User Authenticator #2/INFO]: UUID of player Peropeal is f705d23b-cc3f-3e76-adea-124e76997d89
+[09:17:47] [Server thread/INFO]: Peropeal joined the game
+[09:17:47] [Server thread/INFO]: Peropeal[/49.43.133.63:50864] logged in with entity id 2020 at ([world]767.5661772981216, 63.875, 123.41883168157301)
+[09:17:53] [Server thread/INFO]: Kashik_Gaming has made the advancement [Not Today, Thank You]
+[09:18:07] [Server thread/INFO]: Kashik_Gaming has made the advancement [Monster Hunter]
+[09:18:12] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode spectator
+[09:18:14] [Server thread/INFO]: Dhruv issued server command: /
+[09:18:15] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags
+[09:18:25] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:18:25] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg delete __global__
+[09:18:29] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:18:31] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg tp -c -w "world" spawn
+[09:18:35] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags
+[09:18:42] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 2 spawn
+[09:18:44] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 2 spawn mob-damage DENY
+[09:18:51] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 3 spawn
+[09:18:54] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 3 spawn mob-spawning DENY
+[09:18:55] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:19:01] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode survival
+[09:19:03] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode creative
+[09:19:05] [Server thread/INFO]: Peropeal lost connection: Disconnected
+[09:19:05] [Server thread/INFO]: Peropeal left the game
+[09:19:54] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:19:56] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode spectator
+[09:20:00] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg tp -c -w "world" spawn
+[09:20:01] [User Authenticator #3/INFO]: UUID of player levitation_LLN is 9be650b0-af21-31f4-8be2-6bae2f273226
+[09:20:01] [Server thread/INFO]: levitation_LLN joined the game
+[09:20:01] [Server thread/INFO]: levitation_LLN[/37.111.212.244:55041] logged in with entity id 2687 at ([world]811.6769929853741, 63.0, 231.94666823628938)
+[09:20:06] [Server thread/INFO]: alex_bhaiya_001 issued server command: //expand vert
+[09:20:10] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:20:18] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode creative
+[09:20:27] [Server thread/INFO]: alex_bhaiya_001 issued server command: /summon minecraft:zombie
+[09:20:27] [Server thread/INFO]: [alex_bhaiya_001: Summoned new Zombie]
+[09:20:34] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode survival
+[09:20:42] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:20:42] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:20:59] [User Authenticator #3/INFO]: UUID of player Peropeal is f705d23b-cc3f-3e76-adea-124e76997d89
+[09:20:59] [Server thread/INFO]: Peropeal joined the game
+[09:20:59] [Server thread/INFO]: Peropeal[/49.43.133.63:51061] logged in with entity id 3114 at ([world]766.7642973196726, 63.875, 123.54430645959067)
+[09:21:26] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:21:26] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[09:21:32] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode creative
+[09:21:33] [Server thread/INFO]: alex_bhaiya_001 issued server command: //wand
+[09:21:52] [Server thread/INFO]: Kashik_Gaming was slain by Peropeal
+[09:22:01] [Server thread/INFO]: levitation_LLN lost connection: Login timed out!
+[09:22:01] [Server thread/INFO]: levitation_LLN left the game
+[09:22:05] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg define spawn 2
+[09:22:10] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg define spawn2
+[09:22:16] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode spectator
+[09:22:19] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:22:20] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg tp -c -w "world" spawn2
+[09:22:23] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flaggs
+[09:22:25] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:22:27] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags
+[09:22:31] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 1 spawn2 pvp DENY
+[09:22:34] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 2 spawn2
+[09:22:37] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 2 spawn2 mob-damage DENY
+[09:22:51] [Server thread/INFO]: alex_bhaiya_001 issued server command: //expand vert
+[09:22:55] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:22:56] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:23:01] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode creative
+[09:23:11] [Async Chat Thread - #3/INFO]: [Not Secure] <alex_bhaiya_001> do /rtp
+[09:23:19] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/4030, uuid='ca9106aa-4387-4bcf-85d4-f2c3aa87946b', l='ServerLevel[world]', x=677.50, y=-34.00, z=181.50, cpos=[42, 11], tl=700, v=true] died: Skeletal Knight suffocated in a wall
+[09:23:24] [Server thread/INFO]: Kashik_Gaming issued server command: /rtp
+[09:23:31] [Server thread/INFO]: Peropeal lost connection: Disconnected
+[09:23:31] [Server thread/INFO]: Peropeal left the game
+[09:23:42] [Server thread/INFO]: alex_bhaiya_001 issued server command: /pl
+[09:23:52] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky continue
+[09:23:56] [Server thread/INFO]: Dhruv issued server command: /rtp kashish_gaming
+[09:23:58] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61464 chunks (6.13%), ETA: 1:20:20, Rate: 195.1 cps, Current: 6, -156
+[09:23:59] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61478 chunks (6.14%), ETA: 7:43:39, Rate: 33.8 cps, Current: 0, -153
+[09:24:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61490 chunks (6.14%), ETA: 12:10:09, Rate: 21.5 cps, Current: 7, -158
+[09:24:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61496 chunks (6.14%), ETA: 15:52:15, Rate: 16.5 cps, Current: 5, -158
+[09:24:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61499 chunks (6.14%), ETA: 20:09:54, Rate: 13.0 cps, Current: 5, -159
+[09:24:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61543 chunks (6.14%), ETA: 16:12:34, Rate: 16.1 cps, Current: 15, -156
+[09:24:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61558 chunks (6.14%), ETA: 16:35:34, Rate: 15.7 cps, Current: 10, -155
+[09:24:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61569 chunks (6.14%), ETA: 18:46:56, Rate: 13.9 cps, Current: 8, -152
+[09:24:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61592 chunks (6.15%), ETA: 17:46:24, Rate: 14.7 cps, Current: 14, -149
+[09:24:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61611 chunks (6.15%), ETA: 19:57:58, Rate: 13.1 cps, Current: 15, -147
+[09:24:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61655 chunks (6.15%), ETA: 16:58:19, Rate: 15.4 cps, Current: 4, -145
+[09:24:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61672 chunks (6.15%), ETA: 15:39:36, Rate: 16.7 cps, Current: 2, -151
+[09:24:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61724 chunks (6.16%), ETA: 15:35:15, Rate: 16.8 cps, Current: 4, -141
+[09:24:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61776 chunks (6.17%), ETA: 13:02:46, Rate: 20.0 cps, Current: 1, -129
+[09:24:19] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61822 chunks (6.17%), ETA: 11:32:03, Rate: 22.6 cps, Current: 7, -132
+[09:24:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61842 chunks (6.17%), ETA: 11:49:10, Rate: 22.1 cps, Current: 10, -136
+[09:24:21] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61861 chunks (6.17%), ETA: 12:39:20, Rate: 20.6 cps, Current: 15, -129
+[09:24:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61925 chunks (6.18%), ETA: 9:17:41, Rate: 28.1 cps, Current: 15, -139
+[09:24:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61939 chunks (6.18%), ETA: 10:22:56, Rate: 25.2 cps, Current: 12, -142
+[09:24:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61947 chunks (6.18%), ETA: 11:16:00, Rate: 23.2 cps, Current: 14, -144
+[09:24:28] [Server thread/INFO]: [Chunky] Task running for world. Processed: 61961 chunks (6.18%), ETA: 11:54:22, Rate: 21.9 cps, Current: 19, -143
+[09:24:29] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62013 chunks (6.19%), ETA: 12:16:01, Rate: 21.3 cps, Current: 19, -137
+[09:24:30] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62025 chunks (6.19%), ETA: 13:02:36, Rate: 20.0 cps, Current: 17, -134
+[09:24:32] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62081 chunks (6.20%), ETA: 14:01:02, Rate: 18.6 cps, Current: 24, -136
+[09:24:33] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62137 chunks (6.20%), ETA: 11:43:25, Rate: 22.3 cps, Current: 28, -135
+[09:24:35] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62179 chunks (6.21%), ETA: 9:18:43, Rate: 28.0 cps, Current: 29, -140
+[09:24:36] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62200 chunks (6.21%), ETA: 9:42:22, Rate: 26.9 cps, Current: 31, -143
+[09:24:37] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62221 chunks (6.21%), ETA: 10:26:09, Rate: 25.0 cps, Current: 28, -145
+[09:24:37] [Server thread/INFO]: Dhruv issued server command: /rtp Kashikik_gaming
+[09:24:38] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62247 chunks (6.21%), ETA: 10:24:17, Rate: 25.1 cps, Current: 25, -151
+[09:24:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62278 chunks (6.22%), ETA: 8:44:50, Rate: 29.8 cps, Current: 23, -148
+[09:24:40] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62314 chunks (6.22%), ETA: 8:34:49, Rate: 30.4 cps, Current: 19, -149
+[09:24:41] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62337 chunks (6.22%), ETA: 9:07:13, Rate: 28.6 cps, Current: 23, -153
+[09:24:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62373 chunks (6.22%), ETA: 8:59:11, Rate: 29.0 cps, Current: 19, -156
+[09:24:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62412 chunks (6.23%), ETA: 9:44:54, Rate: 26.8 cps, Current: 25, -154
+[09:24:45] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62448 chunks (6.23%), ETA: 9:38:13, Rate: 27.1 cps, Current: 30, -156
+[09:24:46] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62451 chunks (6.23%), ETA: 10:32:49, Rate: 24.7 cps, Current: 31, -157
+[09:24:50] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62465 chunks (6.23%), ETA: 17:43:50, Rate: 14.7 cps, Current: -31, -159
+[09:24:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62506 chunks (6.24%), ETA: 15:35:37, Rate: 16.7 cps, Current: -28, -153
+[09:24:53] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62517 chunks (6.24%), ETA: 19:54:30, Rate: 13.1 cps, Current: -25, -158
+[09:24:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62521 chunks (6.24%), ETA: 30:24:42, Rate: 8.6 cps, Current: -28, -159
+[09:24:55] [Server thread/INFO]: alex_bhaiya_001 issued server command: /setblock ~ ~ ~ dirt
+[09:24:55] [Server thread/INFO]: [alex_bhaiya_001: Changed the block at 703, 250, 60]
+[09:24:55] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62554 chunks (6.24%), ETA: 23:23:26, Rate: 11.2 cps, Current: -22, -160
+[09:24:57] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62571 chunks (6.24%), ETA: 16:31:31, Rate: 15.8 cps, Current: -19, -154
+[09:24:58] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62592 chunks (6.25%), ETA: 15:54:05, Rate: 16.4 cps, Current: -17, -153
+[09:24:59] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62604 chunks (6.25%), ETA: 16:28:22, Rate: 15.8 cps, Current: -17, -152
+[09:25:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62619 chunks (6.25%), ETA: 17:43:19, Rate: 14.7 cps, Current: -17, -151
+[09:25:02] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62631 chunks (6.25%), ETA: 20:53:55, Rate: 12.5 cps, Current: -19, -146
+[09:25:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62662 chunks (6.25%), ETA: 18:34:45, Rate: 14.0 cps, Current: -25, -149
+[09:25:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62685 chunks (6.26%), ETA: 15:25:05, Rate: 16.9 cps, Current: -28, -152
+[09:25:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62704 chunks (6.26%), ETA: 16:28:21, Rate: 15.8 cps, Current: -29, -147
+[09:25:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62724 chunks (6.26%), ETA: 16:32:02, Rate: 15.8 cps, Current: -32, -147
+[09:25:08] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg define spawnn3
+[09:25:08] [Server thread/INFO]: Dhruv issued server command: /rtp kashiki_Gaming
+[09:25:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62744 chunks (6.26%), ETA: 16:26:59, Rate: 15.9 cps, Current: -28, -142
+[09:25:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62759 chunks (6.26%), ETA: 16:32:35, Rate: 15.8 cps, Current: -26, -138
+[09:25:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62793 chunks (6.27%), ETA: 14:02:20, Rate: 18.6 cps, Current: -29, -135
+[09:25:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62809 chunks (6.27%), ETA: 14:18:51, Rate: 18.2 cps, Current: -32, -134
+[09:25:12] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode spectator
+[09:25:12] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62839 chunks (6.27%), ETA: 13:07:51, Rate: 19.9 cps, Current: -26, -136
+[09:25:12] [User Authenticator #4/INFO]: UUID of player KawaiiRero is d626ef7a-5a8e-308e-a1c9-2091bc668172
+[09:25:12] [Server thread/INFO]: KawaiiRero joined the game
+[09:25:12] [Server thread/INFO]: KawaiiRero has made the advancement [Suit Up]
+[09:25:12] [Server thread/INFO]: KawaiiRero has made the advancement [Isn't It Iron Pick]
+[09:25:12] [Server thread/INFO]: KawaiiRero has made the advancement [Acquire Hardware]
+[09:25:12] [Server thread/INFO]: KawaiiRero[/171.76.5.171:34772] logged in with entity id 5964 at ([world]767.5, 168.0, 176.5)
+[09:25:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62864 chunks (6.27%), ETA: 12:50:54, Rate: 20.3 cps, Current: -21, -134
+[09:25:14] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62887 chunks (6.28%), ETA: 12:18:39, Rate: 21.2 cps, Current: -17, -129
+[09:25:16] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:25:18] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg tp -c -w "world" spawnn3
+[09:25:19] [Server thread/INFO]: [Chunky] Task running for world. Processed: 62978 chunks (6.29%), ETA: 11:49:10, Rate: 22.1 cps, Current: -16, -143
+[09:25:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63041 chunks (6.29%), ETA: 10:34:30, Rate: 24.7 cps, Current: -16, -136
+[09:25:21] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63096 chunks (6.30%), ETA: 9:03:36, Rate: 28.8 cps, Current: -12, -134
+[09:25:23] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63154 chunks (6.30%), ETA: 8:25:09, Rate: 31.0 cps, Current: -5, -136
+[09:25:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63195 chunks (6.31%), ETA: 8:13:13, Rate: 31.7 cps, Current: -7, -140
+[09:25:24] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags
+[09:25:25] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:25:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63223 chunks (6.31%), ETA: 8:20:49, Rate: 31.2 cps, Current: -4, -143
+[09:25:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63247 chunks (6.31%), ETA: 6:45:55, Rate: 38.5 cps, Current: -4, -145
+[09:25:27] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63289 chunks (6.32%), ETA: 6:53:29, Rate: 37.8 cps, Current: -7, -152
+[09:25:28] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63333 chunks (6.32%), ETA: 6:48:07, Rate: 38.3 cps, Current: -13, -148
+[09:25:29] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63358 chunks (6.32%), ETA: 7:03:27, Rate: 36.9 cps, Current: -11, -152
+[09:25:30] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63388 chunks (6.33%), ETA: 8:08:24, Rate: 32.0 cps, Current: -11, -156
+[09:25:31] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" spawnn3
+[09:25:31] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63407 chunks (6.33%), ETA: 8:28:31, Rate: 30.8 cps, Current: -12, -157
+[09:25:37] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 1 spawnn3 pvp DENY
+[09:25:38] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 2 spawnn3
+[09:25:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63489 chunks (6.34%), ETA: 19:45:59, Rate: 13.2 cps, Current: -62, -155
+[09:25:40] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63532 chunks (6.34%), ETA: 16:26:56, Rate: 15.8 cps, Current: -63, -153
+[09:25:41] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 2 spawnn3 mob-damage DENY
+[09:25:41] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63538 chunks (6.34%), ETA: 10:49:43, Rate: 24.1 cps, Current: -57, -153
+[09:25:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63545 chunks (6.34%), ETA: 14:57:17, Rate: 17.4 cps, Current: -60, -159
+[09:25:44] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63569 chunks (6.34%), ETA: 14:22:32, Rate: 18.1 cps, Current: -55, -157
+[09:25:45] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63596 chunks (6.35%), ETA: 13:13:44, Rate: 19.7 cps, Current: -52, -154
+[09:25:46] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 2 spawnn3 creeper-explosion DENY
+[09:25:46] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63618 chunks (6.35%), ETA: 13:28:19, Rate: 19.3 cps, Current: -55, -152
+[09:25:47] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 3 spawnn3
+[09:25:48] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63640 chunks (6.35%), ETA: 15:04:42, Rate: 17.3 cps, Current: -51, -149
+[09:25:49] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63670 chunks (6.35%), ETA: 14:08:06, Rate: 18.4 cps, Current: -56, -147
+[09:25:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63703 chunks (6.36%), ETA: 14:51:56, Rate: 17.5 cps, Current: -59, -152
+[09:25:52] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63713 chunks (6.36%), ETA: 15:31:10, Rate: 16.8 cps, Current: -61, -152
+[09:25:53] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63740 chunks (6.36%), ETA: 14:19:37, Rate: 18.2 cps, Current: -63, -144
+[09:25:54] [Server thread/INFO]: Dhruv issued server command: /rtp world world_the_end
+[09:25:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63768 chunks (6.36%), ETA: 13:39:09, Rate: 19.1 cps, Current: -60, -142
+[09:25:54] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 3 spawnn3 mob-spawning DENY
+[09:25:55] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:25:56] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63773 chunks (6.36%), ETA: 15:44:38, Rate: 16.6 cps, Current: -60, -140
+[09:25:57] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63807 chunks (6.37%), ETA: 14:45:16, Rate: 17.7 cps, Current: -62, -135
+[09:25:58] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63852 chunks (6.37%), ETA: 11:52:25, Rate: 21.9 cps, Current: -59, -132
+[09:25:58] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 3 spawnn3 other-explosion DENY
+[09:25:59] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63871 chunks (6.37%), ETA: 12:02:56, Rate: 21.6 cps, Current: -57, -134
+[09:26:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63873 chunks (6.37%), ETA: 13:36:25, Rate: 19.2 cps, Current: -56, -136
+[09:26:01] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 4 spawnn3
+[09:26:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63915 chunks (6.38%), ETA: 12:17:37, Rate: 21.2 cps, Current: -53, -136
+[09:26:02] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63965 chunks (6.38%), ETA: 10:10:58, Rate: 25.6 cps, Current: -53, -140
+[09:26:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63979 chunks (6.39%), ETA: 10:42:24, Rate: 24.3 cps, Current: -55, -144
+[09:26:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 63986 chunks (6.39%), ETA: 10:35:07, Rate: 24.6 cps, Current: -51, -141
+[09:26:05] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" -p 5 spawnn3
+[09:26:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64001 chunks (6.39%), ETA: 11:24:23, Rate: 22.8 cps, Current: -48, -144
+[09:26:07] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flag -w "world" -h 5 spawnn3 invincible ALLOW
+[09:26:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64048 chunks (6.39%), ETA: 11:47:54, Rate: 22.1 cps, Current: -48, -138
+[09:26:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64091 chunks (6.40%), ETA: 10:49:22, Rate: 24.1 cps, Current: -45, -135
+[09:26:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64105 chunks (6.40%), ETA: 9:58:29, Rate: 26.1 cps, Current: -42, -129
+[09:26:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64184 chunks (6.41%), ETA: 8:18:09, Rate: 31.4 cps, Current: -33, -134
+[09:26:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64236 chunks (6.41%), ETA: 8:32:34, Rate: 30.5 cps, Current: -39, -143
+[09:26:12] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags
+[09:26:12] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64256 chunks (6.41%), ETA: 8:52:43, Rate: 29.3 cps, Current: -38, -144
+[09:26:13] [Server thread/INFO]: KawaiiRero issued server command: /skin set https://i.imgur.com/i5Fss5q.png
+[09:26:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64259 chunks (6.41%), ETA: 8:43:53, Rate: 29.8 cps, Current: -34, -145
+[09:26:15] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64321 chunks (6.42%), ETA: 8:18:03, Rate: 31.4 cps, Current: -41, -145
+[09:26:17] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg list
+[09:26:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64385 chunks (6.43%), ETA: 7:51:21, Rate: 33.2 cps, Current: -41, -153
+[09:26:19] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64441 chunks (6.43%), ETA: 7:53:01, Rate: 33.0 cps, Current: -42, -157
+[09:26:25] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[09:26:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64513 chunks (6.44%), ETA: 15:41:07, Rate: 16.6 cps, Current: -94, -156
+[09:26:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64567 chunks (6.44%), ETA: 12:38:03, Rate: 20.6 cps, Current: -92, -158
+[09:26:26] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags
+[09:26:29] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rg flags -w "world" spawnn3
+[09:26:29] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64569 chunks (6.44%), ETA: 19:42:28, Rate: 13.2 cps, Current: -92, -159
+[09:26:30] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64608 chunks (6.45%), ETA: 14:40:26, Rate: 17.7 cps, Current: -84, -160
+[09:26:31] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64623 chunks (6.45%), ETA: 15:07:57, Rate: 17.2 cps, Current: -85, -156
+[09:26:33] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64638 chunks (6.45%), ETA: 15:32:39, Rate: 16.8 cps, Current: -85, -153
+[09:26:34] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64655 chunks (6.45%), ETA: 15:57:26, Rate: 16.3 cps, Current: -88, -150
+[09:26:35] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64681 chunks (6.46%), ETA: 15:05:59, Rate: 17.2 cps, Current: -84, -146
+[09:26:35] [Server thread/INFO]: alex_bhaiya_001 issued server command: //expand vert
+[09:26:37] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64725 chunks (6.46%), ETA: 11:57:17, Rate: 21.8 cps, Current: -91, -148
+[09:26:38] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64739 chunks (6.46%), ETA: 12:41:24, Rate: 20.5 cps, Current: -93, -150
+[09:26:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64766 chunks (6.46%), ETA: 12:21:49, Rate: 21.1 cps, Current: -94, -144
+[09:26:40] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64778 chunks (6.46%), ETA: 14:03:12, Rate: 18.5 cps, Current: -96, -143
+[09:26:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64796 chunks (6.47%), ETA: 14:18:16, Rate: 18.2 cps, Current: -92, -141
+[09:26:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64833 chunks (6.47%), ETA: 12:53:44, Rate: 20.2 cps, Current: -96, -138
+[09:26:44] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64876 chunks (6.47%), ETA: 12:25:22, Rate: 21.0 cps, Current: -91, -132
+[09:26:45] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64897 chunks (6.48%), ETA: 12:45:13, Rate: 20.4 cps, Current: -88, -136
+[09:26:46] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64921 chunks (6.48%), ETA: 12:17:57, Rate: 21.2 cps, Current: -85, -131
+[09:26:47] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64994 chunks (6.49%), ETA: 9:52:20, Rate: 26.4 cps, Current: -84, -141
+[09:26:49] [Server thread/INFO]: [Chunky] Task running for world. Processed: 64998 chunks (6.49%), ETA: 10:45:37, Rate: 24.2 cps, Current: -86, -141
+[09:26:50] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode creative
+[09:26:50] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65018 chunks (6.49%), ETA: 11:04:37, Rate: 23.5 cps, Current: -83, -143
+[09:26:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65025 chunks (6.49%), ETA: 10:43:51, Rate: 24.3 cps, Current: -80, -144
+[09:26:52] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65063 chunks (6.49%), ETA: 10:19:43, Rate: 25.2 cps, Current: -76, -139
+[09:26:53] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65089 chunks (6.50%), ETA: 11:33:42, Rate: 22.5 cps, Current: -80, -136
+[09:26:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65121 chunks (6.50%), ETA: 11:07:18, Rate: 23.4 cps, Current: -73, -129
+[09:26:56] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65180 chunks (6.50%), ETA: 9:28:15, Rate: 27.5 cps, Current: -69, -136
+[09:26:57] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65226 chunks (6.51%), ETA: 8:54:14, Rate: 29.2 cps, Current: -67, -139
+[09:26:58] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65255 chunks (6.51%), ETA: 8:59:35, Rate: 28.9 cps, Current: -72, -144
+[09:26:59] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65275 chunks (6.51%), ETA: 9:22:35, Rate: 27.8 cps, Current: -65, -144
+[09:27:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65295 chunks (6.52%), ETA: 8:22:48, Rate: 31.0 cps, Current: -68, -145
+[09:27:01] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:27:01] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:27:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65343 chunks (6.52%), ETA: 8:23:07, Rate: 31.0 cps, Current: -72, -152
+[09:27:02] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65373 chunks (6.52%), ETA: 8:19:32, Rate: 31.3 cps, Current: -76, -148
+[09:27:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65404 chunks (6.53%), ETA: 8:21:41, Rate: 31.1 cps, Current: -74, -150
+[09:27:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65418 chunks (6.53%), ETA: 9:56:57, Rate: 26.1 cps, Current: -79, -153
+[09:27:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65446 chunks (6.53%), ETA: 9:53:37, Rate: 26.3 cps, Current: -80, -160
+[09:27:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65511 chunks (6.54%), ETA: 10:09:17, Rate: 25.6 cps, Current: -68, -156
+[09:27:08] [Server thread/INFO]: Dhruv issued server command: /rtp world world
+[09:27:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65519 chunks (6.54%), ETA: 11:05:35, Rate: 23.4 cps, Current: -65, -156
+[09:27:12] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65531 chunks (6.54%), ETA: 15:10:54, Rate: 17.1 cps, Current: -65, -159
+[09:27:13] [Server thread/INFO]: KawaiiRero issued server command: /kit
+[09:27:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65537 chunks (6.54%), ETA: 18:31:24, Rate: 14.0 cps, Current: -127, -159
+[09:27:15] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65568 chunks (6.54%), ETA: 16:42:34, Rate: 15.6 cps, Current: -127, -153
+[09:27:16] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65580 chunks (6.54%), ETA: 19:31:15, Rate: 13.3 cps, Current: -122, -153
+[09:27:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65589 chunks (6.55%), ETA: 20:16:31, Rate: 12.8 cps, Current: -121, -158
+[09:27:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65593 chunks (6.55%), ETA: 30:30:19, Rate: 8.5 cps, Current: -124, -159
+[09:27:19] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65627 chunks (6.55%), ETA: 23:59:38, Rate: 10.8 cps, Current: -115, -156
+[09:27:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65643 chunks (6.55%), ETA: 22:51:49, Rate: 11.4 cps, Current: -116, -154
+[09:27:21] [Server thread/INFO]: Kashik_Gaming issued server command: /kit
+[09:27:22] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65666 chunks (6.55%), ETA: 21:16:41, Rate: 12.2 cps, Current: -119, -152
+[09:27:23] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65681 chunks (6.55%), ETA: 16:48:45, Rate: 15.5 cps, Current: -119, -149
+[09:27:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65710 chunks (6.56%), ETA: 15:41:51, Rate: 16.6 cps, Current: -113, -148
+[09:27:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65742 chunks (6.56%), ETA: 14:43:24, Rate: 17.7 cps, Current: -122, -151
+[09:27:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65758 chunks (6.56%), ETA: 14:57:37, Rate: 17.4 cps, Current: -124, -151
+[09:27:27] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65776 chunks (6.56%), ETA: 12:54:20, Rate: 20.2 cps, Current: -127, -148
+[09:27:28] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65805 chunks (6.57%), ETA: 12:23:49, Rate: 21.0 cps, Current: -123, -144
+[09:27:30] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65817 chunks (6.57%), ETA: 13:53:13, Rate: 18.7 cps, Current: -123, -142
+[09:27:31] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65820 chunks (6.57%), ETA: 15:02:41, Rate: 17.3 cps, Current: -124, -141
+[09:27:31] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:27:31] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[09:27:32] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65848 chunks (6.57%), ETA: 14:43:08, Rate: 17.7 cps, Current: -121, -140
+[09:27:33] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65858 chunks (6.57%), ETA: 17:17:22, Rate: 15.0 cps, Current: -126, -135
+[09:27:34] [Server thread/INFO]: Kashik_Gaming issued server command: /rtp
+[09:27:34] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65878 chunks (6.57%), ETA: 16:50:06, Rate: 15.4 cps, Current: -125, -132
+[09:27:37] [Async Chat Thread - #5/INFO]: [Not Secure] <alex_bhaiya_001> do /rtp
+[09:27:37] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65923 chunks (6.58%), ETA: 19:56:51, Rate: 13.0 cps, Current: -119, -135
+[09:27:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 65982 chunks (6.59%), ETA: 15:52:19, Rate: 16.4 cps, Current: -115, -136
+[09:27:41] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66035 chunks (6.59%), ETA: 11:34:15, Rate: 22.5 cps, Current: -114, -141
+[09:27:42] [User Authenticator #5/INFO]: UUID of player AFGamerOG is 8ee9e6b9-c4b9-3bd0-95f6-6be0baf9c755
+[09:27:42] [Server thread/INFO]: AFGamerOG joined the game
+[09:27:42] [Server thread/INFO]: AFGamerOG[/42.111.196.44:49202] logged in with entity id 8724 at ([world]767.5204351492112, 167.0, 183.14534961233218)
+[09:27:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66046 chunks (6.59%), ETA: 12:32:53, Rate: 20.7 cps, Current: -113, -144
+[09:27:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66049 chunks (6.59%), ETA: 11:43:33, Rate: 22.2 cps, Current: -112, -144
+[09:27:45] [Server thread/INFO]: Dhruv issued server command: /rtp world
+[09:27:45] [Server thread/INFO]: AFGamerOG lost connection: Disconnected
+[09:27:45] [Server thread/INFO]: AFGamerOG left the game
+[09:27:46] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66113 chunks (6.60%), ETA: 11:33:35, Rate: 22.5 cps, Current: -112, -136
+[09:27:47] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66153 chunks (6.60%), ETA: 10:41:59, Rate: 24.3 cps, Current: -105, -134
+[09:27:48] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66197 chunks (6.61%), ETA: 11:20:07, Rate: 22.9 cps, Current: -101, -131
+[09:27:49] [Server thread/INFO]: KawaiiRero issued server command: /rtp
+[09:27:49] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66235 chunks (6.61%), ETA: 10:49:31, Rate: 24.0 cps, Current: -98, -135
+[09:27:50] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66283 chunks (6.62%), ETA: 9:48:25, Rate: 26.5 cps, Current: -103, -143
+[09:27:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66311 chunks (6.62%), ETA: 9:49:13, Rate: 26.5 cps, Current: -98, -147
+[09:27:52] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66332 chunks (6.62%), ETA: 8:28:57, Rate: 30.6 cps, Current: -99, -152
+[09:27:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66378 chunks (6.62%), ETA: 8:10:46, Rate: 31.8 cps, Current: -108, -145
+[09:27:56] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66433 chunks (6.63%), ETA: 8:29:29, Rate: 30.6 cps, Current: -105, -153
+[09:27:57] [Server thread/INFO]: KawaiiRero lost connection: Disconnected
+[09:27:57] [Server thread/INFO]: KawaiiRero left the game
+[09:27:57] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66469 chunks (6.63%), ETA: 8:36:51, Rate: 30.2 cps, Current: -108, -156
+[09:28:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66561 chunks (6.64%), ETA: 13:15:07, Rate: 19.6 cps, Current: -128, -128
+[09:28:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66612 chunks (6.65%), ETA: 11:02:13, Rate: 23.5 cps, Current: -121, -128
+[09:28:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66625 chunks (6.65%), ETA: 12:22:38, Rate: 21.0 cps, Current: -120, -128
+[09:28:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66663 chunks (6.65%), ETA: 11:32:03, Rate: 22.5 cps, Current: -116, -123
+[09:28:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66681 chunks (6.65%), ETA: 16:48:14, Rate: 15.5 cps, Current: -119, -124
+[09:28:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66689 chunks (6.66%), ETA: 17:42:48, Rate: 14.7 cps, Current: -120, -120
+[09:28:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66714 chunks (6.66%), ETA: 11:34:04, Rate: 22.5 cps, Current: -115, -116
+[09:28:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66730 chunks (6.66%), ETA: 12:01:15, Rate: 21.6 cps, Current: -117, -116
+[09:28:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66759 chunks (6.66%), ETA: 11:34:32, Rate: 22.4 cps, Current: -121, -114
+[09:28:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66776 chunks (6.66%), ETA: 12:03:56, Rate: 21.5 cps, Current: -122, -113
+[09:28:14] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66795 chunks (6.67%), ETA: 12:54:52, Rate: 20.1 cps, Current: -125, -116
+[09:28:15] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66815 chunks (6.67%), ETA: 13:08:27, Rate: 19.8 cps, Current: -127, -112
+[09:28:16] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66833 chunks (6.67%), ETA: 15:01:20, Rate: 17.3 cps, Current: -125, -111
+[09:28:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66852 chunks (6.67%), ETA: 15:16:07, Rate: 17.0 cps, Current: -123, -107
+[09:28:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66863 chunks (6.67%), ETA: 15:29:44, Rate: 16.8 cps, Current: -127, -108
+[09:28:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66878 chunks (6.67%), ETA: 16:04:18, Rate: 16.2 cps, Current: -127, -104
+[09:28:21] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66904 chunks (6.68%), ETA: 16:34:58, Rate: 15.7 cps, Current: -125, -100
+[09:28:22] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66928 chunks (6.68%), ETA: 16:14:40, Rate: 16.0 cps, Current: -124, -97
+[09:28:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66945 chunks (6.68%), ETA: 16:57:06, Rate: 15.3 cps, Current: -120, -104
+[09:28:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66967 chunks (6.68%), ETA: 16:45:17, Rate: 15.5 cps, Current: -118, -98
+[09:28:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 66989 chunks (6.69%), ETA: 16:09:27, Rate: 16.1 cps, Current: -114, -101
+[09:28:28] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67048 chunks (6.69%), ETA: 12:57:57, Rate: 20.0 cps, Current: -116, -109
+[09:28:28] [Server thread/INFO]: Dhruv issued server command: /rtp world [biome1
+[09:28:29] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67066 chunks (6.69%), ETA: 13:07:46, Rate: 19.8 cps, Current: -115, -111
+[09:28:30] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67079 chunks (6.69%), ETA: 13:03:41, Rate: 19.9 cps, Current: -110, -110
+[09:28:33] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67137 chunks (6.70%), ETA: 12:22:38, Rate: 21.0 cps, Current: -112, -103
+[09:28:34] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67178 chunks (6.70%), ETA: 11:19:44, Rate: 22.9 cps, Current: -105, -102
+[09:28:35] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67203 chunks (6.71%), ETA: 10:51:34, Rate: 23.9 cps, Current: -104, -102
+[09:28:36] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67262 chunks (6.71%), ETA: 9:33:36, Rate: 27.2 cps, Current: -97, -104
+[09:28:36] [User Authenticator #5/INFO]: UUID of player Parth_Pro_IM is 06c15c60-31ce-3be1-baf4-f7cf8fa1e460
+[09:28:36] [Server thread/INFO]: Parth_Pro_IM joined the game
+[09:28:36] [Server thread/INFO]: Parth_Pro_IM has made the advancement [Suit Up]
+[09:28:36] [Server thread/INFO]: Parth_Pro_IM has made the advancement [Isn't It Iron Pick]
+[09:28:36] [Server thread/INFO]: Parth_Pro_IM has made the advancement [Acquire Hardware]
+[09:28:36] [Server thread/INFO]: Parth_Pro_IM[/103.59.75.72:46665] logged in with entity id 9400 at ([world]771.5, 167.0, 181.5)
+[09:28:37] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67303 chunks (6.72%), ETA: 9:22:42, Rate: 27.7 cps, Current: -102, -111
+[09:28:38] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67329 chunks (6.72%), ETA: 9:43:00, Rate: 26.7 cps, Current: -97, -113
+[09:28:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67355 chunks (6.72%), ETA: 8:49:48, Rate: 29.4 cps, Current: -98, -120
+[09:28:41] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67403 chunks (6.73%), ETA: 8:26:07, Rate: 30.8 cps, Current: -108, -113
+[09:28:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67447 chunks (6.73%), ETA: 7:27:23, Rate: 34.8 cps, Current: -107, -119
+[09:28:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67518 chunks (6.74%), ETA: 6:45:40, Rate: 38.4 cps, Current: -105, -128
+[09:28:47] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67585 chunks (6.75%), ETA: 8:48:01, Rate: 29.5 cps, Current: -128, -96
+[09:28:48] [Server thread/INFO]: Dhruv issued server command: /rtp world world
+[09:28:49] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67649 chunks (6.75%), ETA: 9:50:26, Rate: 26.4 cps, Current: -120, -96
+[09:28:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67713 chunks (6.76%), ETA: 13:43:57, Rate: 18.9 cps, Current: -120, -88
+[09:28:55] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67762 chunks (6.76%), ETA: 11:24:45, Rate: 22.7 cps, Current: -118, -81
+[09:28:56] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67769 chunks (6.76%), ETA: 12:48:10, Rate: 20.3 cps, Current: -119, -84
+[09:28:57] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67812 chunks (6.77%), ETA: 11:34:09, Rate: 22.4 cps, Current: -124, -81
+[09:28:59] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67819 chunks (6.77%), ETA: 14:51:56, Rate: 17.5 cps, Current: -127, -86
+[09:29:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67848 chunks (6.77%), ETA: 14:05:05, Rate: 18.4 cps, Current: -128, -84
+[09:29:02] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67868 chunks (6.77%), ETA: 12:59:26, Rate: 20.0 cps, Current: -121, -78
+[09:29:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67874 chunks (6.77%), ETA: 14:12:03, Rate: 18.3 cps, Current: -123, -76
+[09:29:04] [User Authenticator #5/INFO]: UUID of player KawaiiRero is d626ef7a-5a8e-308e-a1c9-2091bc668172
+[09:29:04] [Server thread/INFO]: KawaiiRero joined the game
+[09:29:04] [Server thread/INFO]: KawaiiRero[/171.76.5.171:35338] logged in with entity id 9851 at ([world]869.5, 63.0, -206.5)
+[09:29:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67888 chunks (6.78%), ETA: 14:34:13, Rate: 17.8 cps, Current: -128, -76
+[09:29:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67903 chunks (6.78%), ETA: 15:35:04, Rate: 16.6 cps, Current: -123, -73
+[09:29:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67927 chunks (6.78%), ETA: 17:09:08, Rate: 15.1 cps, Current: -125, -68
+[09:29:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67954 chunks (6.78%), ETA: 16:15:58, Rate: 16.0 cps, Current: -123, -71
+[09:29:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67969 chunks (6.78%), ETA: 16:53:12, Rate: 15.4 cps, Current: -120, -72
+[09:29:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 67979 chunks (6.78%), ETA: 17:31:59, Rate: 14.8 cps, Current: -120, -67
+[09:29:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68002 chunks (6.79%), ETA: 18:00:26, Rate: 14.4 cps, Current: -114, -66
+[09:29:12] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68062 chunks (6.79%), ETA: 13:58:28, Rate: 18.6 cps, Current: -117, -76
+[09:29:14] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68069 chunks (6.79%), ETA: 13:51:38, Rate: 18.7 cps, Current: -120, -78
+[09:29:15] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68082 chunks (6.79%), ETA: 13:20:11, Rate: 19.5 cps, Current: -115, -77
+[09:29:16] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68101 chunks (6.80%), ETA: 13:26:34, Rate: 19.3 cps, Current: -111, -79
+[09:29:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68124 chunks (6.80%), ETA: 13:02:36, Rate: 19.9 cps, Current: -107, -77
+[09:29:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68145 chunks (6.80%), ETA: 13:01:16, Rate: 19.9 cps, Current: -110, -75
+[09:29:19] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68161 chunks (6.80%), ETA: 12:24:14, Rate: 20.9 cps, Current: -105, -73
+[09:29:19] [Server thread/INFO]: alex_bhaiya_001 issued server command: //wand
+[09:29:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68187 chunks (6.81%), ETA: 12:38:41, Rate: 20.5 cps, Current: -109, -68
+[09:29:21] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68209 chunks (6.81%), ETA: 15:38:39, Rate: 16.6 cps, Current: -107, -71
+[09:29:23] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68286 chunks (6.81%), ETA: 12:04:44, Rate: 21.5 cps, Current: -97, -72
+[09:29:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68330 chunks (6.82%), ETA: 9:43:23, Rate: 26.7 cps, Current: -101, -76
+[09:29:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68341 chunks (6.82%), ETA: 10:22:47, Rate: 25.0 cps, Current: -100, -78
+[09:29:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68367 chunks (6.82%), ETA: 10:08:03, Rate: 25.6 cps, Current: -98, -84
+[09:29:27] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68408 chunks (6.83%), ETA: 9:37:40, Rate: 26.9 cps, Current: -104, -81
+[09:29:28] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68446 chunks (6.83%), ETA: 8:47:46, Rate: 29.5 cps, Current: -109, -84
+[09:29:29] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68481 chunks (6.83%), ETA: 8:38:51, Rate: 30.0 cps, Current: -105, -89
+[09:29:35] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68609 chunks (6.85%), ETA: 9:31:14, Rate: 27.2 cps, Current: -125, -64
+[09:29:36] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68665 chunks (6.85%), ETA: 8:42:55, Rate: 29.7 cps, Current: -122, -61
+[09:29:38] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68673 chunks (6.85%), ETA: 15:15:48, Rate: 17.0 cps, Current: -120, -64
+[09:29:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68714 chunks (6.86%), ETA: 13:37:35, Rate: 19.0 cps, Current: -113, -60
+[09:29:41] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68734 chunks (6.86%), ETA: 14:09:08, Rate: 18.3 cps, Current: -119, -58
+[09:29:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68737 chunks (6.86%), ETA: 15:22:09, Rate: 16.9 cps, Current: -119, -56
+[09:29:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68757 chunks (6.86%), ETA: 13:18:41, Rate: 19.5 cps, Current: -115, -53
+[09:29:44] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68776 chunks (6.86%), ETA: 13:34:20, Rate: 19.1 cps, Current: -113, -52
+[09:29:45] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68811 chunks (6.87%), ETA: 12:46:05, Rate: 20.3 cps, Current: -122, -56
+[09:29:47] [Server thread/INFO]: Kashik_Gaming hit the ground too hard
+[09:29:47] [Server thread/INFO]: alex_bhaiya_001 issued server command: //set dirt
+[09:30:06] [spark-async-sampler-worker-thread/WARN]: [spark] Timed out waiting for world statistics
+[09:30:18] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 30ed338a-5250-3515-828a-c7d1f88b9a5b - Kashik_Gaming. No permissions data will be loaded.
+[09:30:18] [User Authenticator #6/INFO]: Disconnecting Kashik_Gaming (/38.137.57.243:27750): [LoginSecurity] This player is already online!
+[09:30:18] [User Authenticator #6/INFO]: UUID of player Kashik_Gaming is 30ed338a-5250-3515-828a-c7d1f88b9a5b
+[09:30:22] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:30:22] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28842): [LoginSecurity] This player is already online!
+[09:30:22] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:30:26] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 30ed338a-5250-3515-828a-c7d1f88b9a5b - Kashik_Gaming. No permissions data will be loaded.
+[09:30:26] [User Authenticator #6/INFO]: Disconnecting Kashik_Gaming (/38.137.57.243:27722): [LoginSecurity] This player is already online!
+[09:30:26] [User Authenticator #6/INFO]: UUID of player Kashik_Gaming is 30ed338a-5250-3515-828a-c7d1f88b9a5b
+[09:30:28] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:30:28] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28736): [LoginSecurity] This player is already online!
+[09:30:28] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:30:35] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 30ed338a-5250-3515-828a-c7d1f88b9a5b - Kashik_Gaming. No permissions data will be loaded.
+[09:30:35] [User Authenticator #6/INFO]: Disconnecting Kashik_Gaming (/38.137.57.243:27952): [LoginSecurity] This player is already online!
+[09:30:35] [User Authenticator #6/INFO]: UUID of player Kashik_Gaming is 30ed338a-5250-3515-828a-c7d1f88b9a5b
+[09:30:36] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:30:36] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28600): [LoginSecurity] This player is already online!
+[09:30:36] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:30:43] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:30:43] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28892): [LoginSecurity] This player is already online!
+[09:30:43] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:30:46] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 30ed338a-5250-3515-828a-c7d1f88b9a5b - Kashik_Gaming. No permissions data will be loaded.
+[09:30:46] [User Authenticator #6/INFO]: Disconnecting Kashik_Gaming (/38.137.57.243:27884): [LoginSecurity] This player is already online!
+[09:30:46] [User Authenticator #6/INFO]: UUID of player Kashik_Gaming is 30ed338a-5250-3515-828a-c7d1f88b9a5b
+[09:30:48] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:30:48] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28662): [LoginSecurity] This player is already online!
+[09:30:48] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:30:50] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 63015ms or 1260 ticks behind
+[09:30:51] [Server thread/INFO]: Dhruv lost connection: Disconnected
+[09:30:51] [Server thread/INFO]: Dhruv left the game
+[09:30:51] [Server thread/INFO]: alex_bhaiya_001 lost connection: Disconnected
+[09:30:51] [Server thread/INFO]: alex_bhaiya_001 left the game
+[09:30:51] [Server thread/INFO]: Kashik_Gaming lost connection: Disconnected
+[09:30:51] [Server thread/INFO]: Kashik_Gaming left the game
+[09:30:51] [Server thread/INFO]: KawaiiRero lost connection: Disconnected
+[09:30:51] [Server thread/INFO]: KawaiiRero left the game
+[09:30:51] [Server thread/INFO]: Kashik_Gaming (/38.137.57.243:27750) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Dhruv (/101.0.45.98:28842) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Kashik_Gaming (/38.137.57.243:27722) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Dhruv (/101.0.45.98:28736) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Kashik_Gaming (/38.137.57.243:27952) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Dhruv (/101.0.45.98:28600) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Dhruv (/101.0.45.98:28892) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Kashik_Gaming (/38.137.57.243:27884) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Dhruv (/101.0.45.98:28662) lost connection: [LoginSecurity] This player is already online!
+[09:30:51] [Server thread/INFO]: Parth_Pro_IM issued server command: /spawn
+[09:30:51] [Server thread/INFO]: Parth_Pro_IM issued server command: /spawnmob
+[09:30:51] [Server thread/INFO]: Parth_Pro_IM issued server command: /rrp
+[09:30:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68858 chunks (6.87%), ETA: 1:54:50, Rate: 135.4 cps, Current: -126, -49
+[09:30:52] [Server thread/INFO]: Parth_Pro_IM issued server command: /rtp
+[09:30:54] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:30:54] [Server thread/INFO]: Dhruv joined the game
+[09:30:54] [Server thread/INFO]: Dhruv[/101.0.45.98:28834] logged in with entity id 11064 at ([world]624.8060185558157, 66.0, -904.0765650270172)
+[09:31:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68933 chunks (6.88%), ETA: 19:21:27, Rate: 13.4 cps, Current: -126, -40
+[09:31:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68969 chunks (6.88%), ETA: 14:19:44, Rate: 18.1 cps, Current: -128, -35
+[09:31:09] [User Authenticator #6/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
+[09:31:09] [Server thread/INFO]: alex_bhaiya_001 joined the game
+[09:31:09] [Server thread/INFO]: alex_bhaiya_001[/103.211.134.222:3306] logged in with entity id 11422 at ([world]705.5469827609179, 149.7837930034683, 141.7127765034693)
+[09:31:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68990 chunks (6.89%), ETA: 14:34:24, Rate: 17.8 cps, Current: -122, -39
+[09:31:12] [Server thread/INFO]: [Chunky] Task running for world. Processed: 68993 chunks (6.89%), ETA: 18:12:51, Rate: 14.2 cps, Current: -120, -40
+[09:31:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69019 chunks (6.89%), ETA: 16:41:04, Rate: 15.5 cps, Current: -114, -34
+[09:31:14] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69037 chunks (6.89%), ETA: 16:44:11, Rate: 15.5 cps, Current: -113, -33
+[09:31:16] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69089 chunks (6.90%), ETA: 13:52:35, Rate: 18.7 cps, Current: -120, -45
+[09:31:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69099 chunks (6.90%), ETA: 15:31:52, Rate: 16.7 cps, Current: -118, -46
+[09:31:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69115 chunks (6.90%), ETA: 20:14:43, Rate: 12.8 cps, Current: -114, -48
+[09:31:21] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69126 chunks (6.90%), ETA: 18:10:27, Rate: 14.3 cps, Current: -111, -46
+[09:31:21] [Server thread/WARN]: Parth_Pro_IM was kicked due to keepalive timeout!
+[09:31:21] [Server thread/INFO]: Parth_Pro_IM lost connection: Timed out
+[09:31:21] [Server thread/INFO]: Parth_Pro_IM left the game
+[09:31:22] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69149 chunks (6.90%), ETA: 17:08:13, Rate: 15.1 cps, Current: -106, -44
+[09:31:23] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69180 chunks (6.90%), ETA: 16:19:54, Rate: 15.9 cps, Current: -108, -41
+[09:31:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69189 chunks (6.91%), ETA: 17:06:05, Rate: 15.2 cps, Current: -111, -39
+[09:31:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69210 chunks (6.91%), ETA: 19:11:04, Rate: 13.5 cps, Current: -109, -37
+[09:31:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69229 chunks (6.91%), ETA: 18:36:07, Rate: 13.9 cps, Current: -108, -38
+[09:31:27] [Server thread/INFO]: alex_bhaiya_001 issued server command: //undo
+[09:32:01] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 0ec76f01-4062-3290-a788-5053c909ebb5 - alex_bhaiya_001. No permissions data will be loaded.
+[09:32:01] [User Authenticator #6/INFO]: Disconnecting alex_bhaiya_001 (/103.211.134.222:3358): [LoginSecurity] This player is already online!
+[09:32:01] [User Authenticator #6/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
+[09:32:04] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:32:04] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28726): [LoginSecurity] This player is already online!
+[09:32:04] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:06] [spark-async-sampler-worker-thread/WARN]: [spark] Timed out waiting for world statistics
+[09:32:09] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:32:09] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28544): [LoginSecurity] This player is already online!
+[09:32:09] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:17] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:32:17] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28622): [LoginSecurity] This player is already online!
+[09:32:17] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:22] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:32:22] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28594): [LoginSecurity] This player is already online!
+[09:32:22] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:30] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:32:30] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28862): [LoginSecurity] This player is already online!
+[09:32:30] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:33] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 0ec76f01-4062-3290-a788-5053c909ebb5 - alex_bhaiya_001. No permissions data will be loaded.
+[09:32:33] [User Authenticator #6/INFO]: Disconnecting alex_bhaiya_001 (/103.211.134.222:3094): [LoginSecurity] This player is already online!
+[09:32:33] [User Authenticator #6/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
+[09:32:34] [User Authenticator #6/INFO]: [LuckPerms] Another plugin has cancelled the connection for 756a322a-c63f-30ee-b8c7-82aeb24d6f24 - Dhruv. No permissions data will be loaded.
+[09:32:34] [User Authenticator #6/INFO]: Disconnecting Dhruv (/101.0.45.98:28700): [LoginSecurity] This player is already online!
+[09:32:34] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:35] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 68120ms or 1362 ticks behind
+[09:32:36] [Server thread/INFO]: Dhruv lost connection: Disconnected
+[09:32:36] [Server thread/INFO]: Dhruv left the game
+[09:32:36] [Server thread/INFO]: alex_bhaiya_001 lost connection: Disconnected
+[09:32:36] [Server thread/INFO]: alex_bhaiya_001 left the game
+[09:32:36] [Server thread/INFO]: alex_bhaiya_001 (/103.211.134.222:3358) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: Dhruv (/101.0.45.98:28726) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: Dhruv (/101.0.45.98:28544) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: Dhruv (/101.0.45.98:28622) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: Dhruv (/101.0.45.98:28594) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: Dhruv (/101.0.45.98:28862) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: alex_bhaiya_001 (/103.211.134.222:3094) lost connection: [LoginSecurity] This player is already online!
+[09:32:36] [Server thread/INFO]: Dhruv (/101.0.45.98:28700) lost connection: [LoginSecurity] This player is already online!
+[09:32:42] [User Authenticator #6/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
+[09:32:43] [Server thread/INFO]: alex_bhaiya_001 joined the game
+[09:32:43] [Server thread/INFO]: alex_bhaiya_001[/103.211.134.222:2504] logged in with entity id 14134 at ([world]705.5469827609179, 149.9215999984741, 141.7127765034693)
+[09:32:44] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69299 chunks (6.92%), ETA: 41:01:36, Rate: 6.3 cps, Current: -99, -37
+[09:32:45] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69310 chunks (6.92%), ETA: 40:15:13, Rate: 6.4 cps, Current: -97, -40
+[09:32:46] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69353 chunks (6.92%), ETA: 12:05:46, Rate: 21.4 cps, Current: -101, -44
+[09:32:47] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69364 chunks (6.92%), ETA: 14:23:52, Rate: 18.0 cps, Current: -100, -48
+[09:32:48] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69380 chunks (6.92%), ETA: 14:45:59, Rate: 17.5 cps, Current: -97, -50
+[09:32:50] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69400 chunks (6.93%), ETA: 15:20:15, Rate: 16.9 cps, Current: -100, -50
+[09:32:51] [User Authenticator #6/INFO]: UUID of player Kashik_Gaming is 30ed338a-5250-3515-828a-c7d1f88b9a5b
+[09:32:51] [Server thread/INFO]: Kashik_Gaming joined the game
+[09:32:51] [Server thread/INFO]: Kashik_Gaming[/38.137.57.243:27812] logged in with entity id 14307 at ([world]1106.0257808079866, 75.0, -619.6999999880791)
+[09:32:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69433 chunks (6.93%), ETA: 14:14:30, Rate: 18.2 cps, Current: -104, -49
+[09:32:52] [User Authenticator #6/INFO]: UUID of player Dhruv is 756a322a-c63f-30ee-b8c7-82aeb24d6f24
+[09:32:52] [Server thread/INFO]: Dhruv joined the game
+[09:32:52] [Server thread/INFO]: Dhruv[/101.0.45.98:28804] logged in with entity id 14340 at ([world]574.7752055413096, 72.0, -796.7366100661261)
+[09:32:53] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69467 chunks (6.93%), ETA: 14:04:58, Rate: 18.4 cps, Current: -111, -51
+[09:32:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69506 chunks (6.94%), ETA: 13:22:47, Rate: 19.4 cps, Current: -106, -57
+[09:32:54] [Server thread/INFO]: alex_bhaiya_001 has made the advancement [Stone Age]
+[09:32:55] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69563 chunks (6.94%), ETA: 11:09:36, Rate: 23.2 cps, Current: -106, -63
+[09:33:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69633 chunks (6.95%), ETA: 11:32:03, Rate: 22.5 cps, Current: -128, -32
+[09:33:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69676 chunks (6.95%), ETA: 10:35:00, Rate: 24.5 cps, Current: -123, -25
+[09:33:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69697 chunks (6.96%), ETA: 12:01:19, Rate: 21.5 cps, Current: -120, -32
+[09:33:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69721 chunks (6.96%), ETA: 11:55:02, Rate: 21.7 cps, Current: -118, -29
+[09:33:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69735 chunks (6.96%), ETA: 12:41:11, Rate: 20.4 cps, Current: -113, -29
+[09:33:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69759 chunks (6.96%), ETA: 12:59:18, Rate: 19.9 cps, Current: -114, -25
+[09:33:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69768 chunks (6.96%), ETA: 14:04:36, Rate: 18.4 cps, Current: -117, -24
+[09:33:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69790 chunks (6.97%), ETA: 14:29:34, Rate: 17.9 cps, Current: -115, -20
+[09:33:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69819 chunks (6.97%), ETA: 13:41:35, Rate: 18.9 cps, Current: -118, -17
+[09:33:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69849 chunks (6.97%), ETA: 14:40:23, Rate: 17.6 cps, Current: -122, -21
+[09:33:13] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69864 chunks (6.97%), ETA: 16:01:45, Rate: 16.2 cps, Current: -126, -23
+[09:33:14] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69886 chunks (6.97%), ETA: 14:39:32, Rate: 17.7 cps, Current: -126, -16
+[09:33:15] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69905 chunks (6.98%), ETA: 14:37:05, Rate: 17.7 cps, Current: -123, -15
+[09:33:16] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69915 chunks (6.98%), ETA: 15:50:30, Rate: 16.3 cps, Current: -121, -15
+[09:33:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69927 chunks (6.98%), ETA: 15:51:59, Rate: 16.3 cps, Current: -123, -10
+[09:33:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69951 chunks (6.98%), ETA: 15:12:40, Rate: 17.0 cps, Current: -126, -8
+[09:33:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 69962 chunks (6.98%), ETA: 19:46:31, Rate: 13.1 cps, Current: -127, -6
+[09:33:21] [Server thread/INFO]: alex_bhaiya_001 issued server command: /kit give Kashik_Gaming starter
+[09:33:23] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70017 chunks (6.99%), ETA: 19:41:04, Rate: 13.2 cps, Current: -120, -8
+[09:33:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70046 chunks (6.99%), ETA: 17:39:19, Rate: 14.7 cps, Current: -119, -1
+[09:33:26] [Server thread/INFO]: Dhruv issued server command: /rtp help
+[09:33:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70117 chunks (7.00%), ETA: 12:28:40, Rate: 20.7 cps, Current: -120, -14
+[09:33:28] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70137 chunks (7.00%), ETA: 12:45:15, Rate: 20.3 cps, Current: -114, -13
+[09:33:29] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70143 chunks (7.00%), ETA: 13:57:54, Rate: 18.5 cps, Current: -113, -14
+[09:33:31] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70179 chunks (7.00%), ETA: 11:16:22, Rate: 23.0 cps, Current: -105, -13
+[09:33:32] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70203 chunks (7.01%), ETA: 11:21:34, Rate: 22.8 cps, Current: -111, -10
+[09:33:33] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70214 chunks (7.01%), ETA: 12:18:50, Rate: 21.0 cps, Current: -110, -7
+[09:33:34] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70246 chunks (7.01%), ETA: 11:46:26, Rate: 22.0 cps, Current: -109, -1
+[09:33:36] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70331 chunks (7.02%), ETA: 11:46:39, Rate: 22.0 cps, Current: -98, -7
+[09:33:37] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70376 chunks (7.02%), ETA: 9:29:19, Rate: 27.3 cps, Current: -99, -12
+[09:33:38] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70395 chunks (7.03%), ETA: 9:56:11, Rate: 26.0 cps, Current: -99, -16
+[09:33:39] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70416 chunks (7.03%), ETA: 9:26:01, Rate: 27.4 cps, Current: -98, -23
+[09:33:40] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70458 chunks (7.03%), ETA: 9:02:32, Rate: 28.6 cps, Current: -104, -18
+[09:33:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70507 chunks (7.04%), ETA: 7:54:09, Rate: 32.7 cps, Current: -109, -21
+[09:33:43] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70556 chunks (7.04%), ETA: 7:01:38, Rate: 36.8 cps, Current: -111, -28
+[09:33:44] [User Authenticator #6/INFO]: UUID of player Parth_Pro_IM is 06c15c60-31ce-3be1-baf4-f7cf8fa1e460
+[09:33:44] [Server thread/INFO]: Parth_Pro_IM joined the game
+[09:33:44] [Server thread/INFO]: Parth_Pro_IM[/103.59.75.72:3692] logged in with entity id 15013 at ([world]484.5, 63.0, -696.5)
+[09:33:48] [Server thread/INFO]: Parth_Pro_IM lost connection: Disconnected
+[09:33:48] [Server thread/INFO]: Parth_Pro_IM left the game
+[09:33:48] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70657 chunks (7.05%), ETA: 9:39:06, Rate: 26.8 cps, Current: -128, 0
+[09:33:49] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70710 chunks (7.06%), ETA: 8:56:23, Rate: 28.9 cps, Current: -122, 0
+[09:33:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70721 chunks (7.06%), ETA: 10:33:43, Rate: 24.5 cps, Current: -120, 0
+[09:33:52] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70761 chunks (7.06%), ETA: 10:07:32, Rate: 25.5 cps, Current: -113, 3
+[09:33:53] [Async Chat Thread - #7/INFO]: [Not Secure] <Kashik_Gaming> I want my iron armor
+[09:33:54] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70787 chunks (7.06%), ETA: 11:59:49, Rate: 21.6 cps, Current: -119, 9
+[09:33:55] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70804 chunks (7.07%), ETA: 11:12:29, Rate: 23.1 cps, Current: -115, 10
+[09:33:56] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70817 chunks (7.07%), ETA: 12:01:37, Rate: 21.5 cps, Current: -115, 12
+[09:33:56] [Server thread/INFO]: alex_bhaiya_001 issued server command: /kit give starter Kashik_Gaming
+[09:33:57] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70864 chunks (7.07%), ETA: 10:43:48, Rate: 24.1 cps, Current: -122, 9
+[09:33:58] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70878 chunks (7.07%), ETA: 11:29:53, Rate: 22.5 cps, Current: -124, 9
+[09:33:59] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70892 chunks (7.08%), ETA: 13:26:57, Rate: 19.2 cps, Current: -126, 11
+[09:34:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70920 chunks (7.08%), ETA: 12:58:22, Rate: 19.9 cps, Current: -128, 15
+[09:34:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70927 chunks (7.08%), ETA: 14:55:13, Rate: 17.3 cps, Current: -128, 19
+[09:34:02] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70945 chunks (7.08%), ETA: 14:52:50, Rate: 17.4 cps, Current: -123, 21
+[09:34:04] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70958 chunks (7.08%), ETA: 15:08:45, Rate: 17.1 cps, Current: -121, 18
+[09:34:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 70978 chunks (7.08%), ETA: 16:47:25, Rate: 15.4 cps, Current: -125, 24
+[09:34:06] [Async Chat Thread - #7/INFO]: [Not Secure] <alex_bhaiya_001> by
+[09:34:08] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:34:08] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:34:09] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71042 chunks (7.09%), ETA: 17:34:49, Rate: 14.7 cps, Current: -120, 25
+[09:34:10] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71071 chunks (7.09%), ETA: 15:54:37, Rate: 16.3 cps, Current: -119, 31
+[09:34:11] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71144 chunks (7.10%), ETA: 11:03:57, Rate: 23.4 cps, Current: -119, 16
+[09:34:12] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71151 chunks (7.10%), ETA: 12:04:19, Rate: 21.4 cps, Current: -117, 16
+[09:34:14] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71157 chunks (7.10%), ETA: 12:16:29, Rate: 21.1 cps, Current: -116, 16
+[09:34:15] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71206 chunks (7.11%), ETA: 10:51:17, Rate: 23.8 cps, Current: -105, 20
+[09:34:16] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71223 chunks (7.11%), ETA: 10:13:31, Rate: 25.3 cps, Current: -105, 21
+[09:34:17] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71253 chunks (7.11%), ETA: 10:04:28, Rate: 25.7 cps, Current: -109, 25
+[09:34:18] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:34:18] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[09:34:18] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71271 chunks (7.11%), ETA: 10:39:26, Rate: 24.3 cps, Current: -107, 24
+[09:34:20] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71324 chunks (7.12%), ETA: 9:38:08, Rate: 26.8 cps, Current: -101, 29
+[09:34:21] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71392 chunks (7.12%), ETA: 9:49:41, Rate: 26.3 cps, Current: -101, 20
+[09:34:22] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71406 chunks (7.13%), ETA: 10:25:56, Rate: 24.8 cps, Current: -102, 17
+[09:34:23] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71426 chunks (7.13%), ETA: 8:45:39, Rate: 29.5 cps, Current: -97, 14
+[09:34:24] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71470 chunks (7.13%), ETA: 8:21:51, Rate: 30.9 cps, Current: -101, 14
+[09:34:25] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71510 chunks (7.14%), ETA: 7:48:44, Rate: 33.1 cps, Current: -111, 13
+[09:34:26] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71540 chunks (7.14%), ETA: 7:55:31, Rate: 32.6 cps, Current: -111, 8
+[09:34:31] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71681 chunks (7.15%), ETA: 8:00:54, Rate: 32.2 cps, Current: -128, 32
+[09:34:33] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71745 chunks (7.16%), ETA: 8:45:35, Rate: 29.5 cps, Current: -120, 32
+[09:34:34] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71780 chunks (7.16%), ETA: 8:45:25, Rate: 29.5 cps, Current: -116, 36
+[09:34:36] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71811 chunks (7.17%), ETA: 11:49:58, Rate: 21.8 cps, Current: -119, 41
+[09:34:37] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71825 chunks (7.17%), ETA: 12:16:38, Rate: 21.0 cps, Current: -114, 41
+[09:34:38] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71866 chunks (7.17%), ETA: 10:45:45, Rate: 24.0 cps, Current: -120, 44
+[09:34:40] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71896 chunks (7.18%), ETA: 10:48:07, Rate: 23.9 cps, Current: -124, 41
+[09:34:41] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71911 chunks (7.18%), ETA: 12:12:39, Rate: 21.2 cps, Current: -126, 41
+[09:34:42] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71942 chunks (7.18%), ETA: 11:52:29, Rate: 21.8 cps, Current: -128, 45
+[09:34:44] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71963 chunks (7.18%), ETA: 12:44:07, Rate: 20.3 cps, Current: -121, 49
+[09:34:45] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71984 chunks (7.18%), ETA: 12:46:37, Rate: 20.2 cps, Current: -126, 53
+[09:34:46] [Server thread/INFO]: [Chunky] Task running for world. Processed: 71996 chunks (7.19%), ETA: 13:34:45, Rate: 19.0 cps, Current: -124, 55
+[09:34:46] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:34:46] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:34:47] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72020 chunks (7.19%), ETA: 14:30:16, Rate: 17.8 cps, Current: -127, 61
+[09:34:49] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72055 chunks (7.19%), ETA: 14:24:16, Rate: 17.9 cps, Current: -123, 63
+[09:34:50] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72074 chunks (7.19%), ETA: 14:39:56, Rate: 17.6 cps, Current: -119, 56
+[09:34:51] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72092 chunks (7.19%), ETA: 14:44:00, Rate: 17.5 cps, Current: -117, 62
+[09:34:52] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72135 chunks (7.20%), ETA: 13:49:29, Rate: 18.7 cps, Current: -118, 55
+[09:34:53] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72185 chunks (7.20%), ETA: 11:56:02, Rate: 21.6 cps, Current: -114, 51
+[09:34:55] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72187 chunks (7.20%), ETA: 12:44:24, Rate: 20.3 cps, Current: -114, 50
+[09:34:56] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72193 chunks (7.20%), ETA: 13:49:58, Rate: 18.7 cps, Current: -112, 48
+[09:34:58] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72257 chunks (7.21%), ETA: 12:02:16, Rate: 21.5 cps, Current: -112, 56
+[09:35:00] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72302 chunks (7.22%), ETA: 11:21:35, Rate: 22.7 cps, Current: -107, 63
+[09:35:01] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72359 chunks (7.22%), ETA: 9:14:26, Rate: 27.9 cps, Current: -99, 62
+[09:35:01] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:35:01] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[09:35:02] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72379 chunks (7.22%), ETA: 9:51:29, Rate: 26.2 cps, Current: -99, 57
+[09:35:03] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72424 chunks (7.23%), ETA: 9:15:28, Rate: 27.9 cps, Current: -103, 49
+[09:35:05] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky progress
+[09:35:05] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72444 chunks (7.23%), ETA: 8:52:21, Rate: 29.1 cps, Current: -97, 48
+[09:35:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72482 chunks (7.23%), ETA: 8:35:12, Rate: 30.1 cps, Current: -101, 43
+[09:35:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72529 chunks (7.24%), ETA: 8:03:31, Rate: 32.0 cps, Current: -108, 46
+[09:35:08] [Server thread/INFO]: [Chunky] Task running for world. Processed: 72577 chunks (7.24%), ETA: 7:45:37, Rate: 33.3 cps, Current: -105, 39
+[09:35:09] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky silent
+[09:35:21] [Server thread/INFO]: Dhruv lost connection: Disconnected
+[09:35:21] [Server thread/INFO]: Dhruv left the game
+[09:35:27] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky world world_the_end
+[09:35:42] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky radius 8000
+[09:35:49] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky start world_the_end
+[09:35:56] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky silent
+[09:35:57] [Server thread/INFO]: [Chunky] Task running for world_the_end. Processed: 1051 chunks (0.10%), ETA: 2:12:39, Rate: 125.8 cps, Current: 33, 6
+[09:35:58] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky silent
+[09:36:08] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamemode survival
+[09:36:09] [Server thread/INFO]: alex_bhaiya_001 issued server command: /kit
+[09:36:19] [Server thread/INFO]: alex_bhaiya_001 issued server command: /clear
+[09:36:23] [Server thread/INFO]: alex_bhaiya_001 issued server command: /clear
+[09:36:27] [Server thread/INFO]: Kashik_Gaming lost connection: Disconnected
+[09:36:27] [Server thread/INFO]: Kashik_Gaming left the game
+[09:36:28] [Server thread/INFO]: alex_bhaiya_001 has made the advancement [Ice Bucket Challenge]
+[09:36:29] [Server thread/INFO]: alex_bhaiya_001 has completed the challenge [Cover Me in Debris]
+[09:36:59] [Server thread/INFO]: alex_bhaiya_001 issued server command: /heal
+[09:37:03] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:37:03] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:37:11] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rtp
+[09:37:14] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rtp
+[09:37:20] [Server thread/WARN]: alex_bhaiya_001 moved too quickly! -687.1523621914857,15.0,664.6203356007827
+[09:37:24] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:37:24] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[09:37:30] [Server thread/INFO]: alex_bhaiya_001 issued server command: /gamerule playersSleepingPercentage 1
+[09:37:30] [Server thread/INFO]: [alex_bhaiya_001: Gamerule playersSleepingPercentage is now set to: 1]
+[09:37:46] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tick rate 10
+[09:37:46] [Server thread/INFO]: [alex_bhaiya_001: Set the target tick rate to 10.0 per second]
+[09:37:49] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tick rate 15
+[09:37:49] [Server thread/INFO]: [alex_bhaiya_001: Set the target tick rate to 15.0 per second]
+[09:37:54] [Server thread/INFO]: alex_bhaiya_001 issued server command: /day
+[09:38:00] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:38:00] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:40:00] [Server thread/INFO]: alex_bhaiya_001 issued server command: /ec
+[09:40:23] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tell
+[09:40:23] [Server thread/INFO]: [Essentials] alex_bhaiya_001 was denied access to command.
+[09:40:43] [Server thread/INFO]: alex_bhaiya_001 issued server command: /msg
+[09:40:43] [Server thread/INFO]: [Essentials] alex_bhaiya_001 was denied access to command.
+[09:40:47] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:40:47] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[09:40:49] [Server thread/INFO]: alex_bhaiya_001 issued server command: /lp editor
+[09:41:37] [luckperms-worker-6/INFO]: [LP] LOG > (alex_bhaiya_001) [G] (default)
+[09:41:37] [luckperms-worker-6/INFO]: [LP] LOG > webeditor add minecraft.command.msg true
+[09:41:37] [luckperms-worker-6/INFO]: [LP] LOG > (alex_bhaiya_001) [G] (default)
+[09:41:37] [luckperms-worker-6/INFO]: [LP] LOG > webeditor add minecraft.command.teammsg true
+[09:41:37] [luckperms-worker-6/INFO]: [LP] LOG > (alex_bhaiya_001) [G] (default)
+[09:41:37] [luckperms-worker-6/INFO]: [LP] LOG > webeditor add essentials.msg true
+[09:44:26] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[09:44:26] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[09:46:41] [User Authenticator #7/INFO]: UUID of player _FiberOp is a5922958-0eaa-383c-be31-e16323514b3a
+[09:46:41] [Server thread/INFO]: _FiberOp joined the game
+[09:46:41] [Server thread/INFO]: _FiberOp has made the advancement [Suit Up]
+[09:46:41] [Server thread/INFO]: _FiberOp has made the advancement [Isn't It Iron Pick]
+[09:46:41] [Server thread/INFO]: _FiberOp has made the advancement [Acquire Hardware]
+[09:46:41] [Server thread/INFO]: _FiberOp[/103.146.85.234:51024] logged in with entity id 20631 at ([world]760.5, 157.0, 190.5)
+[09:47:36] [Server thread/INFO]: _FiberOp issued server command: /skin set Lil_Craft_
+[09:48:48] [Server thread/INFO]: _FiberOp issued server command: /rtp
+[09:49:06] [Server thread/INFO]: _FiberOp issued server command: /rtp
+[09:50:32] [Server thread/INFO]: _FiberOp lost connection: Disconnected
+[09:50:32] [Server thread/INFO]: _FiberOp left the game
+[09:50:49] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] /106.204.141.40:52858 tried to connect!
+[09:50:50] [epollEventLoopGroup-3-2/INFO]: [Geyser-Spigot] Bedrock user with ip: /106.204.141.40 has disconnected for reason Outdated Geyser proxy! This server supports the following Bedrock versions: 1.20.40/1.20.41, 1.20.50/1.20.51
+§aThe latest Geyser release supports this Bedrock version. A server admin can download the update at §9https://geysermc.org/download
+[09:54:05] [User Authenticator #8/INFO]: UUID of player centroplayz_ is 0ab1075a-abe3-3042-bd22-b88986f73b02
+[09:54:05] [Server thread/INFO]: centroplayz_ joined the game
+[09:54:05] [Server thread/INFO]: centroplayz_ has made the advancement [Suit Up]
+[09:54:05] [Server thread/INFO]: centroplayz_ has made the advancement [Isn't It Iron Pick]
+[09:54:05] [Server thread/INFO]: centroplayz_ has made the advancement [Acquire Hardware]
+[09:54:05] [Server thread/INFO]: centroplayz_[/117.200.47.221:54855] logged in with entity id 25053 at ([world]778.5, 157.0, 185.5)
+[09:54:18] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[09:54:18] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]

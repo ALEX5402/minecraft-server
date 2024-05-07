@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 103.146.85.234
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715075432591
+  login: 1715075201717
+money: '0'
+last-account-name: _FiberOp
+lastlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 766.9785112097187
+  y: 157.0
+  z: 192.3688630150506
+  yaw: -156.91302490234375
+  pitch: 0.3498802185058594
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 764.8695256793426
+  y: 63.0
+  z: -768.9671787333623
+  yaw: -106.46586608886719
+  pitch: -17.29778480529785

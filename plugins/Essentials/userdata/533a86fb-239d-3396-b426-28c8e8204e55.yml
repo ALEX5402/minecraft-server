@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 103.111.120.142
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715072274110
+  login: 1715071988629
+money: '0'
+last-account-name: DRAGON_X_1_FIRE
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 752.9446639126596
+  y: 168.0
+  z: 183.12192305580658
+  yaw: 167.33837890625
+  pitch: -27.085487365722656
+lastlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 143.38182613605676
+  y: 86.89674382157371
+  z: -102.4326981106727
+  yaw: -146.55569458007812
+  pitch: 26.70003890991211

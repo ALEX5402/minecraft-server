@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 101.0.45.98
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715074521408
+  login: 1715074372698
+money: '0'
+last-account-name: Dhruv
+lastlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 543.1809380168463
+  y: 63.0
+  z: 46.37239489509202
+  yaw: -163.685546875
+  pitch: 10.5
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 481.32360493855475
+  y: 78.0
+  z: -767.1706022548304
+  yaw: 88.16451263427734
+  pitch: 9.749926567077637
