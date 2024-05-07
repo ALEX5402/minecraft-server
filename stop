@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo killall bash
+sudo killall java
+sudo killall screen
+screen -wipe
