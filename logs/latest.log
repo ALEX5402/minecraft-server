@@ -1,4 +1,4 @@
-[06:59:15] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+[07:00:05] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
 java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[purpur-1.20.1.jar:git-Purpur-2050]
