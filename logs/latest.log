@@ -1,4 +1,4 @@
-[05:49:05] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+[05:55:11] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
 java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[purpur-1.20.1.jar:git-Purpur-2050]
@@ -30,263 +30,32 @@ Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+7
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	... 20 more
-[05:49:12] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[05:49:13] [ServerMain/INFO]: Loaded 7 recipes
-[05:49:14] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[05:49:14] [Server thread/WARN]: ****************************
-[05:49:14] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
-[05:49:14] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
-[05:49:14] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
-[05:49:14] [Server thread/WARN]: ****************************
-[05:49:14] [Server thread/INFO]: Loading properties
-[05:49:14] [Server thread/INFO]: This server is running Purpur version git-Purpur-2050 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 423c2af on HEAD)
-[05:49:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[05:49:14] [Server thread/INFO]: Using 4 threads for Netty based IO
-[05:49:14] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[05:49:15] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
-[05:49:15] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
-[05:49:15] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
-[05:49:15] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.11, test run: true
-[05:49:15] [Server thread/INFO]: Default game type: SURVIVAL
-[05:49:15] [Server thread/INFO]: Generating keypair
-[05:49:15] [Server thread/INFO]: Starting Minecraft server on *:25565
-[05:49:15] [Server thread/INFO]: Using epoll channel type
-[05:49:15] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[05:49:15] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[05:49:21] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
-[05:49:21] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
-[05:49:22] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[05:49:22] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[05:49:22] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[05:49:22] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[05:49:23] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
-[05:49:24] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[05:49:24] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
-[05:49:24] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3f50815a]
-[05:49:24] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
-[05:49:24] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
-[05:49:24] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
-[05:49:24] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[05:49:25] [Server thread/INFO]: [floodgate] Took 377ms to boot Floodgate
-[05:49:25] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
-[05:49:25] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[05:49:25] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
-[05:49:25] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
-[05:49:25] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.5
-[05:49:25] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.66
-[05:49:25] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
-[05:49:25] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
-[05:49:25] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT
-[05:49:25] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[05:49:25] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[05:49:25] [Server thread/INFO]: [ImageMaps] Loading server plugin ImageMaps v1.0.10
-[05:49:25] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
-[05:49:25] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.1.1
-[05:49:25] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.7.0
-[05:49:25] [Server thread/INFO]: [PlayerKits] Loading server plugin PlayerKits v2.27.1
-[05:49:25] [Server thread/INFO]: [SetHomes] Loading server plugin SetHomes v1.3.0
-[05:49:25] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.20.0
-[05:49:25] [Server thread/INFO]: [DeadChest] Worldguard support disabled by user
-[05:49:25] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.9.3
-[05:49:25] [Server thread/INFO]: [BetterTeams] Checking if the file config.yml is up to date
-[05:49:25] [Server thread/INFO]: [BetterTeams] File is up to date
-[05:49:25] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
-[05:49:25] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.12
-[05:49:25] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
-[05:49:25] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
-[05:49:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[05:49:25] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
-[05:49:26] [Server thread/INFO]:         __    
-[05:49:26] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
-[05:49:26] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
-[05:49:26] [Server thread/INFO]: 
-[05:49:26] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[05:49:27] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[05:49:28] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[05:49:28] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[05:49:29] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3972ms)
-[05:49:29] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[05:49:29] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[05:49:29] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[05:49:30] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[05:49:30] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[05:49:30] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
-[05:49:30] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[05:49:30] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[05:49:30] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
-[05:49:32] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v3.0.5
-[05:49:32] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.13
-[05:49:32] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.1.
-[05:49:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.0.13]
-[05:49:32] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
-[05:49:32] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[05:49:32] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[05:49:32] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[05:49:32] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[05:49:32] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[05:49:32] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[05:49:32] [Server thread/INFO]: Preparing level "world"
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.0.13
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 8e4c6e2
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[05:49:33] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[05:49:33] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[05:49:34] [Server thread/INFO]: Time elapsed: 229 ms
-[05:49:34] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[05:49:34] [Server thread/INFO]: Time elapsed: 71 ms
-[05:49:34] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[05:49:34] [Server thread/INFO]: Time elapsed: 48 ms
-[05:49:34] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.2
-[05:49:34] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20/1.20.1 (763)
-[05:49:34] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9+5934e49
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[05:49:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[05:49:34] [Server thread/INFO]: [WorldGuard] Loading region data...
-[05:49:35] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.5
-[05:49:35] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[05:49:35] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.9.1
-[05:49:35] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[05:49:36] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.6.2-3e052553
-[05:49:36] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.1)...
-[05:49:36] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
-[05:49:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
-[05:49:38] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
-[05:49:38] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
-[05:49:38] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
-[05:49:38] [Server thread/INFO]: [MythicMobs] Base directory /root/minecraft-server/plugins/MythicMobs/data
-[05:49:38] [Server thread/INFO]: [MythicMobs] Module directory /root/minecraft-server/plugins/MythicMobs/data/worlds
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Packs...
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Items...
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Skills...
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
-[05:49:41] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
-[05:49:41] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
-[05:49:41] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
-[05:49:42] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
-[05:49:42] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.6.2 ( build 3e052553 ) has been successfully loaded!
-[05:49:42] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
-[05:49:42] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[05:49:42] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[05:49:42] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
-[05:49:42] [Server thread/INFO]: [Essentials] Using locale en_US
-[05:49:42] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[05:49:42] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[05:49:42] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[05:49:42] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[05:49:42] [Server thread/INFO]: [spark] Enabling spark v1.10.66
-[05:49:42] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
-[05:49:42] [Server thread/INFO]: [spark] Starting background profiler...
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: spark [1.10.66]
-[05:49:43] [Server thread/INFO]: [spark] Registered PlaceholderAPI placeholders
-[05:49:43] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.3.0
-[05:49:43] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
-[05:49:43] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[05:49:43] [Server thread/INFO]: [LoginSecurity] Registering commands...
-[05:49:43] [Server thread/INFO]: [LoginSecurity] Registering listeners...
-[05:49:43] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
-[05:49:43] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.92
-[05:49:43] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.2.2-SNAPSHOT
-[05:49:43] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v1.0.10
-[05:49:43] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.1.1
-[05:49:43] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
-[05:49:43] [Server thread/INFO]: [ItemEdit] Hooking into Vault
-[05:49:43] [Server thread/INFO]: [ItemEdit] Hooking into PlaceholderApi
-[05:49:43] [Server thread/INFO]: [ItemEdit] Hooked into PlaceHolderAPI:
-[05:49:43] [Server thread/INFO]: [ItemEdit] placeholders:
-[05:49:43] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
-[05:49:43] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
-[05:49:43] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
-[05:49:43] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
-[05:49:43] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
-[05:49:43] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
-[05:49:43] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
-[05:49:43] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
-[05:49:43] [Server thread/INFO]: [ItemEdit] # Enabled (took 63 ms)
-[05:49:43] [Server thread/INFO]: [GSit] Enabling GSit v1.7.0
-[05:49:43] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
-[05:49:43] [Server thread/INFO]: [GSit] Link with PlaceholderAPI successful!
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: gsit [1.7.0]
-[05:49:43] [Server thread/INFO]: [GSit] Link with ViaVersion successful!
-[05:49:43] [Server thread/INFO]: [GSit] Link with WorldGuard successful!
-[05:49:43] [Server thread/INFO]: [PlayerKits] Enabling PlayerKits v2.27.1
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: playerkits [2.27.1]
-[05:49:43] [Server thread/INFO]: [PlayerKits] Has been enabled! Version: 2.27.1
-[05:49:43] [Server thread/INFO]: [PlayerKits] Thanks for using my plugin!  ~Ajneb97
-[05:49:43] [Server thread/INFO]: [SetHomes] Enabling SetHomes v1.3.0
-[05:49:43] [Server thread/INFO]: [SetHomes] Hooked into LuckPerms!
-[05:49:43] [Server thread/INFO]: [DeadChest] Enabling DeadChest v4.20.0
-[05:49:43] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.9.3
-[05:49:43] [Server thread/INFO]: [BetterTeams] Checking if the file messages.yml is up to date
-[05:49:43] [Server thread/INFO]: [BetterTeams] File is up to date
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterTeams [4.9.3]
-[05:49:43] [Server thread/INFO]: Display team name config value: prefix
-[05:49:43] [Server thread/INFO]: Loading below name. Type: PREFIX
-[05:49:43] [Server thread/INFO]: teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@ea93ac1
-[05:49:43] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.1
-[05:49:43] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[05:49:43] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.12
-[05:49:43] [Server thread/INFO]: [BetterRTP] Cooldown = 600
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterrtp [3.6.12]
-[05:49:43] [Server thread/INFO]: [TAB] Enabling TAB v4.1.2
-[05:49:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [4.1.2]
-[05:49:44] [Server thread/INFO]: [TAB] Enabled in 152ms
-[05:49:44] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.6
-[05:49:44] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[05:49:44] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.6
-[05:49:44] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[05:49:44] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[05:49:44] [Server thread/INFO]: 0 placeholder hook(s) registered!
-[05:49:44] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[05:49:44] [Server thread/INFO]: [Geyser-Spigot] 
-[05:49:44] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.2.2-SNAPSHOT (git-master-f555dc0)
-[05:49:44] [Server thread/INFO]: [Geyser-Spigot] 
-[05:49:44] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[05:49:49] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
-[05:49:49] [Server thread/INFO]: [Geyser-Spigot] Done (5.244s)! Run /geyser help for help!
-[05:49:49] [Server thread/INFO]: Running delayed init tasks
-[05:49:49] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[05:49:49] [Server thread/INFO]: Done (35.494s)! For help, type "help"
-[05:49:49] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[05:49:49] [Craft Scheduler Thread - 7 - Essentials/INFO]: [Essentials] Fetching version information...
-[05:49:49] [Craft Scheduler Thread - 8 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
-[05:49:49] [Craft Scheduler Thread - 13 - Vault/INFO]: [Vault] Checking for Updates ... 
-[05:49:49] [Craft Scheduler Thread - 12 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available.
-[05:49:49] [Craft Scheduler Thread - 12 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available:
-[05:49:49] [Craft Scheduler Thread - 12 - SimpleTpa/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
-[05:49:49] [ForkJoinPool.commonPool-worker-2/INFO]: [Geyser-Spigot] There's a new Geyser update available to support Bedrock version 1.20.80. Download it here: https://geysermc.org/download
-[05:49:49] [Craft Scheduler Thread - 13 - Vault/INFO]: [Vault] No new version available
-[05:49:50] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 4.10.1, you're on: 4.9.2
-[05:53:41] [Server console handler/ERROR]: Caught previously unhandled exception :
+[05:55:18] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:55:20] [ServerMain/INFO]: Loaded 7 recipes
+[05:55:20] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[05:55:20] [Server thread/WARN]: ****************************
+[05:55:20] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[05:55:20] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[05:55:20] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[05:55:20] [Server thread/WARN]: ****************************
+[05:55:20] [Server thread/INFO]: Loading properties
+[05:55:21] [Server thread/INFO]: This server is running Purpur version git-Purpur-2050 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 423c2af on HEAD)
+[05:55:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[05:55:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[05:55:21] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[05:55:22] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[05:55:22] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[05:55:22] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
+[05:55:22] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.11, test run: true
+[05:55:22] [Server thread/INFO]: Default game type: SURVIVAL
+[05:55:22] [Server thread/INFO]: Generating keypair
+[05:55:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[05:55:22] [Server thread/INFO]: Using epoll channel type
+[05:55:22] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[05:55:22] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[05:55:32] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
+[05:55:32] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
+[05:55:32] [Server console handler/ERROR]: Caught previously unhandled exception :
 java.io.IOError: java.io.IOException: Input/output error
 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170) ~[jline-reader-3.20.0.jar:?]
 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110) ~[jline-reader-3.20.0.jar:?]
@@ -307,88 +76,109 @@ Caused by: java.io.IOException: Input/output error
 	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57) ~[jline-terminal-3.21.0.jar:?]
 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160) ~[jline-reader-3.20.0.jar:?]
 	... 9 more
-[05:53:41] [Server thread/INFO]: Stopping server
-[05:53:41] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v6.6
-[05:53:41] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[05:53:41] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 6.6
-[05:53:41] [Server thread/INFO]: [TAB] Disabling TAB v4.1.2
-[05:53:41] [Server thread/INFO]: [TAB] Disabled in 1ms
-[05:53:41] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.1
-[05:53:41] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.9.3
-[05:53:41] [Server thread/INFO]: [DeadChest] Disabling DeadChest v4.20.0
-[05:53:41] [Server thread/INFO]: [SetHomes] Disabling SetHomes v1.3.0
-[05:53:41] [Server thread/INFO]: [PlayerKits] Disabling PlayerKits v2.27.1
-[05:53:41] [Server thread/INFO]: [PlayerKits] Has been disabled! Version: 2.27.1
-[05:53:41] [Server thread/INFO]: [GSit] Disabling GSit v1.7.0
-[05:53:41] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
-[05:53:41] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.1.1
-[05:53:41] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion itemedit
-[05:53:41] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin ItemEdit was disabled.
-[05:53:41] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.0.13
-[05:53:41] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v1.0.10
-[05:53:41] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.2.2-SNAPSHOT
-[05:53:41] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[05:53:41] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[05:53:42] [Server thread/INFO]: [Chunky] Disabling Chunky v1.3.92
-[05:53:42] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.3.0
-[05:53:42] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
-[05:53:42] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
-[05:53:42] [Server thread/INFO]: [spark] Disabling spark v1.10.66
-[05:53:42] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v3.0.5
-[05:53:42] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.1
-[05:53:42] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
-[05:53:42] [WebSocketConnectReadThread-148/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[05:53:42] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.6.2-3e052553
-[05:53:42] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
-[05:53:42] [Server thread/INFO]: [MythicMobs] - 
-[05:53:42] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
-[05:53:42] [Server thread/INFO]: [MythicMobs] - 
-[05:53:42] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
-[05:53:42] [Server thread/INFO]: [MythicMobs] - Spawners saved and unloaded...
-[05:53:42] [Server thread/INFO]: [MythicMobs] - Mobs saved and unloaded...
-[05:53:42] [Server thread/INFO]: [MythicMobs] Saving plugin data...
-[05:53:42] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
-[05:53:42] [Server thread/INFO]: [MythicMobs] - Variables saved...
-[05:53:42] [Server thread/INFO]: [MythicMobs] - All active settings have been saved!
-[05:53:42] [Server thread/INFO]: [MythicMobs] - Mythic has been unloaded!
-[05:53:42] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
-[05:53:42] [Server thread/INFO]: [MythicMobs] Saving plugin data...
-[05:53:42] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
-[05:53:42] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[05:53:42] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.9.1
-[05:53:42] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.5
-[05:53:42] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.9+5934e49
-[05:53:42] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
-[05:53:42] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.18+6616-abda4e0
-[05:53:42] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[05:53:42] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[05:53:42] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
-[05:53:42] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[05:53:42] [Server thread/INFO]: [LuckPerms] Closing storage...
-[05:53:42] [Server thread/INFO]: [LuckPerms] Goodbye!
-[05:53:42] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.9.2
-[05:53:42] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[05:53:42] [Server thread/INFO]: Saving players
-[05:53:42] [Server thread/INFO]: Saving worlds
-[05:53:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[05:53:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[05:53:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[05:53:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 530 entity chunks, 0 poi chunks in world 'world' in 0.60s
-[05:53:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[05:53:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.42s
-[05:53:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[05:53:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[05:53:43] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.11s
-[05:53:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[05:53:43] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[05:53:43] [Server thread/INFO]: Flushing Chunk IO
-[05:53:43] [Server thread/INFO]: Closing Thread Pool
-[05:53:43] [Server thread/INFO]: Closing Server
+[05:55:33] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[05:55:33] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[05:55:33] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[05:55:33] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[05:55:33] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[05:55:33] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[05:55:33] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
+[05:55:34] [Thread-1/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PURPUR)
+[05:55:34] [Server thread/ERROR]: [WorldEdit] Error initializing plugin 'worldedit-bukkit-7.2.18-dist.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
+[05:55:34] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
+[05:55:34] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
+[05:55:34] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
+[05:55:34] [Server thread/ERROR]: [floodgate] Error initializing plugin 'spigot.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
+[05:55:34] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[05:55:34] [Server thread/ERROR]: [MythicMobs] Error initializing plugin 'MythicMobs-5.6.2.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[05:55:34] [Server thread/ERROR]: [Essentials] Error initializing plugin 'EssentialsX-2.20.1.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.5
+[05:55:34] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.66
+[05:55:34] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
+[05:55:34] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
+[05:55:34] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT
+[05:55:34] [Server thread/ERROR]: [Geyser-Spigot] Error initializing plugin 'Geyser-Spigot.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [ImageMaps] Loading server plugin ImageMaps v1.0.10
+[05:55:34] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
+[05:55:34] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.1.1
+[05:55:34] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.7.0
+[05:55:34] [Server thread/ERROR]: [GSit] Error initializing plugin 'GSit-1.7.0.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [PlayerKits] Loading server plugin PlayerKits v2.27.1
+[05:55:34] [Server thread/INFO]: [SetHomes] Loading server plugin SetHomes v1.3.0
+[05:55:34] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.20.0
+[05:55:34] [Server thread/ERROR]: [DeadChest] Error initializing plugin 'dead-chest-4.20.0.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.9.3
+[05:55:34] [Server thread/ERROR]: [BetterTeams] Error initializing plugin 'BetterTeams-4.9.3.jar' in folder 'plugins' (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
+[05:55:34] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.12
+[05:55:34] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
+[05:55:34] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
+[05:55:34] [Server thread/ERROR]: Main thread terminated by WatchDog due to hard crash
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[05:55:34] [Thread-1/INFO]: Stopping server
+[05:55:34] [Thread-1/INFO]: Saving players
+[05:55:34] [Thread-1/WARN]: Asynchronous Save Players! Blocking thread until it returns 
+java.lang.IllegalStateException: null
+	at io.papermc.paper.util.MCUtil.ensureMain(MCUtil.java:367) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1259) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1255) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:966) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
