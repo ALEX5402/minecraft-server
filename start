@@ -1,0 +1,4 @@
+#!/bin/bash
+# cd minecraft-server
+screen -S backup -d -m ./startpush.sh
+screen -S server -d -m ./startminecraft.sh
