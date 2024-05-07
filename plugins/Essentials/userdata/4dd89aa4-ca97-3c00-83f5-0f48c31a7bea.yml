@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 103.177.174.210
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715083879420
+  login: 1715083823562
+money: '0'
+last-account-name: RoyalPrince
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 770.8464697967844
+  y: 167.0
+  z: 189.3376909278614
+  yaw: -89.03463745117188
+  pitch: 8.887444496154785

@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1715073191836
+  lastteleport: 1715080524723
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1715079000272
-  login: 1715078940271
+  logout: 1715081308771
+  login: 1715080289716
 money: '0'
 last-account-name: alex_bhaiya_001
 logoutlocation:
   world: d42b02f7-5654-4917-af1e-2a98fced38f6
   world-name: world
-  x: 767.244365630092
-  y: 160.0
-  z: 188.69999998807907
-  yaw: -73.05096435546875
-  pitch: 17.85000228881836
+  x: -34.5
+  y: 45.0
+  z: -930.5
+  yaw: 131.43630981445312
+  pitch: 15.450643539428711
 lastlocation:
   world: d42b02f7-5654-4917-af1e-2a98fced38f6
   world-name: world
-  x: 769.6523621914857
-  y: 63.0
-  z: 203.8796643992173
-  yaw: 146.71649169921875
-  pitch: 43.799713134765625
+  x: 779.9650072497019
+  y: 163.0
+  z: 232.02639765146583
+  yaw: -103.1640625
+  pitch: 15.150623321533203

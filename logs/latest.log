@@ -407,3 +407,255 @@ java.net.SocketTimeoutException: Connect timed out
 [10:50:00] [Server thread/INFO]: alex_bhaiya_001 left the game
 [10:53:28] [Server thread/INFO]: DRAGON_X_1_FIRE (/103.111.120.142:60786) lost connection: Disconnected
 [10:53:33] [User Authenticator #1/INFO]: UUID of player DRAGON_X_1_FIRE is 533a86fb-239d-3396-b426-28c8e8204e55
+[11:11:29] [User Authenticator #2/INFO]: UUID of player alex_bhaiya_001 is 0ec76f01-4062-3290-a788-5053c909ebb5
+[11:11:29] [Server thread/INFO]: alex_bhaiya_001 joined the game
+[11:11:29] [Server thread/INFO]: alex_bhaiya_001[/103.211.134.222:3132] logged in with entity id 7092 at ([world]767.244365630092, 160.0, 188.69999998807907)
+[11:13:00] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky continue
+[11:13:06] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky silent
+[11:13:06] [Server thread/INFO]: [Chunky] Task running for world_the_end. Processed: 245756 chunks (24.53%), ETA: 2:12:16, Rate: 95.3 cps, Current: 285, -224
+[11:13:06] [Server thread/INFO]: [Chunky] Task running for world. Processed: 103779 chunks (10.36%), ETA: 31:28:22, Rate: 7.9 cps, Current: -160, -133
+[11:13:07] [Server thread/INFO]: [Chunky] Task running for world_the_end. Processed: 245830 chunks (24.53%), ETA: 2:15:39, Rate: 92.9 cps, Current: 267, -254
+[11:13:07] [Server thread/INFO]: [Chunky] Task running for world. Processed: 103793 chunks (10.36%), ETA: 28:51:55, Rate: 8.6 cps, Current: -155, -129
+[11:13:08] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky silent
+[11:13:12] [Server thread/INFO]: alex_bhaiya_001 issued server command: /chunky progress
+[11:14:14] [User Authenticator #3/INFO]: UUID of player gamer_ayush_yt is 9bc86d15-c10a-3a7c-b5f5-7fd4acad94b0
+[11:14:19] [TAB Processing Thread/INFO]: [TAB] [WARN] ViaVersion returned unknown protocol version 766 for player gamer_ayush_yt. Latest version recognized by this plugin version is 765 (1.20.3). Did a new MC version come out without you updating the plugin? This may result in plugin not working correctly for them.
+[11:14:20] [Server thread/INFO]: gamer_ayush_yt joined the game
+[11:14:20] [Server thread/INFO]: gamer_ayush_yt has made the advancement [Suit Up]
+[11:14:20] [Server thread/INFO]: gamer_ayush_yt has made the advancement [Isn't It Iron Pick]
+[11:14:20] [Server thread/INFO]: gamer_ayush_yt has made the advancement [Acquire Hardware]
+[11:14:20] [Server thread/INFO]: gamer_ayush_yt[/103.204.166.46:60148] logged in with entity id 8671 at ([world]776.5, 157.0, 193.5)
+[11:15:22] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op gamer_ayush_yt
+[11:15:22] [Server thread/INFO]: [alex_bhaiya_001: Made gamer_ayush_yt a server operator]
+[11:15:24] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tp gamer_ayush_yt
+[11:16:13] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[11:16:13] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[11:16:18] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop gamer_ayush_yt
+[11:16:18] [Server thread/INFO]: [alex_bhaiya_001: Made gamer_ayush_yt no longer a server operator]
+[11:16:37] [Server thread/INFO]: alex_bhaiya_001 issued server command: /op alex_bhaiya_001
+[11:16:37] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 a server operator]
+[11:16:51] [Server thread/INFO]: alex_bhaiya_001 issued server command: /speed 1 1 gamer_ayush_yt
+[11:17:02] [Server thread/INFO]: alex_bhaiya_001 issued server command: /speed walk 1 gamer_ayush_yt
+[11:17:33] [Server thread/INFO]: gamer_ayush_yt lost connection: Disconnected
+[11:17:33] [Server thread/INFO]: gamer_ayush_yt left the game
+[11:18:23] [Server thread/INFO]: alex_bhaiya_001 issued server command: /deop alex_bhaiya_001
+[11:18:23] [Server thread/INFO]: [alex_bhaiya_001: Made alex_bhaiya_001 no longer a server operator]
+[11:18:49] [Server thread/INFO]: alex_bhaiya_001 issued server command: /warps
+[11:21:27] [User Authenticator #4/INFO]: UUID of player technobroo is 4cd7cf33-81ec-34ef-8612-8f8233102932
+[11:21:31] [TAB Processing Thread/INFO]: [TAB] [WARN] ViaVersion returned unknown protocol version 766 for player technobroo. Latest version recognized by this plugin version is 765 (1.20.3). Did a new MC version come out without you updating the plugin? This may result in plugin not working correctly for them.
+[11:21:31] [Server thread/INFO]: technobroo joined the game
+[11:21:31] [Server thread/INFO]: technobroo has made the advancement [Suit Up]
+[11:21:31] [Server thread/INFO]: technobroo has made the advancement [Isn't It Iron Pick]
+[11:21:31] [Server thread/INFO]: technobroo has made the advancement [Acquire Hardware]
+[11:21:31] [Server thread/INFO]: technobroo[/103.204.166.46:60238] logged in with entity id 11489 at ([world]772.5, 170.0, 187.5)
+[11:21:46] [User Authenticator #4/INFO]: UUID of player ALI_KHAN4569 is 2ec3d999-2d4e-3eb1-8e45-9934a9d0dc2b
+[11:21:46] [Server thread/INFO]: ALI_KHAN4569 joined the game
+[11:21:46] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Suit Up]
+[11:21:46] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Isn't It Iron Pick]
+[11:21:46] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Acquire Hardware]
+[11:21:46] [Server thread/INFO]: ALI_KHAN4569[/175.107.214.110:5659] logged in with entity id 11592 at ([world]766.5, 167.0, 179.5)
+[11:21:48] [Server thread/INFO]: alex_bhaiya_001 issued server command: /warps
+[11:22:19] [Async Chat Thread - #0/INFO]: [Not Secure] <technobroo> vc
+[11:22:22] [User Authenticator #4/INFO]: UUID of player FrenZone is a913c133-8dce-3668-ae32-59525a250ab6
+[11:22:23] [Server thread/INFO]: FrenZone joined the game
+[11:22:23] [Server thread/INFO]: FrenZone has made the advancement [Suit Up]
+[11:22:23] [Server thread/INFO]: FrenZone has made the advancement [Isn't It Iron Pick]
+[11:22:23] [Server thread/INFO]: FrenZone has made the advancement [Acquire Hardware]
+[11:22:23] [Server thread/INFO]: FrenZone[/106.213.81.169:31599] logged in with entity id 11863 at ([world]765.5, 157.0, 175.5)
+[11:22:47] [Server thread/INFO]: FrenZone issued server command: /kit
+[11:22:53] [Server thread/INFO]: alex_bhaiya_001 issued server command: /tpahere ALI_KHAN4569
+[11:22:56] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccept
+[11:22:58] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:23:03] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccept
+[11:23:25] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:23:31] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccept
+[11:23:51] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:24:10] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:24:15] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccept
+[11:24:38] [Server thread/INFO]: ALI_KHAN4569 issued server command: /rtp
+[11:24:46] [Server thread/INFO]: FrenZone issued server command: /rtp
+[11:25:01] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:25:04] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpahere FrenZone
+[11:25:06] [Server thread/INFO]: technobroo drowned while trying to escape Guardian
+[11:25:06] [Server thread/INFO]: FrenZone issued server command: /tpaccept
+[11:25:16] [Server thread/WARN]: technobroo was kicked for floating too long!
+[11:25:16] [Server thread/INFO]: technobroo lost connection: Flying is not enabled on this server
+[11:25:16] [Server thread/INFO]: technobroo left the game
+[11:25:20] [User Authenticator #5/INFO]: UUID of player technobroo is 4cd7cf33-81ec-34ef-8612-8f8233102932
+[11:25:21] [TAB Processing Thread/INFO]: [TAB] [WARN] ViaVersion returned unknown protocol version 766 for player technobroo. Latest version recognized by this plugin version is 765 (1.20.3). Did a new MC version come out without you updating the plugin? This may result in plugin not working correctly for them.
+[11:25:21] [Server thread/INFO]: technobroo joined the game
+[11:25:21] [Server thread/INFO]: technobroo[/103.204.166.46:60264] logged in with entity id 13573 at ([world]778.1188856102858, 158.620877971513, 180.2495469138378)
+[11:25:29] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Take Aim]
+[11:25:52] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Stone Age]
+[11:26:00] [Server thread/INFO]: FrenZone has made the advancement [Stone Age]
+[11:26:05] [Server thread/INFO]: technobroo lost connection: Disconnected
+[11:26:05] [Server thread/INFO]: technobroo left the game
+[11:26:40] [Server thread/INFO]: alex_bhaiya_001 issued server command: /rtp
+[11:27:50] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Diamonds!]
+[11:28:16] [User Authenticator #6/INFO]: UUID of player technobroo is 4cd7cf33-81ec-34ef-8612-8f8233102932
+[11:28:19] [TAB Processing Thread/INFO]: [TAB] [WARN] ViaVersion returned unknown protocol version 766 for player technobroo. Latest version recognized by this plugin version is 765 (1.20.3). Did a new MC version come out without you updating the plugin? This may result in plugin not working correctly for them.
+[11:28:19] [Server thread/INFO]: technobroo joined the game
+[11:28:19] [Server thread/INFO]: technobroo[/103.204.166.46:60349] logged in with entity id 15316 at ([world]796.0628706827616, 163.0, 227.6045165794169)
+[11:28:28] [Server thread/INFO]: alex_bhaiya_001 lost connection: Disconnected
+[11:28:28] [Server thread/INFO]: alex_bhaiya_001 left the game
+[11:29:54] [Server thread/INFO]: FrenZone has made the advancement [Diamonds!]
+[11:31:06] [Async Chat Thread - #1/INFO]: [Not Secure] <ALI_KHAN4569> vc
+[11:31:18] [Server thread/WARN]: technobroo was kicked for floating too long!
+[11:31:18] [Server thread/INFO]: technobroo lost connection: Flying is not enabled on this server
+[11:31:18] [Server thread/INFO]: technobroo left the game
+[11:31:26] [User Authenticator #7/INFO]: UUID of player technobroo is 4cd7cf33-81ec-34ef-8612-8f8233102932
+[11:31:27] [TAB Processing Thread/INFO]: [TAB] [WARN] ViaVersion returned unknown protocol version 766 for player technobroo. Latest version recognized by this plugin version is 765 (1.20.3). Did a new MC version come out without you updating the plugin? This may result in plugin not working correctly for them.
+[11:31:27] [Server thread/INFO]: technobroo joined the game
+[11:31:27] [Server thread/INFO]: technobroo[/103.204.166.46:60387] logged in with entity id 17449 at ([world]713.1921634714763, 187.1788511760774, 116.35049800272182)
+[11:31:35] [Server thread/WARN]: technobroo was kicked for floating too long!
+[11:31:35] [Server thread/INFO]: technobroo lost connection: Flying is not enabled on this server
+[11:31:35] [Server thread/INFO]: technobroo left the game
+[11:31:36] [User Authenticator #7/INFO]: UUID of player technobroo is 4cd7cf33-81ec-34ef-8612-8f8233102932
+[11:31:37] [TAB Processing Thread/INFO]: [TAB] [WARN] ViaVersion returned unknown protocol version 766 for player technobroo. Latest version recognized by this plugin version is 765 (1.20.3). Did a new MC version come out without you updating the plugin? This may result in plugin not working correctly for them.
+[11:31:37] [Server thread/INFO]: technobroo joined the game
+[11:31:37] [Server thread/INFO]: technobroo[/103.204.166.46:60388] logged in with entity id 17782 at ([world]687.3641249962375, 120.77804214305645, 98.62619287154179)
+[11:31:39] [Server thread/INFO]: technobroo fell from a high place
+[11:32:06] [Server thread/INFO]: technobroo issued server command: /tpa ALI_KHAN4569
+[11:32:17] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Cover Me with Diamonds]
+[11:32:41] [Server thread/INFO]: FrenZone has made the advancement [Cover Me with Diamonds]
+[11:33:26] [Server thread/INFO]: technobroo lost connection: Disconnected
+[11:33:26] [Server thread/INFO]: technobroo left the game
+[11:34:04] [Server thread/INFO]: ALI_KHAN4569 issued server command: /warps FrenZone ALI_KHAN4569 FrenZone FrenZone ALI_KHAN4569 FrenZone ALI_KHAN4569 FrenZone ALI_KHAN4569 FrenZone ALI_KHAN4569 ALI_KHAN4569
+[11:34:19] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:34:22] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Monster Hunter]
+[11:34:27] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccetp
+[11:34:30] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccept
+[11:35:23] [Server thread/INFO]: FrenZone has made the advancement [Not Today, Thank You]
+[11:37:58] [Async Chat Thread - #3/INFO]: [Not Secure] <ALI_KHAN4569> nahi ha
+[11:38:11] [Async Chat Thread - #3/INFO]: [Not Secure] <FrenZone> hai
+[11:39:10] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpa f
+[11:39:16] [Server thread/INFO]: FrenZone issued server command: /tpdeny
+[11:39:38] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpa f
+[11:39:43] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> ma
+[11:39:51] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> ma
+[11:39:53] [Async Chat Thread - #5/INFO]: [Not Secure] <FrenZone> wait
+[11:39:58] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> me
+[11:39:59] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> mee
+[11:40:02] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> meeeeeeeeee
+[11:40:04] [Async Chat Thread - #5/INFO]: [Not Secure] <FrenZone> ha
+[11:40:08] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> tpaccept kr
+[11:40:11] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpa f
+[11:40:15] [Server thread/INFO]: FrenZone issued server command: /tpaccept
+[11:40:17] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> nahi
+[11:40:25] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> ya dhack
+[11:40:35] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> armoe
+[11:40:38] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> armor
+[11:40:46] [Server thread/INFO]: FrenZone has made the advancement [Take Aim]
+[11:41:18] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> man huant
+[11:41:21] [Async Chat Thread - #5/INFO]: [Not Secure] <ALI_KHAN4569> kr rah
+[11:41:24] [Server thread/INFO]: ALI_KHAN4569 issued server command: /rtp
+[11:41:35] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpahere f
+[11:41:36] [Server thread/INFO]: FrenZone issued server command: /tpaccept
+[11:41:37] [Async Chat Thread - #6/INFO]: [Not Secure] <ALI_KHAN4569> start
+[11:41:47] [Async Chat Thread - #6/INFO]: [Not Secure] <ALI_KHAN4569> man hant
+[11:42:18] [Server thread/INFO]: FrenZone has made the advancement [Monster Hunter]
+[11:43:22] [Server thread/INFO]: FrenZone was doomed to fall by ALI_KHAN4569
+[11:43:27] [Server thread/INFO]: FrenZone issued server command: /back
+[11:43:32] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpahere f
+[11:43:39] [Async Chat Thread - #7/INFO]: [Not Secure] <ALI_KHAN4569> agin
+[11:43:46] [User Authenticator #8/INFO]: UUID of player KnockbackxD_ is fbc11359-fdab-367b-b0c1-55fb02425df6
+[11:43:46] [Server thread/INFO]: KnockbackxD_ joined the game
+[11:43:46] [Server thread/INFO]: KnockbackxD_ has made the advancement [Suit Up]
+[11:43:46] [Server thread/INFO]: KnockbackxD_ has made the advancement [Isn't It Iron Pick]
+[11:43:46] [Server thread/INFO]: KnockbackxD_ has made the advancement [Acquire Hardware]
+[11:43:46] [Server thread/INFO]: KnockbackxD_[/117.96.19.2:48650] logged in with entity id 23932 at ([world]760.5, 174.0, 178.5)
+[11:44:47] [Server thread/INFO]: KnockbackxD_ issued server command: /skin set SenpaiSpider
+[11:44:51] [Server thread/INFO]: KnockbackxD_ lost connection: Disconnected
+[11:44:51] [Server thread/INFO]: KnockbackxD_ left the game
+[11:45:06] [Server thread/INFO]: ALI_KHAN4569 has made the advancement [Not Today, Thank You]
+[11:45:08] [Server thread/INFO]: FrenZone was slain by ALI_KHAN4569
+[11:45:11] [Server thread/INFO]: FrenZone issued server command: /back
+[11:45:16] [Async Chat Thread - #9/INFO]: [Not Secure] <ALI_KHAN4569> wait
+[11:45:26] [Async Chat Thread - #9/INFO]: [Not Secure] <ALI_KHAN4569> folow
+[11:45:29] [Server thread/INFO]: ALI_KHAN4569 was slain by FrenZone
+[11:45:40] [Server thread/INFO]: ALI_KHAN4569 issued server command: /back
+[11:46:03] [Async Chat Thread - #9/INFO]: [Not Secure] <ALI_KHAN4569> folow me
+[11:47:15] [Async Chat Thread - #11/INFO]: [Not Secure] <ALI_KHAN4569> ya dhack
+[11:49:10] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> op
+[11:49:15] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> mlg
+[11:49:24] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> agin
+[11:49:44] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> ya dhack
+[11:49:49] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> ruk
+[11:49:53] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/26267, uuid='f2cc5013-d4da-497f-9b3c-f65be17a9c57', l='ServerLevel[world]', x=768.35, y=-17.00, z=707.38, cpos=[48, 44], tl=680, v=true] died: Skeletal Knight suffocated in a wall
+[11:50:10] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> w1
+[11:50:12] [Async Chat Thread - #13/INFO]: [Not Secure] <ALI_KHAN4569> 2
+[11:50:13] [Async Chat Thread - #14/INFO]: [Not Secure] <ALI_KHAN4569> 3
+[11:50:15] [Async Chat Thread - #14/INFO]: [Not Secure] <ALI_KHAN4569> start
+[11:50:42] [Server thread/INFO]: ALI_KHAN4569 was slain by FrenZone
+[11:50:44] [Server thread/INFO]: ALI_KHAN4569 issued server command: /back
+[11:51:27] [Server thread/INFO]: ALI_KHAN4569 was slain by FrenZone
+[11:51:30] [Server thread/INFO]: ALI_KHAN4569 issued server command: /back
+[11:51:33] [Async Chat Thread - #15/INFO]: [Not Secure] <ALI_KHAN4569> nic
+[11:51:53] [Async Chat Thread - #15/INFO]: [Not Secure] <ALI_KHAN4569> dhack tu
+[11:52:26] [Server thread/INFO]: ALI_KHAN4569 was slain by FrenZone
+[11:52:29] [Server thread/INFO]: ALI_KHAN4569 issued server command: /back
+[11:53:06] [Server thread/INFO]: FrenZone was slain by ALI_KHAN4569
+[11:53:09] [Server thread/INFO]: FrenZone issued server command: /back
+[11:53:28] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> wait
+[11:53:31] [Server thread/INFO]: FrenZone was slain by ALI_KHAN4569
+[11:53:36] [Server thread/INFO]: ALI_KHAN4569 issued server command: /rtp
+[11:53:38] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> ruk
+[11:53:47] [Server thread/INFO]: FrenZone issued server command: /back
+[11:53:48] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpahere f
+[11:53:51] [Server thread/INFO]: FrenZone issued server command: /tpaccept
+[11:53:51] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> start
+[11:53:56] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> saman le
+[11:53:57] [Server thread/INFO]: FrenZone issued server command: /back
+[11:54:00] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> ja ke
+[11:54:05] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> back kr
+[11:54:06] [Server thread/INFO]: FrenZone issued server command: /back
+[11:54:14] [Server thread/INFO]: FrenZone issued server command: /tpa ALI_KHAN4569
+[11:54:18] [Server thread/INFO]: ALI_KHAN4569 issued server command: /tpaccept
+[11:54:19] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> 1
+[11:54:21] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> 2
+[11:54:22] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> 3
+[11:54:52] [Server thread/INFO]: FrenZone was shot by ALI_KHAN4569
+[11:54:55] [Server thread/INFO]: FrenZone issued server command: /back
+[11:55:01] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> no fall hack
+[11:55:17] [Server thread/INFO]: ALI_KHAN4569 was slain by FrenZone
+[11:55:20] [Server thread/INFO]: ALI_KHAN4569 issued server command: /back
+[11:55:23] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> i am runer
+[11:55:56] [Server thread/INFO]: FrenZone was slain by ALI_KHAN4569
+[11:56:00] [Server thread/INFO]: FrenZone issued server command: /back
+[11:56:10] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> ma ra bhi
+[11:56:26] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> nahi
+[11:56:31] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> ruk
+[11:56:39] [Async Chat Thread - #18/INFO]: [Not Secure] <ALI_KHAN4569> ma ra server ma chala
+[11:56:59] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> man hunt kr rah ga ma ra serveer ma
+[11:56:59] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/29934, uuid='7f7de730-ce09-448c-b797-4df07e65475c', l='ServerLevel[world]', x=480.50, y=-28.00, z=-639.50, cpos=[30, -40], tl=460, v=true] died: Skeletal Knight suffocated in a wall
+[11:57:10] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> sun na
+[11:57:19] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> msg dhack
+[11:57:32] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> chal
+[11:57:38] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> server ma ra
+[11:57:53] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> nahi ma ra server ma a
+[11:57:55] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> na
+[11:58:11] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> man hant kr rah ga ma ra server ma
+[11:58:16] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> mssg
+[11:58:25] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> wma r a server ma
+[11:58:33] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> ruk
+[11:58:49] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> ma ra server ma chal man hant kr rah ga
+[11:58:57] [Async Chat Thread - #17/INFO]: [Not Secure] <ALI_KHAN4569> mssg dhack
+[11:59:06] [Server thread/INFO]: FrenZone issued server command: /msg ALI_KHAN4569
+[11:59:06] [Server thread/INFO]: ALI_KHAN4569 lost connection: Disconnected
+[11:59:06] [Server thread/INFO]: ALI_KHAN4569 left the game
+[11:59:18] [Server thread/INFO]: FrenZone lost connection: Disconnected
+[11:59:18] [Server thread/INFO]: FrenZone left the game
+[11:59:54] [Server thread/INFO]: FrenZone (/106.213.81.169:21423) lost connection: Disconnected
+[11:59:58] [User Authenticator #9/INFO]: UUID of player FrenZone is a913c133-8dce-3668-ae32-59525a250ab6
+[12:10:23] [User Authenticator #10/INFO]: UUID of player RoyalPrince is 4dd89aa4-ca97-3c00-83f5-0f48c31a7bea
+[12:10:23] [Server thread/INFO]: RoyalPrince joined the game
+[12:10:23] [Server thread/INFO]: RoyalPrince has made the advancement [Suit Up]
+[12:10:23] [Server thread/INFO]: RoyalPrince has made the advancement [Isn't It Iron Pick]
+[12:10:23] [Server thread/INFO]: RoyalPrince has made the advancement [Acquire Hardware]
+[12:10:23] [Server thread/INFO]: RoyalPrince[/103.177.174.210:20420] logged in with entity id 35285 at ([world]766.5, 167.0, 189.5)
+[12:11:06] [Server thread/INFO]: RoyalPrince issued server command: /spawnmob
+[12:11:19] [Server thread/INFO]: RoyalPrince lost connection: Disconnected
+[12:11:19] [Server thread/INFO]: RoyalPrince left the game
+[12:58:07] [User Authenticator #11/INFO]: UUID of player ALI_KHAN4569 is 2ec3d999-2d4e-3eb1-8e45-9934a9d0dc2b
+[12:58:07] [Server thread/INFO]: ALI_KHAN4569 joined the game
+[12:58:07] [Server thread/INFO]: ALI_KHAN4569[/175.107.214.110:6578] logged in with entity id 50315 at ([world]537.5238713885784, 63.0, -717.7609262987767)

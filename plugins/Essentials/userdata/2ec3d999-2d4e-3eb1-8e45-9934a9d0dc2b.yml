@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.107.214.110
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1715083146767
+  login: 1715086687472
+money: '0'
+last-account-name: ALI_KHAN4569
+lastlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 865.3000000119209
+  y: 55.0
+  z: 839.3000000119209
+  yaw: -42.966548919677734
+  pitch: -16.550762176513672
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 537.5238713885784
+  y: 63.0
+  z: -717.7609262987767
+  yaw: -173.25567626953125
+  pitch: 23.564868927001953

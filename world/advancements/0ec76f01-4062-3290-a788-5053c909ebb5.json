@@ -9,6 +9,7 @@
     "criteria": {
       "minecraft:cold_ocean": "2024-05-07 08:01:41 +0000",
       "minecraft:savanna_plateau": "2024-05-07 08:44:48 +0000",
+      "minecraft:snowy_slopes": "2024-05-07 11:14:26 +0000",
       "minecraft:beach": "2024-05-07 09:38:09 +0000",
       "minecraft:dark_forest": "2024-05-07 09:39:06 +0000",
       "minecraft:forest": "2024-05-07 08:28:19 +0000",
@@ -111,6 +112,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "cooked_porkchop": "2024-05-07 11:15:34 +0000",
       "enchanted_golden_apple": "2024-05-07 09:37:06 +0000",
       "cooked_mutton": "2024-05-07 09:46:52 +0000",
       "beef": "2024-05-07 08:26:09 +0000"
@@ -817,6 +819,12 @@
   "minecraft:recipes/food/mushroom_stew": {
     "criteria": {
       "has_red_mushroom": "2024-05-07 09:50:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-05-07 11:14:44 +0000"
     },
     "done": true
   },
