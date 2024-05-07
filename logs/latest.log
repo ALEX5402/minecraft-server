@@ -1,4 +1,4 @@
-[06:08:36] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+[06:12:40] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
 java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[purpur-1.20.1.jar:git-Purpur-2050]
@@ -30,93 +30,200 @@ Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+7
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	... 20 more
-[06:08:40] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[06:08:42] [ServerMain/INFO]: Loaded 7 recipes
-[06:08:42] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[06:08:42] [Server thread/WARN]: ****************************
-[06:08:42] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
-[06:08:42] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
-[06:08:42] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
-[06:08:42] [Server thread/WARN]: ****************************
-[06:08:42] [Server thread/INFO]: Loading properties
-[06:08:42] [Server thread/INFO]: This server is running Purpur version git-Purpur-2050 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 423c2af on HEAD)
-[06:08:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[06:08:42] [Server thread/INFO]: Using 4 threads for Netty based IO
-[06:08:42] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[06:08:43] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
-[06:08:43] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
-[06:08:43] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
-[06:08:43] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.11, test run: true
-[06:08:43] [Server thread/INFO]: Default game type: SURVIVAL
-[06:08:43] [Server thread/INFO]: Generating keypair
-[06:08:43] [Server thread/INFO]: Starting Minecraft server on *:25565
-[06:08:43] [Server thread/INFO]: Using epoll channel type
-[06:08:43] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[06:08:43] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[06:08:46] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
-[06:08:46] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
-[06:08:47] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[06:08:47] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[06:08:47] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[06:08:47] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[06:08:47] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
-[06:08:48] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[06:08:48] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
-[06:08:48] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5f3584ed]
-[06:08:48] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
-[06:08:48] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
-[06:08:48] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
-[06:08:48] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
-[06:08:48] [Server thread/INFO]: [floodgate] Took 387ms to boot Floodgate
-[06:08:48] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
-[06:08:48] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[06:08:48] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
-[06:08:48] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
-[06:08:48] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.5
-[06:08:48] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.66
-[06:08:48] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
-[06:08:48] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
-[06:08:48] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT
-[06:08:49] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[06:08:49] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[06:08:49] [Server thread/INFO]: [ImageMaps] Loading server plugin ImageMaps v1.0.10
-[06:08:49] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
-[06:08:49] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.1.1
-[06:08:49] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.7.0
-[06:08:49] [Server thread/INFO]: [PlayerKits] Loading server plugin PlayerKits v2.27.1
-[06:08:49] [Server thread/INFO]: [SetHomes] Loading server plugin SetHomes v1.3.0
-[06:08:49] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.20.0
-[06:08:49] [Server thread/INFO]: [DeadChest] Worldguard support disabled by user
-[06:08:49] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.9.3
-[06:08:49] [Server thread/INFO]: [BetterTeams] Checking if the file config.yml is up to date
-[06:08:49] [Server thread/INFO]: [BetterTeams] File is up to date
-[06:08:49] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
-[06:08:49] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.12
-[06:08:49] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
-[06:08:49] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
-[06:08:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[06:08:49] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
-[06:08:50] [Server thread/INFO]:         __    
-[06:08:50] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
-[06:08:50] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
-[06:08:50] [Server thread/INFO]: 
-[06:08:50] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[06:08:50] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[06:08:50] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[06:08:51] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[06:08:51] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1773ms)
-[06:08:51] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[06:08:51] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[06:08:51] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[06:08:51] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[06:08:51] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[06:08:51] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
-[06:08:51] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[06:08:51] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[06:08:51] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
-[06:08:52] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v3.0.5
-[06:08:52] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.13
-[06:08:52] [Server console handler/ERROR]: Caught previously unhandled exception :
+[06:12:44] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[06:12:45] [ServerMain/INFO]: Loaded 7 recipes
+[06:12:46] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[06:12:46] [Server thread/WARN]: ****************************
+[06:12:46] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[06:12:46] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[06:12:46] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[06:12:46] [Server thread/WARN]: ****************************
+[06:12:46] [Server thread/INFO]: Loading properties
+[06:12:46] [Server thread/INFO]: This server is running Purpur version git-Purpur-2050 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 423c2af on HEAD)
+[06:12:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[06:12:46] [Server thread/INFO]: Using 4 threads for Netty based IO
+[06:12:46] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[06:12:47] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[06:12:47] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[06:12:47] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
+[06:12:47] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.11, test run: true
+[06:12:47] [Server thread/INFO]: Default game type: SURVIVAL
+[06:12:47] [Server thread/INFO]: Generating keypair
+[06:12:47] [Server thread/INFO]: Starting Minecraft server on *:25565
+[06:12:47] [Server thread/INFO]: Using epoll channel type
+[06:12:47] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[06:12:47] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[06:12:50] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
+[06:12:50] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
+[06:12:50] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
+[06:12:50] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 35 Terra addons:
+        - biome-provider-extrusion@1.0.0-BETA+73baaec6c
+        - biome-provider-image@1.0.0-BETA+73baaec6c
+        - biome-provider-image-v2@1.0.0-BETA+73baaec6c
+        - biome-provider-pipeline@1.0.1-BETA+73baaec6c
+        - biome-provider-pipeline-v2@1.0.0-BETA+73baaec6c
+        - biome-provider-single@1.0.0-BETA+73baaec6c
+        - biome-query-api@1.0.0-BETA+73baaec6c
+        - chunk-generator-noise-3d@1.1.0-BETA+73baaec6c
+        - command-addons@1.0.0-BETA+73baaec6c
+        - command-packs@1.0.0-BETA+73baaec6c
+        - command-profiler@1.0.0-BETA+73baaec6c
+        - command-structures@1.0.0-BETA+73baaec6c
+        - config-biome@1.0.0-BETA+73baaec6c
+        - config-distributors@1.0.0-BETA+73baaec6c
+        - config-feature@1.0.0-BETA+73baaec6c
+        - config-flora@1.0.0-BETA+73baaec6c
+        - config-locators@1.1.0-BETA+73baaec6c
+        - config-noise-function@1.0.0-BETA+73baaec6c
+        - config-ore@1.0.0-BETA+73baaec6c
+        - config-palette@1.0.0-BETA+73baaec6c
+        - config-structure@1.0.0-BETA+73baaec6c
+        - generation-stage-feature@1.1.0-BETA+73baaec6c
+        - generation-stage-structure@1.0.0-BETA+73baaec6c
+        - language-yaml@1.0.0-BETA+73baaec6c
+        - library-image@1.0.0-BETA+73baaec6c
+        - palette-block-shortcut@1.0.0-BETA+73baaec6c
+        - pipeline-image@1.0.0-BETA+73baaec6c
+        - structure-block-shortcut@1.0.0-BETA+73baaec6c
+        - structure-function-check-noise-3d@1.0.0-BETA+73baaec6c
+        - structure-mutator@0.1.0-BETA+73baaec6c
+        - structure-sponge-loader@1.0.0-BETA+73baaec6c
+        - structure-terrascript-loader@1.1.0-BETA+73baaec6c
+        - terra@1.0.0
+        - terra-bukkit@1.0.0
+        - terrascript-function-sampler@1.0.0-BETA+73baaec6c
+[06:12:50] [Server thread/WARN]: [com.dfsek.terra.addons.biome.pipeline.BiomePipelineAddon] The biome-provider-pipeline addon is deprecated and scheduled for removal in Terra 7.0. It is recommended to use the biome-provider-pipeline-v2 addon for future pack development instead.
+[06:12:50] [Server thread/WARN]: [com.dfsek.terra.addons.biome.image.ImageBiomeProviderAddon] The biome-provider-image addon is deprecated and scheduled for removal in Terra 7.0. It is recommended to use the biome-provider-image-v2 addon for future pack development instead.
+[06:12:50] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
+[06:12:50] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
+[06:12:50] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
+[06:12:50] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
+[06:12:51] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[06:12:51] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[06:12:51] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[06:12:51] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[06:12:51] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[06:12:52] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[06:12:52] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
+[06:12:52] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@20c3a8b6]
+[06:12:52] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
+[06:12:52] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
+[06:12:52] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
+[06:12:52] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b90-2886a71)
+[06:12:53] [Server thread/INFO]: [floodgate] Took 494ms to boot Floodgate
+[06:12:53] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
+[06:12:53] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[06:12:53] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
+[06:12:53] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[06:12:53] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.5
+[06:12:53] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.66
+[06:12:53] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
+[06:12:53] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
+[06:12:53] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.2-SNAPSHOT
+[06:12:53] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[06:12:53] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[06:12:53] [Server thread/INFO]: [ImageMaps] Loading server plugin ImageMaps v1.0.10
+[06:12:53] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
+[06:12:53] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.1.1
+[06:12:53] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.7.0
+[06:12:53] [Server thread/INFO]: [PlayerKits] Loading server plugin PlayerKits v2.27.1
+[06:12:53] [Server thread/INFO]: [SetHomes] Loading server plugin SetHomes v1.3.0
+[06:12:53] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.20.0
+[06:12:53] [Server thread/INFO]: [DeadChest] Worldguard support disabled by user
+[06:12:53] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.9.3
+[06:12:53] [Server thread/INFO]: [BetterTeams] Checking if the file config.yml is up to date
+[06:12:53] [Server thread/INFO]: [BetterTeams] File is up to date
+[06:12:53] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
+[06:12:53] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.12
+[06:12:53] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.3.1-BETA+73baaec6c
+[06:12:53] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
+[06:12:53] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
+[06:12:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[06:12:53] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[06:12:54] [Server thread/INFO]:         __    
+[06:12:54] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[06:12:54] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
+[06:12:54] [Server thread/INFO]: 
+[06:12:54] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[06:12:54] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[06:12:55] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[06:12:55] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[06:12:55] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1750ms)
+[06:12:55] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[06:12:55] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[06:12:55] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[06:12:55] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[06:12:55] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[06:12:55] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
+[06:12:55] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[06:12:55] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[06:12:55] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
+[06:12:56] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v3.0.5
+[06:12:56] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.13
+[06:12:57] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.1.
+[06:12:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.0.13]
+[06:12:57] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[06:12:57] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[06:12:57] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[06:12:57] [Server thread/INFO]: [Terra] Enabling Terra v6.3.1-BETA+73baaec6c
+[06:12:57] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.1 with server implementation Purpur.
+[06:12:57] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
+[06:12:57] [Server thread/INFO]: [com.dfsek.terra.registry.master.ConfigRegistry] Loading ZIP archive: default.zip
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.0.13
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 8e4c6e2
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[06:12:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[06:12:58] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loading config pack "OVERWORLD:OVERWORLD"
+[06:12:59] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loaded config pack "OVERWORLD:OVERWORLD" v1.3.3 by Astrash, Sancires, Aureus in 2118.038111ms.
+[06:12:59] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loaded packs.
+[06:12:59] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R1.AwfulBukkitHacks] Hacking biome registry...
+[06:12:59] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R1.AwfulBukkitHacks] Doing tag garbage....
+[06:12:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[06:12:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[06:12:59] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[06:12:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[06:12:59] [Server thread/INFO]: Preparing level "world"
+[06:13:00] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[06:13:00] [Server thread/INFO]: Time elapsed: 230 ms
+[06:13:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[06:13:01] [Server thread/INFO]: Time elapsed: 38 ms
+[06:13:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[06:13:01] [Server thread/INFO]: Time elapsed: 82 ms
+[06:13:01] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.2
+[06:13:01] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20/1.20.1 (763)
+[06:13:01] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9+5934e49
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[06:13:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[06:13:01] [Server thread/INFO]: [WorldGuard] Loading region data...
+[06:13:01] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.5
+[06:13:01] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[06:13:01] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.9.1
+[06:13:02] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.2-SNAPSHOT (b90-2886a71)
+[06:13:02] [Folia Async Scheduler Thread #2/ERROR]: [SkinsRestorer] Error getting Eclipse UUID
+[06:13:02] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.6.2-3e052553
+[06:13:02] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.1)...
+[06:13:02] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[06:13:03] [Server console handler/ERROR]: Caught previously unhandled exception :
 java.io.IOError: java.io.IOException: Input/output error
 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170) ~[jline-reader-3.20.0.jar:?]
 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110) ~[jline-reader-3.20.0.jar:?]
@@ -137,44 +244,113 @@ Caused by: java.io.IOException: Input/output error
 	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57) ~[jline-terminal-3.21.0.jar:?]
 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160) ~[jline-reader-3.20.0.jar:?]
 	... 9 more
-[06:08:53] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.1.
-[06:08:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.0.13]
-[06:08:53] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
-[06:08:53] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[06:08:53] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[06:08:53] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[06:08:53] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[06:08:53] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[06:08:53] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[06:08:53] [Server thread/INFO]: Preparing level "world"
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.0.13
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 8e4c6e2
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[06:08:53] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[06:08:53] [Thread-1/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PURPUR)
-[06:08:53] [Server thread/ERROR]: Could not dispatch event: com.sk89q.worldedit.event.platform.PlatformReadyEvent@427513cd to handler EventHandler{priority=NORMAL}
-java.lang.reflect.InvocationTargetException: null
-	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:75) ~[worldedit-bukkit-7.2.18-dist.jar:?]
-	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.18-dist.jar:?]
-	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.18-dist.jar:?]
-	at com.sk89q.worldedit.bukkit.WorldEditPlugin.setupWorldData(WorldEditPlugin.java:206) ~[worldedit-bukkit-7.2.18-dist.jar:?]
-	at com.sk89q.worldedit.bukkit.WorldEditPlugin.access$100(WorldEditPlugin.java:101) ~[worldedit-bukkit-7.2.18-dist.jar:?]
-	at com.sk89q.worldedit.bukkit.WorldEditPlugin$WorldInitListener.onWorldInit(WorldEditPlugin.java:533) ~[worldedit-bukkit-7.2.18-dist.jar:?]
-	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:77) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:git-Purpur-2050]
-	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:617) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at net.minecraft.server.MinecraftServer.initWorld(MinecraftServer.java:657) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:610) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[06:13:04] [Thread-1/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PURPUR)
+[06:13:04] [Server thread/ERROR]: Error occurred while enabling MythicMobs v5.6.2-3e052553 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.6.2-3e052553
+[06:13:04] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[06:13:04] [Server thread/INFO]: [MythicMobs] - 
+[06:13:04] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
+[06:13:04] [Server thread/INFO]: [MythicMobs] - 
+[06:13:04] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[06:13:04] [Server thread/WARN]: java.lang.ThreadDeath
+[06:13:04] [Server thread/WARN]: 	at java.base/java.lang.Thread.stop(Thread.java:949)
+[06:13:04] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.t(MinecraftServer.java:930)
+[06:13:04] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.t(DedicatedServer.java:853)
+[06:13:04] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902)
+[06:13:04] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28)
+[06:13:04] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[06:13:04] [Server thread/INFO]: [MythicMobs] ✗An error occurred while saving data
+[06:13:04] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.core.mobs.MobExecutor.saveCachedActiveMobs()" because the return value of "io.lumine.mythic.bukkit.MythicBukkit.getMobManager()" is null
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.core.config.ConfigExecutor.save(ConfigExecutor.java:446)
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.core.config.ConfigExecutor.unload(ConfigExecutor.java:475)
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.bukkit.utils.plugin.PluginModule.close(PluginModule.java:50)
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.bukkit.utils.terminable.composite.AbstractCompositeTerminable.close(AbstractCompositeTerminable.java:31)
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.bukkit.utils.terminable.composite.CompositeTerminable.closeAndReportException(CompositeTerminable.java:63)
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.close(LuminePlugin.java:110)
+[06:13:04] [Server thread/WARN]: 	at MythicMobs-5.6.2.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.onDisable(LuminePlugin.java:105)
+[06:13:04] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:283)
+[06:13:04] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:224)
+[06:13:04] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:109)
+[06:13:04] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:537)
+[06:13:04] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:193)
+[06:13:04] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104)
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling MythicMobs v5.6.2-3e052553 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while unregistering events for MythicMobs v5.6.2-3e052553 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while removing chunk tickets for MythicMobs v5.6.2-3e052553 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_20_R1.CraftServer] null loading Essentials v2.20.1 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: Error occurred while enabling spark v1.10.66 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [spark] Disabling spark v1.10.66
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling spark v1.10.66 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while removing chunk tickets for spark v1.10.66 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.3.0
+[06:13:04] [Server thread/ERROR]: Error occurred while enabling LoginSecurity v3.3.0 (Is it up to date?)
+java.lang.InternalError: java.lang.ThreadDeath
+	at java.lang.invoke.InnerClassLambdaMetafactory.generateInnerClass(InnerClassLambdaMetafactory.java:413) ~[?:?]
+	at java.lang.invoke.InnerClassLambdaMetafactory.spinInnerClass(InnerClassLambdaMetafactory.java:315) ~[?:?]
+	at java.lang.invoke.InnerClassLambdaMetafactory.buildCallSite(InnerClassLambdaMetafactory.java:228) ~[?:?]
+	at java.lang.invoke.LambdaMetafactory.metafactory(LambdaMetafactory.java:341) ~[?:?]
+	at java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:134) ~[?:?]
+	at java.lang.invoke.CallSite.makeSite(CallSite.java:315) ~[?:?]
+	at java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(MethodHandleNatives.java:281) ~[?:?]
+	at java.lang.invoke.MethodHandleNatives.linkCallSite(MethodHandleNatives.java:271) ~[?:?]
+	at com.lenis0012.bukkit.loginsecurity.libs.pluginutils.modules.ModuleRegistry.enableModules(ModuleRegistry.java:58) ~[LoginSecurity-Spigot-3.3.0.jar:?]
+	at com.lenis0012.bukkit.loginsecurity.libs.pluginutils.modules.ModularPlugin.onEnable(ModularPlugin.java:26) ~[LoginSecurity-Spigot-3.3.0.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugin(CraftServer.java:654) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugins(CraftServer.java:565) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:640) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:439) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:345) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1116) ~[purpur-1.20.1.jar:git-Purpur-2050]
@@ -186,104 +362,129 @@ Caused by: java.lang.ThreadDeath
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:53] [Server thread/ERROR]: Encountered an unexpected exception
-java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:522) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.3.0
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling LoginSecurity v3.3.0 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while removing chunk tickets for LoginSecurity v3.3.0 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.92
+[06:13:04] [Server thread/ERROR]: Error occurred while enabling Chunky v1.3.92 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [Chunky] Disabling Chunky v1.3.92
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while unregistering events for Chunky v1.3.92 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while removing chunk tickets for Chunky v1.3.92 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.2.2-SNAPSHOT
+[06:13:04] [Server thread/ERROR]: Error occurred while enabling Geyser-Spigot v2.2.2-SNAPSHOT (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.2.2-SNAPSHOT
+[06:13:04] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling Geyser-Spigot v2.2.2-SNAPSHOT (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "java.util.concurrent.ScheduledExecutorService.shutdown()" because "this.scheduledThread" is null
+	at org.geysermc.geyser.GeyserImpl.shutdown(GeyserImpl.java:613) ~[Geyser-Spigot.jar:?]
+	at org.geysermc.geyser.platform.spigot.GeyserSpigotPlugin.onDisable(GeyserSpigotPlugin.java:372) ~[Geyser-Spigot.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:283) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:224) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:109) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:537) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:193) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugin(CraftServer.java:654) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugins(CraftServer.java:565) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:640) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:439) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:345) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1116) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:322) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-Caused by: java.nio.channels.ClosedByInterruptException
-	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199) ~[?:?]
-	at sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171) ~[?:?]
-	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:293) ~[?:?]
-	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:26) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:520) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	... 5 more
-[06:08:53] [Server thread/ERROR]: 	Cause of unexpected exception was
-java.nio.channels.ClosedByInterruptException: null
-	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199) ~[?:?]
-	at sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171) ~[?:?]
-	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:293) ~[?:?]
-	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:26) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
-	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:520) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:439) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:345) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1116) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:322) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[06:08:53] [Server thread/WARN]: Failed retrieving info for group processor
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while unregistering events for Geyser-Spigot v2.2.2-SNAPSHOT (Is it up to date?)
 java.lang.ThreadDeath: null
 	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:53] [Server thread/WARN]: Failed retrieving info for group graphics
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while removing chunk tickets for Geyser-Spigot v2.2.2-SNAPSHOT (Is it up to date?)
 java.lang.ThreadDeath: null
 	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:53] [Server thread/WARN]: Failed retrieving info for group physical memory
+[06:13:04] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v1.0.10
+[06:13:04] [Server thread/ERROR]: Error occurred while enabling ImageMaps v1.0.10 (Is it up to date?)
 java.lang.ThreadDeath: null
 	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:53] [Server thread/WARN]: Failed retrieving info for group virtual memory
+[06:13:04] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v1.0.10
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling ImageMaps v1.0.10 (Is it up to date?)
 java.lang.ThreadDeath: null
 	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:53] [Server thread/ERROR]: Uncaught exception in server thread
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while removing chunk tickets for ImageMaps v1.0.10 (Is it up to date?)
 java.lang.ThreadDeath: null
 	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:53] [Thread-1/INFO]: Stopping server
-[06:08:53] [Thread-1/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.0.13
-[06:08:53] [Thread-1/INFO]: [ViaRewind] Disabling ViaRewind v3.0.5
-[06:08:53] [Thread-1/INFO]: [WorldEdit] Disabling WorldEdit v7.2.18+6616-abda4e0
-[06:08:53] [Thread-1/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[06:08:53] [Thread-1/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[06:08:53] [Thread-1/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
-[06:08:53] [Thread-1/INFO]: [LuckPerms] Starting shutdown process...
-[06:08:53] [Thread-1/INFO]: [LuckPerms] Closing storage...
-[06:08:53] [Thread-1/INFO]: [LuckPerms] Goodbye!
-[06:08:53] [Thread-1/INFO]: Saving players
-[06:08:53] [Thread-1/WARN]: Asynchronous Save Players! Blocking thread until it returns 
-java.lang.IllegalStateException: null
-	at io.papermc.paper.util.MCUtil.ensureMain(MCUtil.java:367) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1259) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1255) ~[purpur-1.20.1.jar:git-Purpur-2050]
-	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:966) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_20_R1.CraftServer] null loading ItemEdit v3.1.1 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
 	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
-[06:08:54] [Folia Async Scheduler Thread #2/WARN]: [SkinsRestorer] Async task for SkinsRestorer v15.0.13 generated an exception
-java.lang.NoClassDefFoundError: net/skinsrestorer/shared/connections/responses/uuid/MojangUUIDResponse
-	at net.skinsrestorer.shared.connections.MojangAPIImpl.getUUIDMojang(MojangAPIImpl.java:135) ~[SkinsRestorer.jar:?]
-	at net.skinsrestorer.shared.connections.ServiceCheckerService.checkServices(ServiceCheckerService.java:68) ~[SkinsRestorer.jar:?]
-	at net.skinsrestorer.shared.plugin.SRPlugin.runServiceCheck(SRPlugin.java:438) ~[SkinsRestorer.jar:?]
-	at net.skinsrestorer.bukkit.folia.FoliaSchedulerProvider.lambda$getCancellingTaskConsumer$0(FoliaSchedulerProvider.java:84) ~[SkinsRestorer.jar:?]
-	at io.papermc.paper.threadedregions.scheduler.FoliaAsyncScheduler$AsyncScheduledTask.run(FoliaAsyncScheduler.java:217) ~[purpur-1.20.1.jar:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-Caused by: java.lang.ClassNotFoundException: net.skinsrestorer.shared.connections.responses.uuid.MojangUUIDResponse
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:185) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:152) ~[purpur-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
-	... 8 more
+[06:13:04] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_20_R1.CraftServer] null loading GSit v1.7.0 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]
+[06:13:04] [Server thread/INFO]: [PlayerKits] Enabling PlayerKits v2.27.1
+[06:13:04] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling PlayerKits v2.27.1 (Is it up to date?)
+java.lang.ThreadDeath: null
+	at java.lang.Thread.stop(Thread.java:949) ~[?:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:930) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:853) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:902) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.v1_20_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[purpur-1.20.1.jar:git-Purpur-2050]

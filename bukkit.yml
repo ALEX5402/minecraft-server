@@ -1,3 +1,10 @@
+worlds:
+  world:
+    generator: Terra:ORIGEN
+  world_nether:
+    generator: Terra:ORIGEN
+  world_the_end:
+    generator: Terra:REIMAGEND
 settings:
   allow-end: true
   warn-on-overload: true
