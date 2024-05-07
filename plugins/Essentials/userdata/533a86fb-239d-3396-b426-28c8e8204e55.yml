@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1715072274110
-  login: 1715071988629
+  logout: 1715078738203
+  login: 1715077804119
 money: '0'
 last-account-name: DRAGON_X_1_FIRE
 logoutlocation:
   world: d42b02f7-5654-4917-af1e-2a98fced38f6
   world-name: world
-  x: 752.9446639126596
-  y: 168.0
-  z: 183.12192305580658
-  yaw: 167.33837890625
-  pitch: -27.085487365722656
+  x: 769.5172337733868
+  y: 160.0
+  z: 207.33730320589478
+  yaw: 179.79052734375
+  pitch: 39.59999084472656
 lastlocation:
   world: d42b02f7-5654-4917-af1e-2a98fced38f6
   world-name: world

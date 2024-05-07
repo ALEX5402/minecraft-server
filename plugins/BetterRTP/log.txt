@@ -1,30 +1,18 @@
-2024-05-07 09:10:02 [INFO]: Loading Overrides...
-2024-05-07 09:10:02 [INFO]: Loading World Types...
-2024-05-07 09:10:02 [INFO]: - World Type for 'world' set to 'NORMAL'
-2024-05-07 09:10:02 [INFO]: - World Type for 'world_nether' set to 'NETHER'
-2024-05-07 09:10:02 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
-2024-05-07 09:10:02 [INFO]: Loading Defaults...
-2024-05-07 09:10:02 [INFO]: Loading Custom Worlds...
-2024-05-07 09:10:02 [INFO]: [WARN] - Custom World 'custom_world_1' was not registered because world does NOT exist
-2024-05-07 09:10:02 [INFO]: [WARN] - Custom World 'other_custom_world' was not registered because world does NOT exist
-2024-05-07 09:10:02 [SEVERE]: The particle 'EXPLOSION_NORMAL' created a fatal error when loading particles! Your MC version isn't supported!
-2024-05-07 09:10:06 [INFO]: Database COOLDOWN:world configured and loaded!
-2024-05-07 09:10:06 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
-2024-05-07 09:10:06 [INFO]: Database COOLDOWN:world_nether configured and loaded!
-2024-05-07 09:10:06 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
-2024-05-07 09:10:06 [INFO]: Database QUEUE:Queue configured and loaded!
-2024-05-07 09:10:06 [INFO]: Database PLAYERS:Players configured and loaded!
-2024-05-07 09:10:06 [INFO]: Attempting to queue up some more safe locations...
-2024-05-07 09:10:07 [INFO]: Queueing paused, max queue limit reached!
-2024-05-07 09:23:29 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=961.5,y=68.0,z=-859.5,pitch=26.33313,yaw=19.408203}
-2024-05-07 09:25:54 [INFO]: Dhruv executed: /rtp world world_the_end
-2024-05-07 09:27:08 [INFO]: Dhruv executed: /rtp world world
-2024-05-07 09:27:14 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=542.5,y=70.0,z=-988.5,pitch=10.5,yaw=-163.68555}
-2024-05-07 09:27:45 [INFO]: Dhruv executed: /rtp world
-2024-05-07 09:27:55 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=869.5,y=63.0,z=-206.5,pitch=-2.149329,yaw=-163.40952}
-2024-05-07 09:28:28 [INFO]: Dhruv executed: /rtp world [biome1
-2024-05-07 09:28:48 [INFO]: Dhruv executed: /rtp world world
-2024-05-07 09:31:00 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=484.5,y=63.0,z=-696.5,pitch=25.049976,yaw=102.900055}
-2024-05-07 09:33:26 [INFO]: Dhruv executed: /rtp help
-2024-05-07 09:37:20 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=82.5,y=78.0,z=868.5,pitch=43.799713,yaw=146.71649}
-2024-05-07 09:48:57 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=814.5,y=68.0,z=-994.5,pitch=0.34988022,yaw=-156.91302}
+2024-05-07 10:47:48 [INFO]: Loading Overrides...
+2024-05-07 10:47:48 [INFO]: Loading World Types...
+2024-05-07 10:47:48 [INFO]: - World Type for 'world' set to 'NORMAL'
+2024-05-07 10:47:48 [INFO]: - World Type for 'world_nether' set to 'NETHER'
+2024-05-07 10:47:48 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
+2024-05-07 10:47:48 [INFO]: Loading Defaults...
+2024-05-07 10:47:48 [INFO]: Loading Custom Worlds...
+2024-05-07 10:47:48 [INFO]: [WARN] - Custom World 'custom_world_1' was not registered because world does NOT exist
+2024-05-07 10:47:48 [INFO]: [WARN] - Custom World 'other_custom_world' was not registered because world does NOT exist
+2024-05-07 10:47:48 [SEVERE]: The particle 'EXPLOSION_NORMAL' created a fatal error when loading particles! Your MC version isn't supported!
+2024-05-07 10:47:52 [INFO]: Database QUEUE:Queue configured and loaded!
+2024-05-07 10:47:52 [INFO]: Database COOLDOWN:world configured and loaded!
+2024-05-07 10:47:52 [INFO]: Database COOLDOWN:world_nether configured and loaded!
+2024-05-07 10:47:52 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
+2024-05-07 10:47:52 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
+2024-05-07 10:47:52 [INFO]: Database PLAYERS:Players configured and loaded!
+2024-05-07 10:47:53 [INFO]: Attempting to queue up some more safe locations...
+2024-05-07 10:47:53 [INFO]: Queueing paused, max queue limit reached!

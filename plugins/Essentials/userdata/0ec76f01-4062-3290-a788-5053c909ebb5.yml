@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1715074356099
-  login: 1715074363052
+  logout: 1715079000272
+  login: 1715078940271
 money: '0'
 last-account-name: alex_bhaiya_001
 logoutlocation:
   world: d42b02f7-5654-4917-af1e-2a98fced38f6
   world-name: world
-  x: 705.5469827609179
-  y: 150.0
-  z: 141.7127765034693
-  yaw: -58.18805694580078
-  pitch: -73.2001953125
+  x: 767.244365630092
+  y: 160.0
+  z: 188.69999998807907
+  yaw: -73.05096435546875
+  pitch: 17.85000228881836
 lastlocation:
   world: d42b02f7-5654-4917-af1e-2a98fced38f6
   world-name: world

@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
+  logout: 1715075663848
   login: 1715075645716
 money: '0'
 last-account-name: centroplayz_
+logoutlocation:
+  world: d42b02f7-5654-4917-af1e-2a98fced38f6
+  world-name: world
+  x: 773.813772259116
+  y: 157.1212968405392
+  z: 194.28705509381717
+  yaw: -19.980144500732422
+  pitch: 10.659987449645996
