@@ -1,0 +1,448 @@
+[04:59:13] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[04:59:26] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:59:26] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[04:59:32] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:59:32] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[04:59:40] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:59:40] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[04:59:46] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:59:46] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[04:59:52] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:59:52] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[04:59:59] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:59:59] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:09] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:00:09] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:16] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:00:16] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:22] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:00:22] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:28] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:00:28] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:40] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:00:40] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.SessionLock$ExceptionWorldConflict: /root/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:102) ~[?:?]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:512) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:425) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:200) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+ream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:34] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+[05:00:40] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at net.minecraft.server.Main.main(Main.java:126) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at org.bukkit.craftbukkit.Main.main(Main.java:330) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:95) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: plugins/Terra-fabric-6.3.1-BETA+73baaec6c.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:104) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:76) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:49) ~[purpur-1.20.1.jar:git-Purpur-2050]
+	... 20 more

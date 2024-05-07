@@ -1,3 +1,0 @@
-#!/bin/bash
-screen -S server -d -m ./startserver.sh
-screen -S backup -d -m ./startpush.sh
