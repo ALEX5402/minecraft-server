@@ -63,6 +63,7 @@ stats:
   forced-stats: {}
 world-settings:
   default:
+    seed-trialchambers: 94251327
     below-zero-generation-in-existing-chunks: true
     view-distance: default
     simulation-distance: default

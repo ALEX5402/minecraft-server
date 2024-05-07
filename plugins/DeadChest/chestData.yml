@@ -12,71 +12,71 @@ chestData:
   xpStored: 0
   inventory:
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       Damage: 19
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_AXE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       Damage: 102
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_PICKAXE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       Damage: 2
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_SHOVEL
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: BOW
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       Damage: 1
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: ARROW
     amount: 64
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: WATER_BUCKET
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: OAK_PLANKS
     amount: 24
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: COOKED_BEEF
     amount: 55
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: ARROW
     amount: 7
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: COOKED_MUTTON
     amount: 64
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: WHEAT_SEEDS
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_INGOT
     amount: 32
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: FLINT_AND_STEEL
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: DIRT
     amount: 4
   - null
@@ -101,35 +101,35 @@ chestData:
   - null
   - null
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: ARMOR
       Damage: 87
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_LEGGINGS
     meta:
       ==: ItemMeta
       meta-type: ARMOR
       Damage: 87
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_CHESTPLATE
     meta:
       ==: ItemMeta
       meta-type: ARMOR
       Damage: 87
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: IRON_HELMET
     meta:
       ==: ItemMeta
       meta-type: ARMOR
       Damage: 87
   - ==: org.bukkit.inventory.ItemStack
-    v: 3465
+    v: 3700
     type: SHIELD
     meta:
       ==: ItemMeta
